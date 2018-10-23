@@ -8,12 +8,21 @@
 <h2>Welcome, to {{ title }}, you can:</h2>
 <ul>
   <li>
-    <h4><a rel="noopener" href="">Generate Certificates</a></h4>
+     <h4><a  routerLink="/login">Login</a></h4>
   </li>
   <li>
-    <h4><a rel="noopener" href="">View your certificates</a></h4>
+      <h4><a  routerLink="/signup">Signup</a></h4>
+   </li>
+  <li>
+    <h4><a  routerLink="/organization">Generate Certificates</a></h4>
+  </li>
+  <li>
+    <h4><a  routerLink="/student">View your certificates</a></h4>
   </li>
 </ul>
+<br>
+<h1>Router Outlet</h1>
+<router-outlet></router-outlet>
 <!-- Footer -->
 <footer class="footer">
   <div class="text-center py-3">Copyright © 2018:
