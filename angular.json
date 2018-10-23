@@ -23,7 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/bootstrap/dist/css/botstrap.min.css"
+              "src/style.css"
             ],
             "scripts": []
           },
@@ -31,7 +32,7 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
+                  "replace": "src/environments/environment.ts"
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
