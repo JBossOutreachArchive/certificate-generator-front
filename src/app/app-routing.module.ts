@@ -9,10 +9,8 @@ import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/landing', pathMatch: 'full' },
   { path: 'organization', component: OrganizationComponent },
   { path: 'student', component: StudentComponent },
-  { path: 'landing', component: AppComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent }
 ];
