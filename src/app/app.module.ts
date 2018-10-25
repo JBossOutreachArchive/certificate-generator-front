@@ -7,6 +7,7 @@ import { SignupComponent } from './core/signup/signup.component';
 import { StudentComponent } from './student/student.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { BasicComponent } from './templates/basic/basic.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AppRoutingModule } from './/app-routing.module';
     LoginComponent,
     SignupComponent,
     StudentComponent,
-    OrganizationComponent
+    OrganizationComponent,
+    BasicComponent
   ],
   imports: [
     BrowserModule,
