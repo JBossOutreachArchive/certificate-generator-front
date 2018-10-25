@@ -1,0 +1,6 @@
+.container button{ /* You Can Name it what you want*/
+    margin-right:16px;
+}
+.container button:last-child{
+    margin-right:0px;
+}
