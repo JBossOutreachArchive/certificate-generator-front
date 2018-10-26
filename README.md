@@ -1,6 +1,8 @@
 
 # Certificate-Front-End
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6bbfa83b948b4037a9d9438dbe83f8fc)](https://www.codacy.com/app/ByteRebel2/certificate-generator-front?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ByteRebel2/certificate-generator-front&amp;utm_campaign=Badge_Grade)
+
 Certificate Generator aims to automatically generate certificates based on the data provided using input files like csv and excel.
 
 ## Target Audience
