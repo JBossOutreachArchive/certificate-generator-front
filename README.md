@@ -55,3 +55,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 If you need any help anywhere in the process, you can always ask a question on our [Gitter Chat](https://gitter.im/jboss-outreach/gci).
 
+![alt text](https://storage.googleapis.com/codein-prod.appspot.com/gci-2018/core_taskupdate/doc/4833544801091584_1540638693_role.png?Expires=1540735807&GoogleAccessId=codein-prod%40appspot.gserviceaccount.com&Signature=gLqGW0vAK9tNAZXjSJ5I7p0Uh3yOw%2B6c8o83wcJzcIocCi0HHhMUkUciUUJU8VUWcNaVfaHMuGU5ZAKzwPT7Fxg4J2eQgzPeL9%2F9%2FOqefDWFtpHRAX3V0LYKfyA%2FInsxw24ooAFeo%2FiiC%2F9wcYgdW2FcIxwBZIV4dH0PM85zcx%2B2y3c6pZlfxujuOiI%2BF574Lr8P4fUzg4yJgpVXdraOSaf%2FHUWYtVOjPTq2D%2FB8yTpSJ9wnlXq%2FwdIRjPJwMYJhB6%2FVc31HCKm0Zn8oDK8%2BIIevHRuCvTvohUx0O3IuO22DT5wPBFE95u7KUwhTdxIW3VUCD7XokeT0a0VNIbBwWw%3D%3D)
+![alt text](https://storage.googleapis.com/codein-prod.appspot.com/gci-2018/core_taskupdate/doc/4833544801091584_1540638693_main.png?Expires=1540735958&GoogleAccessId=codein-prod%40appspot.gserviceaccount.com&Signature=n%2BkNOrgVSG4XLpCoVJUHNOL0R442l30ck%2BmbIoDPko%2B5%2FQ6hxtDt68tUThh1ADkZ2g87uMUmZdBsCGMZEjCko1Fbc2Zi%2B%2F7lWRSoHRXrK5b%2F2fd6%2FYlpHCE03AAN3jbo7DfFsL%2FqEmoO9sdv2Op1DIrmnxWUviyOT5E8aHLejIM%2FPdM6wFvQdCZ8BplDOPvEQXGFpHu7u6B5zVS5Jdvi70eAzS5l30xLYlWLAQpxB%2FxzcJDDlBWAmspJrkKAI1XkbBEnf9MJE7bExFjlPcZRKs5rUjFuJBz%2FJKDOn6huwQpRG6U3sIdS2%2BV1nVjeW69EBXXczeKMAM4lEUxOyS7Bpw%3D%3D)
+
+
