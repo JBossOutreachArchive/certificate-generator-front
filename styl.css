@@ -1,0 +1,28 @@
+ input{
+     margin-bottom:10px;
+     background-color: grey;
+     border: none;
+     color: black;
+ }
+ body{
+    font-family: 'Merriweather Sans', sans-serif;
+    color:orange;
+    background-image:url(folk-pattern-black.png);
+ }
+ #contener{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+
+ }
+ fotter{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    border-top: solid;
+    border-color: orange;
+    position:absolute;
+    bottom: 0;
+    border-width:4px;
+  }
