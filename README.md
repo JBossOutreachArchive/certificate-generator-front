@@ -51,6 +51,31 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Wireframes
+ > Sign In Page 
+ 
+ ![Sign-in](https://raw.githubusercontent.com/sidhyatikku/certificate-generator-front/wireframs/wire_login.jpg)
+ 
+ 
+ 
+ > Sign Up Page
+ 
+ ![Sign-Up](https://raw.githubusercontent.com/sidhyatikku/certificate-generator-front/wireframs/wire_signup.jpg)
+ 
+ 
+ 
+ > Student Dashboard
+ 
+ ![Stud](https://raw.githubusercontent.com/sidhyatikku/certificate-generator-front/wireframs/dash_stud.jpg)
+ 
+ 
+ 
+ > Mentor Dashboard
+ 
+ ![Ment](https://raw.githubusercontent.com/sidhyatikku/certificate-generator-front/wireframs/dash_ment.jpg)
+ 
+
+
 #### Help
 
 If you need any help anywhere in the process, you can always ask a question on our [Gitter Chat](https://gitter.im/jboss-outreach/gci).
