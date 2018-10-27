@@ -1,5 +1,5 @@
-
 # Certificate-Front-End
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/06bd6acff9cd4506985192596642ef5f)](https://www.codacy.com/app/JBossOutreach/certificate-generator-front?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JBossOutreach/certificate-generator-front&amp;utm_campaign=Badge_Grade)
 
 Certificate Generator aims to automatically generate certificates based on the data provided using input files like csv and excel.
 
