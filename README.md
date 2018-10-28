@@ -1,6 +1,8 @@
 
 # Certificate-Front-End
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/549e50f733ab42a498c9d34da2ebff5e)](https://app.codacy.com/app/ribhavsharma/certificate-generator-front?utm_source=github.com&utm_medium=referral&utm_content=ribhavsharma/certificate-generator-front&utm_campaign=Badge_Grade_Dashboard)
+
 Certificate Generator aims to automatically generate certificates based on the data provided using input files like csv and excel.
 
 ## Target Audience
