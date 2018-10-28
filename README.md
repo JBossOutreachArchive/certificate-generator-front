@@ -54,4 +54,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 #### Help
 
 If you need any help anywhere in the process, you can always ask a question on our [Gitter Chat](https://gitter.im/jboss-outreach/gci).
+### Wireframes
+!(alt text)(https://storage.googleapis.com/codein-prod.appspot.com/gci-2018/core_taskupdate/doc/6202245596053504_1540719559_CGI_wireframe.jpg?Expires=1540806045&GoogleAccessId=codein-prod%40appspot.gserviceaccount.com&Signature=O5v9OpJs9ZEx79S8ugRIKXllVre2LVFpdv%2FGvKzJnuTJOS4dmnYgJjh1qnQ4YnoIFy%2BDdDe2c4qn9srz%2FQr1OQtqOpVphPsIlcRoT2y241bLed63XRUJDag1dqATg0tSszTDT80RsU%2FkyG7tvMCuV0948Q8Uga5T4rddTOMGkKY87iLdA3DdKGbn6JHkqoQQe%2B91SdoK15muwXXYKh0%2FXoyYhoupQakBHA2PScrQnDtZaCk11US8ESr0nPTMRGaHwuAaRYdY3iKwkeHKzKGUsU%2B2UABPlLP89MFwU0VM%2F%2BnOH87A%2Bobg1exbqfnRCtb6riKUSGoii7AuU7X5amjacg%3D%3D)
+
 
