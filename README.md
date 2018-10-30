@@ -56,5 +56,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 If you need any help anywhere in the process, you can always ask a question on our [Gitter Chat](https://gitter.im/jboss-outreach/gci).
 
 # Wireframe for student's dashboard
-![alt text](https://user-images.githubusercontent.com/36305142/47714157-1ca0b500-dc62-11e8-894f-a81dd6198111.png)
+![alt text](https://user-images.githubusercontent.com/36305142/47723418-7e6d1900-dc7a-11e8-9c4e-721a9938df2e.png)
 ![alt text](https://user-images.githubusercontent.com/36305142/47723423-7f9e4600-dc7a-11e8-9320-f9d40f78ccb2.png)
