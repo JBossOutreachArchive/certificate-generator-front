@@ -57,3 +57,4 @@ If you need any help anywhere in the process, you can always ask a question on o
 
 # Wireframe for student's dashboard
 ![alt text](https://user-images.githubusercontent.com/36305142/47714157-1ca0b500-dc62-11e8-894f-a81dd6198111.png)
+![alt text](https://user-images.githubusercontent.com/36305142/47723423-7f9e4600-dc7a-11e8-9320-f9d40f78ccb2.png)
