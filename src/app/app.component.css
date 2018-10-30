@@ -4,3 +4,8 @@
 .container button:last-child{
     margin-right:0px;
 }
+
+#main {
+  min-height: 100vh;
+  height: 100%;
+}
