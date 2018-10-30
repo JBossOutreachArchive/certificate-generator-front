@@ -5,16 +5,38 @@
     <button type="button" class="btn" routerLink="/login">Basic</button>
     <button type="button" class="btn" routerLink="/signup">Sign up</button>
     <button type="button" class="btn" routerLink="/organization">Generate Certificates</button>
-    <button type="button" class="btn" routerLink="/student">View your certificates</button> 
+    <button type="button" class="btn" routerLink="/student">View your certificates</button>
 </div>
 <br>
 <h5>Router Outlet</h5>
 <router-outlet></router-outlet>
 <!-- Footer -->
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #F44336;
+   color: white;
+   text-align: center;
+}
+
+.social {
+   position: fixed;
+   left: 0;
+   bottom: 0.25%;
+   width: 95%;
+}
+</style>
 <footer class="footer">
-  <div class="text-center py-3">Copyright © 2018:
-    <a style = "text-decoration: none; color: white;"href="https://codein.withgoogle.com/organizations/jboss-community/"> JBoss Community</a>
+  <div class="text-center py-3"><strong>© 2018
+    <a style = "text-decoration: none; color: white;"href="https://codein.withgoogle.com/organizations/jboss-community" > JBoss Community </a> </strong>
+      <div class="social">
+        <a href="https://gitter.im/JBossOutreach"><img src="src/gitter.png" align="right" /></a>
+        <a href="https://github.com/JBossOutreach"><img src="src/github.png" align="right" /></a>
+        <a href="https://twitter.com/jbossorg"><img src="src/twitter.png" align="right" /></a>
+      </div>
   </div>
 </footer>
 <!-- Footer -->
-
