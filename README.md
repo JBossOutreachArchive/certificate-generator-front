@@ -2,12 +2,12 @@
 # Certificate’s Front End
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4350ebc02efb4442ba256e66d2e4d66e)](https://www.codacy.com/app/JbossOutreach/certificate-generator-front?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JbossOutreach/certificate-generator-front&amp;utm_campaign=Badge_Grade)
 
-Certificate Generator aims to automatically generate certificates based on the data provided using Comma separated value files and Microsoft Excel files as input files.
+Certificate Generator aims to automatically generate certificates based on the data provided using Comma separated value files or Microsoft Excel files as input files.
 
 ## Target Audience
-* _**Certificate Issuing Organizations:**_ The Certificate issuing organization will first have to register themselves for authorization. They can generate multiple certificates simply by selecting the template and giving the candidates details through files in the format of Comma separated value and Microsoft Excel.
+* _**Certificate-issuing-organisations:**_ The certificate-issuing-organisation will first have to register themselves for authorisation. They can generate multiple certificates simply by selecting the template and giving the candidates' details through files in the format of Comma separated value file or Microsoft Excel file.
 
-* _**Candidates Receiving the Certificates:**_  The candidate's dashboard will contain the URLs of all the certificates they have received. This will help them in maintaining all the certificates even if they have lost them locally.
+* _**Candidates receiving the certificates:**_  The candidate's dashboard will contain the URLs of all the certificates they have received. This will help them in maintaining all the certificates even if they have lost them locally.
 
 ## Development Stack
 * HTML.
@@ -28,33 +28,33 @@ Certificate Generator aims to automatically generate certificates based on the d
 * _**For Candidates:**_
     i. The dashboard will contain thumbnails of all the certificates received by the student.
     ii. There will be an option to view a particular certificate.
-    iii. The candidate will also be allowed to share the certificate.
+    iii. The candidate will also be allowed to share the certificate with others on any social platform.
 
 
 
 
 
-### Development Steps
+### Development Steps:
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-#### Code scaffolding
+#### Code scaffolding:
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-#### Build
+#### Build/:
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-#### Running unit tests
+#### Running unit tests:
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-#### Running end-to-end tests
+#### Running end-to-end tests:
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-#### Help
+#### Help:
 
 If you need any help anywhere in the process, you can always ask a question on our [Gitter Chat](https://gitter.im/jboss-outreach/gci).
 
