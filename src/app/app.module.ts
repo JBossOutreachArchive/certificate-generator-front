@@ -12,6 +12,9 @@ import { StudentComponent } from './student/student.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
+import { CanActivateRouteGuard } from './can-activate-route.guard';
+import { AuthService } from './auth.service';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +30,7 @@ import { BasicComponent } from './templates/basic/basic.component';
     AppRoutingModule,
     AgGridModule.withComponents([])
   ],
-  providers: [],
+  providers: [ AuthService, CanActivateRouteGuard ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

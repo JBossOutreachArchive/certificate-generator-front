@@ -25,7 +25,9 @@
     "bootstrap": "^4.1.3",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "@auth0/angular-jwt": "^2.0.0",
+    "jwt-decode": "^2.2.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.7.0",

@@ -8,11 +8,21 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
 
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+import { DashboardComponent } from './dashboard.component';
+import { CanActivateRouteGuard } from './can-activate-route.guard';
+
+
 const routes: Routes = [
   { path: 'organization', component: OrganizationComponent },
   { path: 'student', component: StudentComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'signup', component: SignupComponent }
+  { path: 'signup', component: SignupComponent },
+  { path: 'dashboard',
+    component: DashboardComponent,
+    canActivate: [CanActivateRouteGuard]
 ];
  
 @NgModule({
@@ -20,3 +30,4 @@ const routes: Routes = [
   exports: [ RouterModule ]
 })
 export class AppRoutingModule { }
+
