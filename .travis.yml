@@ -10,9 +10,13 @@ branches:
   only:
     - master
 
+cache:
+  directories:
+    - ./node_modules
+
 before_script:
   - npm install -g @angular/cli
 
 script:
   - ng build --prod --aot
-  - ng test
+  - ng test --watch=false --browsers=ChromeHeadless
