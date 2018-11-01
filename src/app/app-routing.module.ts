@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './auth.guard';
 
 import { OrganizationComponent } from './organization/organization.component';
 import { StudentComponent } from './student/student.component';
@@ -10,7 +11,7 @@ import { SignupComponent } from './core/signup/signup.component';
 
 const routes: Routes = [
   { path: 'organization', component: OrganizationComponent },
-  { path: 'student', component: StudentComponent },
+  { path: 'student', component: StudentComponent,canActivate:[AuthGuard] },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent }
 ];
