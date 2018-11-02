@@ -57,4 +57,4 @@ If you need any help anywhere in the process, you can always ask a question on o
 
 ###Wireframes
 
-![alt text](https://user-images.githubusercontent.com/22834172/47897073-2ad71700-de96-11e8-819f-ea70f09aebb8.png)
+![alt text]https://user-images.githubusercontent.com/22834172/47919931-b4a6d480-ded6-11e8-8655-f7ab0634363a.png)
