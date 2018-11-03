@@ -1,9 +1,8 @@
 
 # Certificate-Front-End
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4350ebc02efb4442ba256e66d2e4d66e)](https://www.codacy.com/app/JbossOutreach/certificate-generator-front?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JbossOutreach/certificate-generator-front&amp;utm_campaign=Badge_Grade)
 
 Certificate Generator aims to automatically generate certificates based on the data provided using input files like CSV and Excel.
-
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b7346b7c5e914b53ab268896f536d20b)](https://www.codacy.com/app/visheshc14/certificate-generator-front?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=visheshc14/certificate-generator-front&amp;utm_campaign=Badge_Grade)
 ## Target Audience
 * _**Certificate Issuing Organizations:**_ The Certificate issuing organization will first have to register themselves for authorization. They can generate multiple certificates simply by selecting the template and giving the candidates details through files like csv and excel.
 
