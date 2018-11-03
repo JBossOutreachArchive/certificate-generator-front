@@ -58,6 +58,10 @@ If you need any help anywhere in the process, you can always ask a question on o
 
 ### Wireframes:
 
+1. For student :
+
 ![student dashboard](https://user-images.githubusercontent.com/35162705/47953963-7549b800-dfaa-11e8-8898-50babaf14905.png)
 
+2. For Issuer:
 
+![issuer dashboard](https://user-images.githubusercontent.com/35162705/47955339-b77bf500-dfbc-11e8-8c44-d5be65d3834d.png)
