@@ -60,8 +60,8 @@ If you need any help anywhere in the process, you can always ask a question on o
 
 1. For student :
 
-![student dashboard](https://user-images.githubusercontent.com/35162705/47955659-54409180-dfc1-11e8-8a7c-5e360211bae8.png)
+![student dashboard](https://user-images.githubusercontent.com/35162705/47955849-04af9500-dfc4-11e8-9f72-a7322b6f1714.png)
 
 2. For Issuer:
 
-![issuer dashboard](https://user-images.githubusercontent.com/35162705/47955339-b77bf500-dfbc-11e8-8c44-d5be65d3834d.png)
+![issuer dashboard](https://user-images.githubusercontent.com/35162705/47955878-61ab4b00-dfc4-11e8-9e48-22494d680481.png)
