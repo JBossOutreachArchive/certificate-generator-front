@@ -60,7 +60,7 @@ If you need any help anywhere in the process, you can always ask a question on o
 
 1. For student :
 
-![student dashboard](https://user-images.githubusercontent.com/35162705/47953963-7549b800-dfaa-11e8-8898-50babaf14905.png)
+![student dashboard](https://user-images.githubusercontent.com/35162705/47955659-54409180-dfc1-11e8-8a7c-5e360211bae8.png)
 
 2. For Issuer:
 
