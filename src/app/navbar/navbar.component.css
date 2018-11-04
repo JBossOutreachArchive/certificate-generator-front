@@ -1,0 +1,27 @@
+
+.navbar {
+  background: white;
+}
+
+.navbar-brand {
+  color: #204e57;
+  font-size: 175%;
+  text-align: center;
+  height: 100%;
+  font-family: "Josefin Sans";
+  font-style: italic;
+}
+
+.fa-map {
+  background: -webkit-linear-gradient(#FF416C, #FF4B2B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-brand:hover{
+  color: #204e57;
+}
+
+.nav a {
+  color: #204e57;
+}
