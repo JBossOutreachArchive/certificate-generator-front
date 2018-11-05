@@ -7,7 +7,7 @@
 }
 
 .nav-menu {
-    height: calc(100vh - 175px);
+    height: calc(100vh - 300px);
     display: flex;
     align-items: center;
 }
@@ -15,7 +15,7 @@
 h1 {
     font-family: 'Lobster';
     color: #f2f2f2;
-    font-size: 3vw;
+    font-size: 20px;
 }
 
 p {
@@ -54,5 +54,38 @@ p {
 @media only screen and (max-height: 300px) {
     .nav-link {
         font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .auth-links {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    h1 {
+        font-size: 27px;
+    }
+    .nav-menu {
+        height: calc(100vh - 250px);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 30px;
+    }
+    .nav-menu {
+        height: calc(100vh - 220px);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 35px;
+    }
+    .nav-menu {
+        height: calc(100vh - 200px);
     }
 }
