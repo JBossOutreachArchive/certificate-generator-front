@@ -1,3 +1,19 @@
-<p>
-  login works!
-</p>
+<div class="login-card">
+  <i class="fa fa-user-circle user-logo"></i>
+  <h2>Login to<br><span>Certificate Generator</span></h2>
+  <div class="form">
+    <mat-form-field>
+      <input matInput placeholder="Email" [(ngModel)]="emailData">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Password" type="password" [(ngModel)]="passwordData">
+    </mat-form-field>
+    <p>By logging in, you agree to our Terms of Use and Privacy Policy.</p>
+    <div class="login-button-container">
+      <button mat-raised-button color="primary" (click)="loginUser()"><i class="fa fa-id-card"></i>&nbsp;&nbsp;Login</button>
+      <button mat-raised-button color="warn" [routerLink]="['/']"><i class="fa fa-times-circle"></i>&nbsp;&nbsp;Cancel</button>
+    </div>
+    <p style="color:red;">{{ authService.errorData }}</p>
+    <p class="signup-text">Don't have an account?&nbsp;<a [routerLink]="['/signup']">Sign up here.</a></p>
+  </div>
+</div>

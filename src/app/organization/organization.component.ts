@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatSort, MatTableDataSource} from '@angular/material';
 
 @Component({
   selector: 'app-organization',
@@ -6,19 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./organization.component.css']
 })
 export class OrganizationComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-  title = 'app';
-
-    columnDefs = [
-        {headerName: 'Student Name', field: 'name',checkboxSelection:true},
-        {headerName: 'Date', field: 'date' },
-        {headerName: 'Certificate Description', field: 'desc'}
-    ];
+    @ViewChild(MatSort) sort: MatSort;
+    displayedColumns: string[] = ['name', 'date', 'desc'];
 
     rowData = [
         { name: 'Chandler', date: '10/10/2018', desc: 'For being Sarcastic' },
@@ -26,5 +16,12 @@ export class OrganizationComponent implements OnInit {
         { name: 'Phoebe', date: '10/10/2018', desc: 'For being the normal one' }
     ];
 
+    dataSource = new MatTableDataSource(this.rowData);
+
+  constructor() { }
+
+  ngOnInit() {
+    this.dataSource.sort = this.sort;
+  }
     
 }

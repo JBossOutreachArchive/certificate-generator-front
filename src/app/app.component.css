@@ -1,6 +1,24 @@
-.container button{ /* You Can Name it what you want*/
-    margin-right:16px;
+.main-container {
+    margin-left: 0;
+    min-height: 100%;
+    margin-bottom: -45px;
+    position: relative;
 }
-.container button:last-child{
-    margin-right:0px;
+
+.clearfooter {
+    height: 57px;
+    clear: both;
+    }
+
+.main-footer {
+    height: 57px;
+    position: relative;
+
+    width: 100vw;
+    font-family: 'Roboto';
+    color: #f2f2f2;
+    font-weight: 400;
+    font-size: 17px;
+    transition: 0.2s;
+    background-color: rgb(87, 116, 153);
 }

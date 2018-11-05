@@ -1,0 +1,28 @@
+<div class="create-card">
+  <i class="fa fa-plus-circle user-logo"></i>
+  <h2>Generate<br><span>Single Certificate</span></h2>
+  <div class="form">
+      <mat-form-field>
+          <mat-select placeholder="Certificate Style" [(value)]="certStyle">
+            <mat-option value="basic">Basic</mat-option>
+            <mat-option value="stylish">Stylish</mat-option>
+            <mat-option value="Logo">Logo</mat-option>
+          </mat-select>
+        </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Name" [(ngModel)]="certName">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Date" [(value)]="certDate.value" [min]="certDate.value">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput placeholder="Description" style="resize: none;" [(ngModel)]="certDesc"></textarea>
+    </mat-form-field>
+    <div class="login-button-container">
+      <button mat-raised-button color="primary" (click)="loginUser()"><i class="fa fa-image"></i>&nbsp;&nbsp;Preview</button>
+      <button mat-raised-button color="primary" (click)="loginUser()"><i class="fa fa-cloud-upload"></i>&nbsp;&nbsp;Publish</button>
+    </div>
+  </div>
+</div>
