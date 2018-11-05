@@ -1,20 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
-
-<div class="container">
-    <h2>Welcome to {{ title }}, you can:</h2>
-    <button type="button" class="btn" routerLink="/login">Basic</button>
-    <button type="button" class="btn" routerLink="/signup">Sign up</button>
-    <button type="button" class="btn" routerLink="/organization">Generate Certificates</button>
-    <button type="button" class="btn" routerLink="/student">View your certificates</button> 
+<div class="container main-container">
+  <div class="row">
+    <div class="col-4 navbar-menu">
+      <app-navbar></app-navbar>
+    </div>
+    <div class="col-8">
+      <br>
+      <h5>Router Outlet</h5>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
-<br>
-<h5>Router Outlet</h5>
-<router-outlet></router-outlet>
 <!-- Footer -->
 <footer class="footer">
   <div class="text-center py-3">Copyright © 2018:
-    <a style = "text-decoration: none; color: white;"href="https://codein.withgoogle.com/organizations/jboss-community/"> JBoss Community</a>
+    <a style="text-decoration: none; color: white;" href="https://codein.withgoogle.com/organizations/jboss-community/">
+      JBoss Community</a>
   </div>
 </footer>
 <!-- Footer -->
-

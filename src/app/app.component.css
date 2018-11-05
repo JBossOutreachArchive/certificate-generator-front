@@ -1,6 +1,9 @@
-.container button{ /* You Can Name it what you want*/
-    margin-right:16px;
+.main-container {
+    margin-left: 0;
 }
-.container button:last-child{
-    margin-right:0px;
+
+.navbar-menu {
+    height: 100vh;
+    background-color: rgb(82, 116, 160);
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.2);
 }

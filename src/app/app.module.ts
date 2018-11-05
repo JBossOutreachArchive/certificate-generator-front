@@ -12,6 +12,7 @@ import { StudentComponent } from './student/student.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BasicComponent } from './templates/basic/basic.component';
     SignupComponent,
     StudentComponent,
     OrganizationComponent,
-    BasicComponent
+    BasicComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
