@@ -4,12 +4,27 @@
     <h2 class="text-center"> SIGN IN </h2>
   </div>
 
-  <div class="wrapper text-center">
+  <form class="wrapper text-center" [formGroup]="loginForm" (submit)="login()">
+    <div *ngIf="error" class="alert alert-danger" role="alert">
+		  <i class="fa fa-exclamation-circle"></i>
+		  <span class="sr-only">Error:</span>
+		  {{ error }}
+		</div>
+    <div class="row">
+        <div class="col-xs-6">
+            <input type='radio' value='owner' formControlName="loginType" name="loginType" id='owner' checked/>
+            <label class="login-type-label" for='owner' checked>Owner</label>
+        </div>
+        <div class="col-xs-6">
+            <input type='radio' value='issuer' formControlName="loginType" name="loginType" id='issuer'/>
+            <label class="login-type-label" for='issuer'>Issuer</label>
+        </div>
+    </div>
     <label for=""> E-Mail: </label>
-    <input type="text" id="email" name="email">
+    <input type="text" formControlName="email">
     <label for=""> Password: </label>
-    <input type="password" id="email" name="email">
+    <input type="password" formControlName="password">
     <h5 class="reset-wrap"> Forgot password?  </h5>
     <button class="login"> SIGN IN</button>
-  </div>
+  </form>
 </div>

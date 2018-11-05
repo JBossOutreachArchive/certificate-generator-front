@@ -15,10 +15,14 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a routerLink="/login">Login</a></li>
-        <li><a routerLink="/signup">Sign up</a></li>
+          <li *ngIf="afAuth.user | async as user; else showLogin"><a> Hello {{ user.displayName }}! </a></li>
+        <ng-template #showLogin>
+          <li><a routerLink="/login">Login</a></li>
+          <li><a routerLink="/signup">Sign up</a></li>
+        </ng-template>
         <li><a routerLink="/organization">Generate Certificates</a></li>
         <li><a routerLink="/student">View certificates</a></li>
+        <li *ngIf="afAuth.user | async as user"><a (click)="logout()"> Log out <i class="fa fa-sign-out"></i> </a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

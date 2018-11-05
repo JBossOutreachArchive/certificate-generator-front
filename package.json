@@ -15,6 +15,7 @@
     "@angular/common": "^6.1.0",
     "@angular/compiler": "^6.1.0",
     "@angular/core": "^6.1.0",
+    "@angular/fire": "^5.1.0",
     "@angular/forms": "^6.1.0",
     "@angular/http": "^6.1.0",
     "@angular/platform-browser": "^6.1.0",
@@ -24,6 +25,7 @@
     "ag-grid-community": "^19.0.0",
     "bootstrap": "^3.3.7",
     "core-js": "^2.5.4",
+    "firebase": "^5.5.7",
     "font-awesome": "^4.7.0",
     "rxjs": "^6.0.0",
     "zone.js": "~0.8.26"
