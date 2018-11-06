@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'ag-grid-community/dist/styles/ag-grid.css';
 @import 'ag-grid-community/dist/styles/ag-theme-balham.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 .footer{
     position: fixed;
     left: 0;

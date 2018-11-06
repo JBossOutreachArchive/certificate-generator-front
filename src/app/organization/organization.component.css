@@ -1,4 +1,24 @@
-.ag-theme-balham{
+/* .ag-theme-balham{
     height:60vh !important;
     width: 100% !important;
+} */
+table {
+    width: 90vw;
+    margin-left: 2vw;
+}
+
+button {
+    margin-left: 2vw;
+    outline: 0;
+    border: none;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+::ng-deep .mat-sort-header-button:focus{
+    outline: 0;
+    border: none;
 }

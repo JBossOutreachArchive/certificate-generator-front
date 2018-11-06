@@ -1,12 +1,14 @@
 <div class="container">
-  <h1>Certificate Generator</h1>
-  <p>The free online tool for all of your certificate-making needs!</p>
-  <nav class="nav flex-column nav-menu">
-    <a class="nav-link" routerLink="/student" routerLinkActive="nav-link-active"><i class="fa fa-search"></i> View Certificates</a>
-    <a class="nav-link" routerLink="/organization" routerLinkActive="nav-link-active"><i class="fa fa-wrench"></i> Generate Certificates</a>
-    <nav class="nav auth-links">
-      <a class="nav-link" routerLink="/login" routerLinkActive="nav-link-active"><i class="fa fa-id-card"></i> Login</a>
-      <a class="nav-link" routerLink="/signup" routerLinkActive="nav-link-active"><i class="fa fa-user-plus"></i>  Sign up</a>
-    </nav>
+  <nav class="nav nav-menu">
+    <a class="nav-link large-screen logo"><h1>Certificate Generator</h1></a>
+    <a class="nav-link small-screen logo"><h1>C.G</h1></a>
+    <a class="nav-link large-screen" routerLink="/dashboard" routerLinkActive="nav-link-active"><i class="fa fa-book"></i> Dashboard</a>
+    <a class="nav-link small-screen" routerLink="/dashboard" routerLinkActive="nav-link-active"><i class="fa fa-book"></i></a>
+    <a class="nav-link large-screen" routerLink="/student" routerLinkActive="nav-link-active"><i class="fa fa-search"></i> View</a>
+    <a class="nav-link small-screen" routerLink="/student" routerLinkActive="nav-link-active"><i class="fa fa-search"></i></a>
+    <a class="nav-link large-screen" routerLink="/organization" routerLinkActive="nav-link-active"><i class="fa fa-wrench"></i> Create</a>
+    <a class="nav-link small-screen" routerLink="/organization" routerLinkActive="nav-link-active"><i class="fa fa-wrench"></i></a>
+    <a class="nav-link login-button" mat-raised-button routerLink="/login" routerLinkActive="nav-link-active" *ngIf="!loggedIn"><i class="fa fa-id-card"></i>&nbsp;&nbsp;Login</a>
+    <a class="nav-link login-button" mat-raised-button routerLink="/login" routerLinkActive="nav-link-active" *ngIf="loggedIn"><i class="fa fa-id-card"></i>&nbsp;&nbsp;Logout</a>
   </nav>
 </div>
