@@ -1,20 +1,124 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
 
 <div class="container">
     <h2>Welcome to {{ title }}, you can:</h2>
     <button type="button" class="btn" routerLink="/login">Basic</button>
     <button type="button" class="btn" routerLink="/signup">Sign up</button>
     <button type="button" class="btn" routerLink="/organization">Generate Certificates</button>
-    <button type="button" class="btn" routerLink="/student">View your certificates</button> 
+    <button type="button" class="btn" routerLink="/student">View your certificates</button>
 </div>
 <br>
 <h5>Router Outlet</h5>
 <router-outlet></router-outlet>
 <!-- Footer -->
-<footer class="footer">
-  <div class="text-center py-3">Copyright © 2018:
-    <a style = "text-decoration: none; color: white;"href="https://codein.withgoogle.com/organizations/jboss-community/"> JBoss Community</a>
-  </div>
-</footer>
-<!-- Footer -->
+<style>
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
+* {
+  font-family: Roboto;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #e74c3c;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer .footer-left p {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer .footer-links a:before {
+  content: "-";
+  font-size: 20px;
+  left: 0;
+  color: #000000;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer .footer-links .link-1:before {
+  content: none;
+}
+
+.footer .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #161b1e;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer p.footer-links a:hover{text-decoration:underline;}
+
+</style>
+
+
+<div class="footer">
+
+			<div class="footer-right">
+
+				<a href="#"><i class="fab fa-gitter"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-github"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="#">Home</a>
+
+					<a href="#">Log In</a>
+
+					<a href="#">Sign Up</a>
+				</p>
+
+				<p>JBOSS &copy; 2018</p>
+			</div>
+
+		</div>  
+
+	
