@@ -52,7 +52,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-#### Wireframe
+#### Application Login Page
 
 > Login Page
 ![Login](https://raw.githubusercontent.com/sidhyatikku/certificate-generator-front/loginfram/wire_login.jpg)
