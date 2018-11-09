@@ -1,0 +1,49 @@
+<div class="row">
+  <app-certificate [inputs]="inputs"></app-certificate>
+
+  <form [formGroup]="ngForm" (submit)="onSubmit()">
+
+    <div *ngIf="error" class="alert alert-danger" role="alert">
+      <i class="fa fa-exclamation-circle"></i>
+      <span class="sr-only">Error:</span>
+      {{ error }}
+    </div>
+
+    <div>
+      <label for="template">Template<span class="required">*</span>: </label>
+      <select id="template" name="template"  formControlName="template">
+        <option selected>Certificate</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="company">Company<span class="required">*</span>: </label>
+      <input id="company" type="text" (input)="inputs[0]=$event.target.value" formControlName="company">
+    </div>
+
+    <div>
+      <label for="title">Title<span class="required">*</span>: </label>
+      <input id="title" type="text" (input)="inputs[1]=$event.target.value" formControlName="title">
+    </div>
+
+    <div>
+      <label for="name">Name<span class="required">*</span>: </label>
+      <input id="name" name="name" type="text" (input)="inputs[2]=$event.target.value" formControlName="name">
+    </div>
+
+    <div>
+      <label for="description">Description<span class="required">*</span>: </label>
+      <input id="description" type="text" (input)="inputs[3]=$event.target.value" formControlName="description">
+    </div>
+
+    <div>
+      <label for="date">Date<span class="required">*</span>: </label>
+      <input id="date" type="date" (input)="inputs[4]=$event.target.value" formControlName="date"/>
+    </div>
+
+    <div>
+      <button type="submit">Publish</button>
+    </div>
+
+  </form>
+</div>
