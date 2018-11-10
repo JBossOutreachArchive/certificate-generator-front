@@ -19,6 +19,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatSelectModule} from '@angular/material/select';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 // Ag grid angular
 import { AgGridModule } from 'ag-grid-angular';
@@ -33,6 +34,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CreateComponent } from './organization/create/create.component';
+import { MatNativeDateModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     OrganizationComponent,
     BasicComponent,
     NavbarComponent,
-    DashboardComponent
+    DashboardComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,
@@ -60,10 +64,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HttpClientModule,
     AngularFireAuthModule,
     AngularFirestoreModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     AgGridModule.withComponents([]),
     AngularFireModule.initializeApp(environment.firebase)
   ],
-  providers: [AuthService],
+  providers: [
+    AuthService,
+    MatDatepickerModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

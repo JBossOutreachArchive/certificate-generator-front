@@ -1,6 +1,6 @@
 <div class="container">
   <h2>Generate Certificates</h2>
-  <button mat-raised-button color="primary">Generate Single</button>
+  <button mat-raised-button color="primary" [routerLink]="['/create']">Generate Single</button>
   <button mat-raised-button color="primary" id="bulk-upload-button">Bulk Upload</button>
   <br><br>
   <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z5">
