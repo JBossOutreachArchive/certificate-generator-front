@@ -1,14 +1,12 @@
-/* .ag-theme-balham{
-    height:60vh !important;
-    width: 100% !important;
-} */
+#bulk-upload-button {
+    margin-left: 10px;
+}
+
 table {
-    width: 90vw;
-    margin-left: 2vw;
+    width: 100%;
 }
 
 button {
-    margin-left: 2vw;
     outline: 0;
     border: none;
 }

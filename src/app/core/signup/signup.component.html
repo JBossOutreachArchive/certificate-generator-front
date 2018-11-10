@@ -1,3 +1,24 @@
-<p>
-  signup works!
-</p>
+<div class="login-card">
+  <i class="fa fa-user-circle user-logo"></i>
+  <h2>Sign up to<br><span>Certificate Generator</span></h2>
+  <div class="form">
+    <mat-form-field>
+      <input matInput placeholder="Email" [(ngModel)]="emailData">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Password" type="password" [(ngModel)]="passwordData">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="User Type" [(value)]="userType">
+        <mat-option value="issuer">Issuer</mat-option>
+        <mat-option value="candidate">Candidate</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <p style="color:red;">{{ authService.errorData }}</p>
+    <p>By signing up, you agree to our Terms of Use and Privacy Policy.</p>
+    <div class="login-button-container">
+      <button (click)="signUpUser()" mat-raised-button color="primary"><i class="fa fa-user-plus"></i>&nbsp;&nbsp;Signup</button>
+      <button routerLink="/" mat-raised-button color="warn"><i class="fa fa-times-circle"></i>&nbsp;&nbsp;Cancel</button>
+    </div>
+  </div>
+</div>

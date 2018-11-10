@@ -1,7 +1,10 @@
 <div class="container">
   <h2>Generate Certificates</h2>
+  <button mat-raised-button color="primary">Generate Single</button>
+  <button mat-raised-button color="primary" id="bulk-upload-button">Bulk Upload</button>
+  <br><br>
   <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z5">
-    
+
     <!-- Name Column -->
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
@@ -23,7 +26,4 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
-  <br>
-  <button mat-raised-button color="primary">Generate Single</button>
-  <button mat-raised-button color="primary">Bulk Upload</button>
 </div>
