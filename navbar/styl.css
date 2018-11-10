@@ -1,0 +1,42 @@
+body{
+    background-image:url(water1.jpg);
+    background-size: cover;
+    margin:0;
+    font-family: 'Exo 2', sans-serif;
+}
+nav{
+    text-align: center;
+position: fixed;
+left: 0;
+height: 100%;
+width:15%;
+background-color: rgba(118, 201, 207, 0.8);
+color: white;
+text-align: center;
+border-right: solid;
+}
+.icon-info{
+    font-size: 20px;
+   
+}
+.icon-search{
+    font-size: 20px;
+    margin-top: 15px;
+}
+.icon-wrench{
+    font-size: 20px;
+    margin-top: 15px;
+    
+}
+.icon-user{
+    text-decoration-line: underline;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 15%;
+    height: 5%;
+    background-color: rgb(34, 115, 139);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
