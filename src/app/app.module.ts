@@ -35,7 +35,7 @@ import { BasicComponent } from './templates/basic/basic.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CreateComponent } from './organization/create/create.component';
-import { MatNativeDateModule } from '@angular/material';
+import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -71,7 +71,8 @@ import { MatNativeDateModule } from '@angular/material';
   ],
   providers: [
     AuthService,
-    MatDatepickerModule
+    MatDatepickerModule,
+    {provide: MAT_DATE_LOCALE, useValue: 'en-GB'}
   ],
   bootstrap: [AppComponent]
 })

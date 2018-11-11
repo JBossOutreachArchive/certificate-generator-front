@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-create',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class CreateComponent implements OnInit {
   certName: string;
   certDesc: string;
-  certDate: any;
+  certDate = new FormControl(new Date());
   certStyle: string;
 
   constructor() { }

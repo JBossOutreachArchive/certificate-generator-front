@@ -23,7 +23,7 @@ p {
     padding-top: 10px;
 }
 
-.form{
+.form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +49,7 @@ h2 {
 }
 
 .user-logo {
-    font-size: 70px;
+    font-size: 80px;
     text-align: center;
     width: 100%;
     padding-bottom: 10px;
