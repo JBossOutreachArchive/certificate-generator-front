@@ -1,0 +1,8 @@
+.footer {
+  height:50px;
+  background-color: #F1002C;
+  text-align: center;
+}
+.footer .footer__text {
+  padding-top:10px;
+}
