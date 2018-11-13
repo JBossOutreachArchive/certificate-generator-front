@@ -1,3 +1,62 @@
-<p>
-  login works!
-</p>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<div class="container-fluid">
+  <div class="row">
+    <div class="description col-md-7">
+      <div class="description__section">
+        <div class="description__section-heading">
+          What is Certificate Generator?
+        </div>
+        <div class="description__section-body">
+          Certificate Generator aims to automatically generate <br>
+          certificates based on the data provided using input files <br>
+          like CSV or Excel.
+        </div>
+      </div>
+      <div class="description__section">
+          <div class="description__section-heading">
+          New to our website? Sign up now!
+        </div>
+      </div>
+      <div class="description__section">
+          <div class="description__section-heading">
+          Development Stack
+        </div>
+        <div class="description__section-body">
+          HTML <br>
+          CSS <br>
+          Angular 6 for Front-End
+        </div>
+      </div>
+    </div>
+    <div class="login col-md-5">
+      <div class="login__shadow-outline">
+        <div class="login__logo">
+          <img src="/assets/jbosslogo.svg">
+        </div>
+        <div class="login__heading">
+          Certificate Generator
+        </div>
+        <form>
+         <div class="form-group">
+           <label class="login__input-label" for="username-input">Username:</label>
+           <input type=text class="form-control" id="username-input" formControlName="username">
+           <label class="login__input-label" for="password-input">Password:</label>
+           <input type=password class="form-control" id="password-input" formControlName="password">
+         </div>
+         <div class="login__forgot-password">Forgot password?</div>
+         <br>
+         <br>
+         <div class="form-group login__remember">
+            <input id="remember-me" type="checkbox">
+            <label for="remember-me">Remember me</label>
+         </div>
+         <div class="container-fluid">
+            <div class="row login__button-parent">
+              <button class="login__button">SIGN IN</button>
+            </div>
+         </div>
+       </form>
+      </div>
+    </div>
+  </div>
+</div>
