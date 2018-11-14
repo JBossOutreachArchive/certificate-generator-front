@@ -1,0 +1,183 @@
+<style type="text/css">
+body {
+  background: rgb(255, 255, 255);
+  text-align: center;
+  font-family: 'Comic Sans MS', sans-serif;
+  height: 100%;
+}
+.top {
+  display: block;
+  width: 100%;
+  height: 15em;
+  background-color: #6435e5;
+  margin-bottom: -13em;
+}
+.card {
+  height: 500px;
+  width: 400px;
+  background: white;
+  position: relative;
+  margin: 100px auto;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.23), 0 8px 8px rgba(0, 0, 0, 0.23);
+} 
+.bottom {
+  width: 100%;
+  height: 8em;
+  background-color: #6435e5;
+  margin-bottom: -13em;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.15em;
+  color: white;
+}
+.logo {
+  margin-bottom: 2em;
+}
+.header {
+  display: block;
+  position: relative;
+  font-size: 2em;
+  color: #f80000;
+}
+.field {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  top: 40px;
+  position: relative;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.form-group {
+  position: relative;
+  text-align: left;
+  margin-top: 2em;
+}
+.form-group .control-label {
+  position: absolute;
+  top: 0.25rem;
+  float: left;
+  pointer-events: none;
+  z-index: 1;
+  color: #9e9e9e;
+  font-size: 1rem;
+  font-weight: normal;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+}
+.form-group .bar {
+  position: relative;
+  border-bottom: 0.0625rem solid #9e9e9e;
+  display: block;
+}
+.form-group .bar::before {
+  content: '';
+  height: 0.125rem;
+  width: 0;
+  left: 50%;
+  bottom: -0.0625rem;
+  position: absolute;
+  background: #6435e5;
+  -webkit-transition: left 0.28s ease, width 0.28s ease;
+  transition: left 0.28s ease, width 0.28s ease;
+  z-index: 2;
+}
+.form-group input {
+  display: block;
+  background: none;
+  padding: 0.125rem 0.125rem 0.0625rem;
+  font-size: 1rem;
+  border-width: 0;
+  border-color: transparent;
+  line-height: 1.9;
+  width: 100%;
+  color: transparent;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+  box-shadow: none;
+}
+.form-group input[type="file"] {
+  line-height: 1;
+}
+.form-group input[type="file"] ~ .bar {
+  display: none;
+}
+.form-group input:focus,
+.form-group input:valid,
+.form-group input.form-file,
+.form-group input.has-value {
+  color: #333;
+}
+.form-group input:focus ~ .control-label,
+.form-group input:valid ~ .control-label,
+.form-group input.form-file ~ .control-label,
+.form-group input.has-value ~ .control-label {
+  font-size: 0.8rem;
+  color: gray;
+  top: -1rem;
+  left: 0;
+}
+.form-group input:focus {
+  outline: none;
+}
+.form-group input:focus ~ .control-label {
+  color: #6435e5;
+}
+.form-group input:focus ~ .bar::before {
+  width: 100%;
+  left: 0;
+}
+.form-check {
+  padding: .4em;
+}
+.form-check-input {
+  margin-top: -0.40em;
+}
+.form-check-label {
+  color: #c93030;
+}
+.button {
+  position: relative;
+  background: #6435e5;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  padding: .75em;
+  width: 6em;
+  cursor: pointer;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.button span {
+  color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 1;
+}
+.button::before {
+  content: '';
+  position: absolute;
+  background: #6435e5;
+  border: 50vh solid #2f9af8;
+  width: 40vh;
+  height: 30vh;
+  border-radius: 50%;
+  display: block;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+}
+.button:hover {
+  color: #e53935;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+.button:focus {
+  outline: none;
+}
+</style>
