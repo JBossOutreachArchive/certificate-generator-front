@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'icon-fonts';
+  src: url('/assets/icons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.navbar {
+  height:60px;
+  background-color: #F1002C;
+  text-align: center;
+  color:white;
+  font-size: 200%;
+}
+.navbar .navbar__title {
+  padding-top:10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.navbar .navbar__buttons a {
+  text-decoration: none;
+  color:white;
+  margin:15px;
+}
+.navbar .navbar__buttons .navbar__icon-font{
+  font-family:'icon-fonts';
+  /* line-height: 200px */
+}
+.navbar__icon--person {
+  font-size: 80%;
+}
+.navbar__icon--ellipsis {
+  font-size: 50%;
+  padding-bottom:3px;
+}

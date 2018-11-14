@@ -19,15 +19,18 @@
   border: 1px solid #00000018;
   border-radius: 45px;
   box-shadow: 0px 0px 25px 5px #0000006c;
-  margin: 5% 15%;
-  min-width:500px;
+  margin: 7% 15%;
 }
 
 .login .login__logo {
   margin: 40px auto 30px auto;
-  width: 50%;
-  min-height: 200px;
-  min-width: 250px;
+  width: 150px;
+  height:100px;
+}
+
+.login .login__logo img{
+  height:100%;
+  width:auto;
 }
 .login .login__heading {
   font-weight:bold;
@@ -87,8 +90,5 @@
     width:100%;
     max-width:100%;
     flex:initial;
-  }
-  .login .login__shadow-outline {
-    margin: 10% 0% 10% -2%;
   }
 }
