@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Certificate Generator</title>
+</head>
+<body>
+  <div class="top">
+  </div>
+  <div class="card">
+    <div class="field " >
+      <div class="logo">
+        <img src="JBoss1.png" width="200px">
+      </div>
+      <span class="header"></span>
+      <div class="form-group">
+        <input type="text" required="required" />
+        <label for="input" class="control-label">Username or Email</label><i class="bar"></i>
+      </div>
+      <div class="form-group">
+        <input type="password" required="required" />
+        <label for="input" class="control-label">Password</label><i class="bar"></i>
+      </div>
+      <div class="button-container">
+        <button type="button" class="button"><span>Log In</span></button>
+        <button type="button" class="button"><span>Sign Up</span></button>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <p>&copy JBoss Outreach 2018</p>
+  </div>
+</body>
+</html>
