@@ -88,7 +88,15 @@
   }
   .login {
     width:100%;
-    max-width:100%;
     flex:initial;
+    max-width: 100%;
+  }
+  .login .login__shadow-outline {
+    margin: 3% 7%;
+  }
+  .login .login__logo {
+    margin: 30px auto 10px auto;
+    width: 100px;
+    height:70px;
   }
 }
