@@ -5,30 +5,136 @@
   <title>Certificate Generator</title>
 </head>
 <body>
-  <div class="top">
-  </div>
-  <div class="card">
-    <div class="field " >
-      <div class="logo">
-        <img src="JBoss1.png" width="200px">
-      </div>
-      <span class="header"></span>
-      <div class="form-group">
-        <input type="text" required="required" />
-        <label for="input" class="control-label">Username or Email</label><i class="bar"></i>
-      </div>
-      <div class="form-group">
-        <input type="password" required="required" />
-        <label for="input" class="control-label">Password</label><i class="bar"></i>
-      </div>
-      <div class="button-container">
-        <button type="button" class="button"><span>Log In</span></button>
-        <button type="button" class="button"><span>Sign Up</span></button>
+<div class="container" ng-app="myApp" ng-controller="MyCtrl">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-header">
       </div>
     </div>
+    
+    <div ui-view></div>
+    
   </div>
-  <div class="bottom">
-    <p>&copy JBoss Outreach 2018</p>
-  </div>
+<script type="text/ng-template" id="login.html">
+    <div class="col-md-12">
+      <h3>Login Page</h3>
+      
+ <div class="logo">
+<img src="JBoss1.png"/>
+    
+<img ng-src="{{image}}"/> 
+</div>
+
+      <form ng-submit="formSubmit()" class="form">
+        <div class="col-md-4">
+          <div class="form-group">
+            <input type="text" class="form-control" ng-model="username" 
+
+placeholder="username" required=""/>
+          </div> 
+
+          <div class="form-group">
+            <input type="password" class="form-control" ng-model="password" 
+
+placeholder="password" required=""/>
+          </div>
+
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-success">Login</button>
+            <span class="text-danger">{{ error }}</span>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </script>
+  
+  <script type="text/ng-template" id="home.html">
+    <div class="col-md-12">
+      <h3>Home Page</h3>
+    
+      <a ui-sref="login">Back</a>
+    </div>
+  </script>
+</div>  
+
+<script type="text/javascript">
+(function() {
+  var app = angular.module('myApp', ['ui.router']);
+
+  app.run(function($rootScope, $location, $state, LoginService) {
+    $rootScope.$on('$stateChangeStart', 
+      function(event, toState, toParams, fromState, fromParams){ 
+          console.log('Changed state to: ' + toState);
+      });
+    
+      if(!LoginService.isAuthenticated()) {
+        $state.transitionTo('login');
+      }
+  });
+  
+  app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, 
+
+$urlRouterProvider) {
+    $urlRouterProvider.otherwise('/home');
+    
+    $stateProvider
+      .state('login', {
+        url : '/login',
+        templateUrl : 'login.html',
+        controller : 'LoginController'
+      })
+      .state('home', {
+        url : '/home',
+        templateUrl : 'home.html',
+        controller : 'HomeController'
+      });
+  }]);
+
+  app.controller('LoginController', function($scope, $rootScope, $stateParams, $state, 
+
+LoginService) {
+    $rootScope.title = "AngularJS Login Sample";
+    
+    $scope.formSubmit = function() {
+      if(LoginService.login($scope.username, $scope.password)) {
+        $scope.error = '';
+        $scope.username = '';
+        $scope.password = '';
+        $state.transitionTo('home');
+      } else {
+        $scope.error = "Incorrect username/password !";
+      }   
+    };
+    
+  });
+  
+  app.controller('HomeController', function($scope, $rootScope, $stateParams, $state, 
+
+LoginService) {
+    $rootScope.title = "AngularJS Login Sample";
+    
+  });
+  
+  app.factory('LoginService', function() {
+    var admin = 'admin';
+    var pass = 'pass';
+    var isAuthenticated = false;
+    
+    return {
+      login : function(username, password) {
+        isAuthenticated = username === admin && password === pass;
+        return isAuthenticated;
+      },
+      isAuthenticated : function() {
+        return isAuthenticated;
+      }
+    };
+    
+  });
+  
+})();
+</script>
 </body>
 </html>
