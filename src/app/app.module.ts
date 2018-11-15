@@ -1,31 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-// Ag grid angular
-import { AgGridModule } from 'ag-grid-angular';
-
-//components
 import { AppComponent } from './app.component';
-import { LoginComponent } from './core/login/login.component';
-import { SignupComponent } from './core/signup/signup.component';
-import { StudentComponent } from './student/student.component';
-import { OrganizationComponent } from './organization/organization.component';
-import { AppRoutingModule } from './/app-routing.module';
-import { BasicComponent } from './templates/basic/basic.component';
+import { CertificateComponent } from './certificate/certificate.component';
+import {RouterModule, Routes } from  '@angular/router';
+import { Certificate2Component } from './certificate2/certificate2.component';
+import { OptionsComponent } from './options/options.component';
 
+
+const router: Routes = [
+  {path: 'certificate', component:CertificateComponent},
+  {path:'certificate2', component:Certificate2Component}
+]
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    SignupComponent,
-    StudentComponent,
-    OrganizationComponent,
-    BasicComponent
+    CertificateComponent,
+    Certificate2Component,
+    OptionsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AgGridModule.withComponents([])
+    RouterModule.forRoot(router)
   ],
   providers: [],
   bootstrap: [AppComponent]

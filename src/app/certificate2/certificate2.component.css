@@ -1,0 +1,55 @@
+.im
+{
+  background-image: url("https://edsurge.imgix.net/uploads/post/image/6659/Computerscience-1444864521.jpg?auto=compress%2Cformat&w=2000&h=810&fit=crop");
+  float : right;
+  top:-150px;
+margin-right: 100px;
+width:70%;
+height:600px;
+position:relative;
+  border: 2px solid black;
+   border-radius: 5px;
+}
+h1
+{
+  color: black;
+  text-align: left;
+  margin-left: 20px;
+  font-family:  Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+
+}
+h2
+{
+  color:#251E1E;
+  margin-left:20%;
+}
+p{
+  font-size: 20px;
+margin-left: 38px;}
+input[type=text] {
+    width: 20%;
+    font-family: cursive;
+      background-color: #C6CCD0;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+      margin-left: 60px;
+}
+p.s {
+word-spacing: 6cm;
+font-size: 15px;
+}
+textarea
+{
+  background-color:#C6CCD0;
+  width: 29%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+    margin-left: 15px;
+}
