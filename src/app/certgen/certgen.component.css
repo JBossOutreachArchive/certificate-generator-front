@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+* {
+  font-family: 'Varela Round', sans-serif;
+ }
+
+.generate_w {
+  border: 1px solid rgba(0, 0, 0, 0.0);
+  border-radius: 50px;
+  padding: 30px 30px 30px 30px;
+  margin-top: 10px;
+  margin-left: 500px;
+  -webkit-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
+  -moz-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
+  box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
+}
+
+.row {
+  margin-bottom: 50px;
+}
+
+form {
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+.input {
+  font-size: 130%;
+  float: left;
+  color: #526E7A;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="text"], input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ADBDC5;
+  border-radius: 10px;
+  color: #ADBDC5;
+  font-size: 100%;
+  margin-top: 10px;
+}
+
+input[type="text_des"] {
+  width: 100%;
+  padding: 10px 20px 30px 10px;
+  border: 1px solid #ADBDC5;
+  border-radius: 10px;
+  color: #ADBDC5;
+  font-size:100%;
+  margin-top: 10px; 
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  }
+
+button {
+  background-color: #B22222;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 30px;
+  margin: 10px 95px;
+  color: white;
+  font-weight: bold;
+  font-size: 100%;
+  letter-spacing: 1px;
+}
+
+@media all and (max-width: 1000px) {
+  * {
+    font-size: 100%;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .col-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-8 {
+    display: none;
+  }
+
+  .generate_w {
+    -webkit-box-shadow: none;
+    -moz-box-shadow:    none;
+    box-shadow:         none;
+    border: none;
+  }
+
+  .input {
+    margin-top: 10px;
+  }
+}
