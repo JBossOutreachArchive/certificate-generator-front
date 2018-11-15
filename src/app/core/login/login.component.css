@@ -44,6 +44,11 @@
   margin: 3px 40px;
 }
 
+.login .alert {
+  margin: 3px 40px;
+  padding:7px 15px;
+}
+
 .login input[type=text], .login input[type=password] {
   width:calc(100% - 80px);
   padding: 10px;
@@ -81,6 +86,10 @@
 }
 .login__button-parent {
   text-align: center;
+}
+
+.login__button:disabled {
+  opacity: 0.30;
 }
 @media screen and (max-width:1000px){
   .description {

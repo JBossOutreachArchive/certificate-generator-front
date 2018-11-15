@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import {FormBuilder, ReactiveFormsModule} from '@angular/forms';
 
 // Ag grid angular
 import { AgGridModule } from 'ag-grid-angular';
@@ -24,14 +26,16 @@ import { NavbarComponent } from './navbar/navbar.component';
     OrganizationComponent,
     BasicComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [FormBuilder],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

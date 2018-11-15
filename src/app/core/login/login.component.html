@@ -36,13 +36,29 @@
         <div class="login__heading">
           Certificate Generator
         </div>
-        <form>
-         <div class="form-group">
-           <label class="login__input-label" for="username-input">Username:</label>
-           <input type=text class="form-control" id="username-input" formControlName="username">
-           <label class="login__input-label" for="password-input">Password:</label>
-           <input type=password class="form-control" id="password-input" formControlName="password">
-         </div>
+        <form [formGroup]="form" (submit)="onSubmit()">
+          <div *ngIf="error" class="alert alert-danger" role="alert">
+            {{ errorMessage }}
+          </div>
+          <div *ngIf="success" class="alert alert-success" role="alert">
+              Logged in successfully
+            </div>
+          <div class="form-group">
+            <label class="login__input-label" for="username-input">Username:</label>
+            <input type=text class="form-control" id="username-input" formControlName="username" required>
+            <div *ngIf="username.invalid && (username.dirty || username.touched)" class="alert alert-danger">
+              <div *ngIf="username.errors.required">
+                Username is required.
+              </div>
+            </div>
+            <label class="login__input-label" for="password-input">Password:</label>
+            <input type=password class="form-control" id="password-input" formControlName="password">
+            <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert alert-danger">
+              <div *ngIf="password.errors.required">
+                Password is required.
+              </div>
+            </div>
+          </div>
          <div class="login__forgot-password">Forgot password?</div>
          <div class="form-group login__remember">
             <input id="remember-me" type="checkbox">
@@ -50,7 +66,7 @@
          </div>
          <div class="container-fluid">
             <div class="row login__button-parent">
-              <button class="login__button">SIGN IN</button>
+              <button [disabled]="form.invalid" class="login__button">SIGN IN</button>
             </div>
          </div>
        </form>
