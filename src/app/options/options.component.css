@@ -1,0 +1,22 @@
+h1{
+  color: black;
+  font-style: oblique;
+}
+ul{
+  margin:0;
+  overflow:hidden;
+list-style-type: none;
+width:10%;
+top:150px;
+background-color: white;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: grey;
+}
