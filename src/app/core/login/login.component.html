@@ -1,3 +1,48 @@
-<p>
-  login works!
-</p>
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-8">
+      <div class="section">
+        <div class="section_t">What is Certificate Generator?</div>
+        Certificate Generator aims to automatically generate<br>certificates based on the data provided using input files<br>like CSV or Excel.
+      </div>
+      <div class="section">
+        <div class="section_t">New to our website? Sign up now!</div>
+      </div>
+      <div class="section">
+        <div class="section_t">Development Stack</div>
+        HTML<br>CSS<br>Angular 6 for Front-End
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="login_w">
+        <img src="assets/jboss_logo.svg" class="logo">
+        <h1 class="login_t text-center">Certificate Generator</h1>
+        <form [formGroup]="loginForm" (submit)="onSubmit()">
+         <div class="form-group">
+           <label for="email" class="input">Username </label>
+           <input type="text" class="form-control" id="email" formControlName="username">
+         </div>
+         <div class="form-group">
+           <label for="pwd" class="input">Password</label>
+           <input type="password" class="form-control" id="pwd" formControlName="password">
+         </div>
+         <h5 class="fpwd">Forgot password? </h5>
+         <div class="checkbox">
+           <label><input type="checkbox"> Remember me</label>
+         </div>
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col">
+               <button type="submit" class="col">SIGN IN</button>
+             </div>
+             <div class="col">
+               <button type="submit" routerLink="/signup" class="col">SIGN UP</button>
+             </div>
+           </div>
+         </div>
+       </form>
+      </div>
+    </div>
+  </div>
+</div>
