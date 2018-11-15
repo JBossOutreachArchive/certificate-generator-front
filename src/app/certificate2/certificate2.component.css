@@ -22,7 +22,6 @@ h2
 {
   color:#251E1E;
   margin-left:20%;
-
 }
 p{
   font-size: 20px;
@@ -37,7 +36,10 @@ input[type=text] {
     outline: none;
       margin-left: 60px;
 }
-
+p.s {
+word-spacing: 6cm;
+font-size: 15px;
+}
 textarea
 {
   background-color:#C6CCD0;
