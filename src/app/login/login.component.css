@@ -1,0 +1,85 @@
+.im
+{
+  background-image: url("https://wallpapertag.com/wallpaper/full/f/7/7/143274-free-computer-science-wallpaper-1920x1200.jpg");
+  top:55px;
+margin:0;
+width:99.6%;
+height:680px;
+position:relative;
+  border: 2px solid black;
+   border-radius: 2px;
+   opacity: 0.8;
+background-repeat: no-repeat;
+}
+.login
+{
+  background: rgba(95, 118, 142, 0.9);
+  top:150px;
+width:23%;
+height:450px;
+position: relative;
+  border: 1px solid black;
+   border-radius: 25px;
+   background-position: center;
+   margin-left: 38%;
+}
+h1
+{
+  margin-left: 130px;
+  color:#010e3a;
+  font-size: 38px;
+}
+h2{
+  color:black;
+  font-family:Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+  margin-left: 25px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+input[type=text]
+{
+  background-color: #9cacbc;
+  width:80%;
+  display: inline-block;
+  padding:5px 5px;
+  margin-left: 27px;
+  box-sizing: border-box;
+
+}
+::placeholder
+{color:black;}
+.log{
+  margin-left: 57px;
+  margin-top: 60px;
+  background-color: #010e3a;
+  border:none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  font-family:Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
+.log:hover
+{
+  background-color: #680403;
+}
+.forgot
+{
+  background-color: transparent;
+  border: none;
+    margin-top: 55px;
+  margin-left: 57%;
+  color:#030633;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: bold;
+  position:relative;
+}
+.check
+{ position: relative;
+  cursor: pointer;
+  margin-left:20px;
+bottom: 20px;
+color:#030633;
+font-weight: bold;;
+  font-size: 16px;
+}
