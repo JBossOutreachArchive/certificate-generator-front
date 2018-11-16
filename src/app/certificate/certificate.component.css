@@ -4,9 +4,8 @@
   height: 200px;
    background-color: #cccccc;
    background-image: linear-gradient(#446EAE, #5E8ACB);
-  float : right;
-  top:-150px;
-margin-right: 100px;
+  top:100px;
+margin-left: 100px;
 width:70%;
 height:600px;
 position:relative;
