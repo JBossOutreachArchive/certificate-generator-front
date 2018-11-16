@@ -1,9 +1,8 @@
 .im
 {
   background-image: url("https://edsurge.imgix.net/uploads/post/image/6659/Computerscience-1444864521.jpg?auto=compress%2Cformat&w=2000&h=810&fit=crop");
-  float : right;
-  top:-150px;
-margin-right: 100px;
+  top:100px;
+margin-left: 100px;
 width:70%;
 height:600px;
 position:relative;
