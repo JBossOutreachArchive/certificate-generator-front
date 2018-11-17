@@ -1,0 +1,59 @@
+<div class="card">
+  <form ngForm="ngForm">
+
+    <div class="styled-input">
+      <h5>Photo:</h5>
+      <input id="photo" type="file" required/>
+    </div>
+
+    <div class="styled-input">
+      <input id="company" type="text" required/>
+      <label for="company">Company</label>
+    </div>
+
+    <div class="styled-input">
+      <input id="title" type="text" required/>
+      <label for="title">Title</label>
+    </div>
+
+    <div class="styled-input">
+      <input id="name" type="text" required/>
+      <label for="name">Name</label>
+    </div>
+
+    <div class="styled-input">
+      <input id="description" type="text" required/>
+      <label for="description">Description</label>
+    </div>
+
+    <div class="styled-input">
+      <input id="date" type="date" required/>
+      <label for="date"></label>
+    </div>
+
+    <div class="styled-input">
+      <h5>Signature:</h5>
+      <input id="signature" type="file" required/>
+    </div>
+
+    <div class="btn">
+      <input type="submit" value="Preview">
+    </div>
+
+    <div class="btn">
+      <input type="button" onclick="function validateForm() {
+          if(document.getElementById('company').value.length === 0
+            ||document.getElementById('title').value.length === 0
+            ||document.getElementById('name').value.length === 0
+            ||document.getElementById('description').value.length === 0
+            ||document.getElementById('photo').value.length === 0
+            ||document.getElementById('date').value.length === 0
+            ||document.getElementById('signature').value.length === 0)
+             alert('Fill in all mandatory fields!')
+             // just example, it'll be checked more exactly later
+      }
+      validateForm()" value="Publish">
+    </div>
+
+  </form>
+</div>

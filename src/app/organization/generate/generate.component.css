@@ -1,0 +1,50 @@
+.card {
+  width: 30%;
+  margin: 30px auto 80px auto;
+  border-radius: 15px;
+  box-shadow: 2px 3px 15px 1px rgba(0, 0, 0, 0.2);
+  padding: 50px 20px 10px 20px;
+}
+
+.styled-input {
+  margin: 0 0 15px 12px;
+  float: left;
+  position: relative;
+  border-radius: 4px;
+}
+
+.btn {
+  margin-left: 15%;
+  float: left;
+  position: relative;
+}
+
+.styled-input input:focus ~ label, input:valid ~ label {
+  font-size: 0.75em;
+  color: #0053bd;
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+.styled-input label {
+  color: #787878;
+  padding: 0.8rem 0 0 15px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.styled-input input {
+  padding: 30px 10px 15px 20px;
+  border: 0;
+  background-color: #ececec;
+  border-radius: 4px;
+}
+
+.styled-input input:focus {
+  outline: 0;
+}

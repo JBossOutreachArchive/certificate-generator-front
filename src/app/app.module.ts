@@ -12,6 +12,8 @@ import { StudentComponent } from './student/student.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
+import {CertificateComponent} from './templates/certificate/certificate.component';
+import { GenerateComponent } from './organization/generate/generate.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { BasicComponent } from './templates/basic/basic.component';
     SignupComponent,
     StudentComponent,
     OrganizationComponent,
-    BasicComponent
+    BasicComponent,
+    CertificateComponent,
+    GenerateComponent
   ],
   imports: [
     BrowserModule,

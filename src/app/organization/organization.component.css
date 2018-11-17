@@ -2,3 +2,18 @@
     height:60vh !important;
     width: 100% !important;
 }
+
+.button{
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+  width: 2.5em;
+  height: 1.5em;
+  text-align: center;
+  background: #ed3f00;
+  border: 2px solid rgb(185, 0, 0);
+  font: 1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 2px 0 #1b383b;
+  text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+}
