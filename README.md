@@ -55,6 +55,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 #### Application Login Page
 
 ![Login](https://raw.githubusercontent.com/JBossOutreach/certificate-generator-front/master/src/assets/wire_login.jpg)
+
+#### Application Sign Up Page
+
+ ![Signup](https://raw.githubusercontent.com/saivittalb/certificate-generator-front/loginfram/src/assets/wire_signup.jpg)
+
 #### Help
 
 If you need any help anywhere in the process, you can always ask a question on our [Gitter Chat](https://gitter.im/jboss-outreach/gci).
