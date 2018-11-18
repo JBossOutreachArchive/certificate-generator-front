@@ -24,7 +24,12 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.css",
+"https://fonts.googleapis.com/css?family=Noto+Sans",
+"https://fonts.googleapis.com/css?family=Roboto+Condensed",
+"https://fonts.googleapis.com/css?family=Courgette",
+"https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i",
+"https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" 
             ],
             "scripts": []
           },
