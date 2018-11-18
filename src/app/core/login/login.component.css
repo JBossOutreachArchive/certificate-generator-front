@@ -1,0 +1,68 @@
+.main {
+  font-family: 'Arial', sans-serif;
+}
+
+.section {
+  margin-top: 8%;
+  margin-left: 8%;
+  color: #3d4e57;
+}
+
+.section-title {
+  font-weight: bold;
+}
+
+.col-4 {
+  height: 47em;
+}
+
+.login-wrapper {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  padding: 0 30px;
+  margin: 10% 0;
+  -webkit-box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.5);
+}
+
+.header-logo {
+  display: block;
+  margin: 40px auto 10px auto;
+  width: 50%;
+}
+
+.login-title {
+  color: #384851;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.input-label {
+  float: left;
+  color: #384851;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.reset-wrap {
+  color: #384851;
+  text-align: right;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ADBDC5;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #f00019;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin: 40px 0;
+  color: white;
+  font-weight: bold;
+}
