@@ -1,0 +1,143 @@
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+  body{
+  background-color:#f4f4f4;
+}
+footer{
+    font-size:17px;
+   font-family: 'Tahoma'; 
+    width:100%;
+    height:61px;
+  background-color:#e53935;
+  color:white;
+  }
+d{
+  font-size:15px;
+   font-family: 'Tahoma'; 
+   color:#6C6868;
+  }
+k{
+   color:black;
+     font-size:32px;
+     font-family: 'Tahoma'; 
+   }
+   
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#e53935;
+    color:white;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    width:100%;
+     height:42px;
+    text-decoration: none;
+    font-size:32px;
+  
+     font-family: 'Tahoma'; 
+}
+li a:hover:not(.active) {
+    background-color: #333;
+}
+.active {
+   color:white;
+}
+y{
+     font-family: 'Tahoma'; 
+  font-size:50px;
+ font-weight:400;
+}
+li a:hover{
+   color:black;
+   }
+   t{
+    font-size:32px;
+     font-family: 'Tahoma'; 
+     color:#6C6868;
+     font-weight:400;
+  
+     width:789px;
+     }
+     .v{
+     
+           box-shadow: 0 2px 8px 0 darkgrey, 0 2px 20px 0 darkgrey;
+           border-radius:30px;
+          width:390px;
+          height:481px;
+          float:right;
+               background-color:#f4f4f4; 
+          }
+           form {  
+            border:  #f1f1f1;  
+        
+     font-family: 'Tahoma';  
+            text-align:left;
+            border-radius:20px;
+            font-size:19px;
+      
+        }  
+  
+        input[type=text],  
+        input[type=password] {  
+            background-color:white;
+               border:20px;
+              width:100%;
+                  padding: 4px 20px;
+                margin: 8px 0;
+               display: inline-block;
+               border: 1px solid #ccc;
+               box-sizing: border-box;
+              position:center;
+               border-radius:15px;
+              
+     font-family: 'Tahoma';  
+            font-size:15px;
+            
+        }  
+  
+        .button {
+    background-color:crimson;
+    border-radius:20px;
+    border: none;
+    color: white;
+    padding: 2.2px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color:#e53935;
+   
+     font-family: 'Tahoma'; 
+    font-size:17.5px;
+}
+        .button:hover {  
+            background-color: black;  
+            color: white;  
+        }  
+  
+        .container {  
+            padding: 9px;  
+        }  
+  
+        span.psw {  
+            float: right;  
+            padding-top: 10px;  
+        }  
+  
+        span.psw {  
+            display: block;  
+            float: none;  
+        }  
