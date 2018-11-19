@@ -30,6 +30,7 @@
   background: linear-gradient(to top, #93291E, #ED213A);
   padding: 10px;
   border-radius: 40px;
+  font-size: 175%;
   transition: all 0.5s;
 }
 
@@ -52,6 +53,10 @@
 
 .fa-twitter:hover {
   color: #1DA1F2;
+}
+
+.fa-heart {
+  font-size: 100%;
 }
 
 .navigation-bottom {
