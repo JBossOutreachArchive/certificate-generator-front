@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+ import { AngularFireModule } from '@angular/fire';
+ import { environment } from '../environments/environment';
+ import { AngularFireAuthModule } from '@angular/fire/auth';
 
 // Ag grid angular
 import { AgGridModule } from 'ag-grid-angular';
@@ -25,7 +29,10 @@ import { BasicComponent } from './templates/basic/basic.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
