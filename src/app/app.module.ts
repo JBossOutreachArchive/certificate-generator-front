@@ -14,7 +14,6 @@ import { StudentComponent } from './student/student.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
-import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
@@ -25,7 +24,6 @@ import { NavbarComponent } from './navbar/navbar.component';
     StudentComponent,
     OrganizationComponent,
     BasicComponent,
-    FooterComponent,
     NavbarComponent
   ],
   imports: [
