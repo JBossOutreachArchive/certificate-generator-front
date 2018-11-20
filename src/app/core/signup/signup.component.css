@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
 * {
   font-family: 'Varela Round', sans-serif;
  }
 
  .col-4 {
-  height: 80vh;
+  height: 85vh;
 }
 
  .section {
@@ -64,20 +66,18 @@ input[type="text"], input[type="password"], input[type="email"] {
   margin-top: 5px;
 }
 
-.checkboxes {
-  text-align:center;
- }
-
-.checkboxes input{
-  margin: 0px 0px 0px 0px;
- }
-
- .checkboxes label{
-   margin: 0px 40px 0px 60px;
-   font-size: 100%;
-   float: center;
-   color: #526E7A;
- }
+input[type="text_des"] {
+width: 100%;
+padding: 20px 20px 70px 10px;
+border: 1px solid #ADBDC5;
+border-radius: 10px;
+color: #ADBDC5;
+font-size:100%;
+margin-top: 5px; 
+width: 100%;
+box-sizing: border-box;
+resize: none;
+}
 
 button {
   background-color: #B22222;

@@ -1,4 +1,3 @@
-<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 <div class="container-fluid">
   <div class="row">
     <div class="col-8">
@@ -18,37 +17,27 @@
       <div class="signup_w">
         <img src="assets/jboss_logo.svg" class="logo">
         <h1 class="signup_t text-center">Certificate Generator</h1>
-        <form>
+        <form [formGroup]="signupForm" (submit)="onSubmit()">
          <div class ="form-group">
            <label for="name" class="input">Name</label> 
            <input type="text" class="form-control" id="name" formControlName="name">        
-          </div>
-         <div class="form-group">
-           <label for="email" class="input">Username </label>
-           <input type="text" class="form-control" id="username" formControlName="username">
-         </div>
+        </div>
          <div class="form-group">
             <label for="email" class="input">Email </label>
-            <input type="email" class="form-control" id="email" formControlName="email">
-          </div>
-          <div class="checkboxes">
-              <span>
-              <label><input type="checkbox"> Issuer</label>
-              <label><input type="checkbox"> Student</label>
-              </span>
-            </div>
+            <input type="email" class="form-control" id="email" formControlName="email" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+         </div>
          <div class="form-group">
            <label for="pwd" class="input">Password</label>
            <input type="password" class="form-control" id="pwd" formControlName="password">
          </div>
          <div class="form-group">
-           <label for="pwd" class="input">Confirm Password</label>
-           <input type="password" class="form-control" id="con_pwd" formControlName="con_password">
+          <label for="description" class="input">Description</label>
+          <input type="text_des" class="form-control" id="description" formControlName="description">
          </div>
          <div class="container-fluid">
            <div class="row">
              <div class="button">
-               <button type="submit" class="col" onclick="return Validate()">SIGN UP</button>
+               <button type="submit" class="col">SIGN UP</button>
              </div>
            </div>
          </div>
@@ -57,14 +46,3 @@
     </div>
   </div>
 </div>
-<script type="text/javascript">
-  function Validate() {
-      var password = document.getElementById("pwd").value;
-      var confirmPassword = document.getElementById("con_pwd").value;
-      if (password != confirmPassword) {
-          alert("Passwords do not match.");
-          return false;
-      }
-      return true;
-  }
-</script>
