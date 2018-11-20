@@ -13,7 +13,7 @@
       <input matInput placeholder="Name" [(ngModel)]="certName">
     </mat-form-field>
     <mat-form-field>
-      <input matInput [matDatepicker]="picker" placeholder="Date" [(value)]="certDate.value" [min]="certDate.value">
+      <input matInput [matDatepicker]="picker" placeholder="Date" [(value)]="certDate.value" [min]="certDate.value" color="warn">
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
