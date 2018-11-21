@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { StudentService } from "../services/student.service"
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-student',
@@ -9,11 +8,21 @@ import { Observable } from 'rxjs';
 })
 export class StudentComponent implements OnInit {
 
+  mode:string;
   columns: any[];
   certs: any[];
   constructor(private studentService: StudentService) { }
 
+  switchDisplayMode(){
+    console.log(this.mode)
+    if(this.mode==="list"){
+      this.mode="thumbnail"
+    }else{
+      this.mode="list"
+    }
+  }
   ngOnInit() {
+    this.mode="list"
     this.studentService.getAllCertificates()
     .subscribe((data: any[])=>{
       data = data.sort((a,b)=>{

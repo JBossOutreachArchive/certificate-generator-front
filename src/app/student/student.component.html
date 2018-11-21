@@ -2,8 +2,12 @@
   student works!
 </p>
 
+<div class="button-container">
+  <button type="button" class="switch-mode btn" (click)="switchDisplayMode()">Switch certificate display mode</button>
+</div>
+<br>
 <div class="container container-grid">
-  <ag-grid-angular 
+  <ag-grid-angular *ngIf="mode==='list'"
     style="width: 600px;" 
     class="ag-theme-balham"
     [rowData]="certs"
@@ -13,4 +17,11 @@
     [enableColResize] = "true"
     >
   </ag-grid-angular>
+  <div class="cert-display-thumbnail-container" *ngIf="mode==='thumbnail'">
+    <div *ngFor="let cert of certs" class="cert-display-thumbnail">
+        <div *ngFor="let column of columns" class="cert-display-thumbnail-info">
+          <span class="thumbnail-info-title">{{column.headerName}}:</span> {{cert[column.field]}}
+        </div>
+    </div>
+  </div>
 </div>

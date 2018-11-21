@@ -3,3 +3,26 @@ ag-grid-angular {
   width:600px;
   height: 500px;
 }
+.button-container{
+  text-align: center;
+}
+.thumbnail-info-title{
+  font-weight: bold;
+}
+.cert-display-thumbnail-info:first-child{
+  font-size:125%;
+  font-weight: bold;
+  padding-bottom:20px;
+}
+.cert-display-thumbnail-info:first-child .thumbnail-info-title{
+  /* Hide title of first detail */
+  display:none;
+}
+.cert-display-thumbnail {
+  display:inline-block;
+  margin:10px;
+  border: 1px solid #00000018;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 5px #0000006c;
+  padding:10px;
+}
