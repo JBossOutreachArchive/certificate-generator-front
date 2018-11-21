@@ -8,6 +8,12 @@ class Cert{
   name:string;
 }
 
+class ColumnDefs {
+  headerName:string;
+  field:string;
+  sort?:string;
+  comparator?:Function;
+}
 @Component({
   selector: 'app-student',
   templateUrl: './student.component.html',
@@ -15,9 +21,8 @@ class Cert{
 })
 export class StudentComponent implements OnInit {
 
-  columns: string[];
+  columns: ColumnDefs[];
   certs: Cert[];
-
   constructor(private studentService: StudentService) { }
 
   ngOnInit() {
@@ -29,7 +34,13 @@ export class StudentComponent implements OnInit {
       console.log(data)
       this.certs = data
     })
-    this.columns = ["Name","Issuer","Date"]
+    this.columns = [
+      {headerName: 'Certificate Name', field: 'name'},
+      {headerName: 'Issued Date', field: 'date',sort:"desc" ,comparator:(a,b)=>{
+        return new Date(a).getTime() - new Date(b).getTime()
+      }},
+      {headerName: 'Issuing organization', field: 'issuer'}
+    ]
   }
 
 }

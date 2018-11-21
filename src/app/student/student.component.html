@@ -2,15 +2,15 @@
   student works!
 </p>
 
-<table>
-  <tr>
-    <th *ngFor="let column of columns">
-      {{column}}
-    </th>
-  </tr>
-  <tr *ngFor="let cert of certs">
-    <td *ngFor="let column of columns">
-      {{cert[column.toLowerCase()]}}
-    </td>
-  </tr>
-</table>
+<div class="container container-grid">
+  <ag-grid-angular 
+    style="width: 600px;" 
+    class="ag-theme-balham"
+    [rowData]="certs"
+    [enableSorting]="true"
+    [enableFilter]="true"    
+    [columnDefs]="columns"
+    [enableColResize] = "true"
+    >
+  </ag-grid-angular>
+</div>
