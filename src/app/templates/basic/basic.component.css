@@ -5,6 +5,20 @@
   height: 60vh;
   border: 10px solid #3F213B;
   font-family: 'Questrial', sans-serif;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.id-wrapper {
+  float: left;
+  text-align: left;
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+}
+
+#cert_id {
+  font-weight: normal;
 }
 
 
