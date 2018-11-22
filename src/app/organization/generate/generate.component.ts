@@ -12,4 +12,17 @@ export class GenerateComponent implements OnInit {
   ngOnInit() {
   }
 
+  validateForm() {
+    if (document.getElementById('company').nodeValue.length === 0
+      || document.getElementById('title').nodeValue.length === 0
+      || document.getElementById('name').nodeValue.length === 0
+      || document.getElementById('description').nodeValue.length === 0
+      || document.getElementById('photo').nodeValue.length === 0
+      || document.getElementById('date').nodeValue.length === 0
+      || document.getElementById('signature').nodeValue.length === 0) {
+      console.log('Not filled.');
+      // it' ll be changed later
+    }
+}
+
 }
