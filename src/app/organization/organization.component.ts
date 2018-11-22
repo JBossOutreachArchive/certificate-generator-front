@@ -16,15 +16,15 @@ export class OrganizationComponent implements OnInit {
 
     columnDefs = [
         {headerName: 'Student Name', field: 'name',checkboxSelection:true},
-        {headerName: 'Date', field: 'date' },
+        {headerName: 'Date', field: 'date', sort: 'desc', cellRenderer: (date) => date.value.toLocaleDateString() },
         {headerName: 'Certificate Description', field: 'desc'}
     ];
 
     rowData = [
-        { name: 'Chandler', date: '10/10/2018', desc: 'For being Sarcastic' },
-        { name: 'Joey', date: '10/10/2018', desc: 'For eating all the food' },
-        { name: 'Phoebe', date: '10/10/2018', desc: 'For being the normal one' }
+        { name: 'Phoebe', date: new Date('10/1/2018'), desc: 'For being the normal one' }
+        { name: 'Joey', date: new Date('10/2/2018'), desc: 'For eating all the food' },
+        { name: 'Chandler', date: new Date('10/3/2018'), desc: 'For being Sarcastic' },
     ];
 
-    
+
 }
