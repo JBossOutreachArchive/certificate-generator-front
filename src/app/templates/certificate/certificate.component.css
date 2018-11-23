@@ -1,0 +1,171 @@
+body {
+  background: #E5E5E5;
+}
+
+.outer {
+text-align: Center;
+position: absolute;
+width: 934px;
+height: 658px;
+background: #30CBEF;
+position: absolute;
+font-width: 209px;
+font-height: 20px;
+font-family: Courgette;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 24px;
+color: #000000;
+}
+
+.inner {
+position: absolute;
+width: 881px;
+height: 586px;
+background: #1C2133;
+margin-left: 20px;
+ margin-top: 10px;
+}
+
+.logo {
+  position: absolute;
+  z-index : 100;
+  left: 0px;
+    top: 0px;
+  width: 200px;
+  height: auto;
+}
+
+.text-1 {
+margin-left: 150px;
+margin-top: 50px;
+width: 262px;
+height: 45px;
+font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 42px;
+color: #F8E39F;
+}
+
+.text-2 {
+margin-left: 48px;
+margin-top:0px;
+width: 419px;
+height: 45px;
+font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 42px;
+color: #F8E39F;
+}
+
+.text-3 {
+width: 301px;
+height: 38px;
+margin-left: 190px;
+margin-top: 31px;
+font-family: Quicksand;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 30px;
+color: #FFFFFF;
+}
+
+.name {
+width: 287px;
+height: 76px;
+font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 64px;
+color: #30CBEF;
+margin-left: 148px;
+margin-top: 26px;
+}
+
+.description {
+width: 544px;
+height: 65px;
+font-family: Quicksand;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 26px;
+color: #FFFFFF;
+margin-left: 0px;
+margin-top: 28px;
+}
+
+.line-1 {
+width: 153px;
+height: 0px;
+border: 4px solid #30CBEF;
+margin-top: 72px;
+ margin-left: 200px;
+}
+
+.line-2 {
+position: absolute;
+width: 153px;
+height: 0px;
+border: 4px solid #30CBEF;
+margin-left: 600px;
+margin-top: 69px;
+}
+
+.date {
+position: absolute;
+width: 49px;
+height: 28px;
+font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+margin-left: 198px;
+margin-top: 8px;
+font-size: 20px;
+color: #30CBEF;
+}
+
+.signature {
+position: absolute;
+margin-left: 600px;
+width: 109px;
+height: 28px;
+font-family: Noto Sans;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 20px;
+color: #30CBEF;
+margin-top: 5px;
+}
+
+.ribbon-2 {
+position: absolute;
+width: 119.06px;
+height: 20px;
+background: #F13B99;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+transform: rotate(34.69deg);
+margin-top: 80px;
+}
+
+.ribbon-1 {
+position: absolute;
+width: 132.79px;
+height: 20px;
+background: #F13B99;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+transform: rotate(34.69deg);
+margin-left: 800px;
+margin-top: 10px;
+}
+
+/**/
