@@ -1,0 +1,16 @@
+<form name="userform"  method="post" #form="ngForm">
+  <div class="form-group" >
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" name="email" class="form-control" [(ngModel)]="user.email" placeholder="Email" required>
+
+<br>
+    <label for="Password">Password</label>
+    <input type="password" name="password" class="form-control" [(ngModel)]="user.password" placeholder="Password" required>
+  </div>
+<br>
+<div class="form-group">
+   <button type="buton" (click)="signIn()" [disabled]="forml.form.invalid">
+   Login with Email
+   </button>
+</div>
+</form>
