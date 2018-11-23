@@ -20,8 +20,10 @@ import { StudentComponent } from './student/student.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
+
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+
 
 const routes: Routes=
 [
@@ -38,6 +40,7 @@ const routes: Routes=
     BasicComponent,
       LoginComponent,
     DashboardComponent
+
   ],
   imports: [
     BrowserModule,
