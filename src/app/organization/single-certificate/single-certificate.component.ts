@@ -17,6 +17,10 @@ export class SingleCertificateComponent implements OnInit {
       issued_for: ['', Validators.required],
       date: ['', Validators.required]
     })
+
+    this.certificateForm.get('template').valueChanges.subscribe(val => {
+      alert(val);
+    });
   }
 
   ngOnInit() {
