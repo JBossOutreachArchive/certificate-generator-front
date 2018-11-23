@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial|Roboto+Slab');
+
+.input-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-label {
+  font-size: 125%;
+  float: left;
+  color: #3F213B;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.title {
+  margin: 20px;
+  color: #3F213B;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ADBDC5;
+  border-radius: 8px;
+  color: #2b393f;
+  font-size: 120%;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #F1002C;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 30px;
+  margin: 40px 0;
+  color: white;
+  font-weight: bold;
+  font-size: 130%;
+  letter-spacing: 1.5px;
+}
+
+.certificate-wrapper {
+  width: 80%;
+  height: 60vh;
+  border: 10px solid #3F213B;
+  font-family: 'Questrial', sans-serif;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.id-wrapper {
+  float: left;
+  text-align: left;
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+}
+#cert_id {
+  font-weight: normal;
+}
+.certificate-content {
+  width: 96%;
+  height: 96%;
+  margin: 1vh auto;
+  border: 3px solid #583259;
+  position:relative;
+}
+.main-title {
+  background: linear-gradient(to left, #CB004C, #FF8A79);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5vh;
+  font-weight: bold;
+  margin-top: 7vh;
+  font-family: 'Roboto Slab', serif;
+}
+
+#issued_to {
+  font-size: 3.5vh;
+  margin: 1.75vh 0;
+}
+
+#for {
+  font-size: 3vh;
+  margin: 1.75vh 0;
+  font-weight: bold;
+}
+.footer {
+  position:absolute;
+  bottom:0;
+  left:0;
+  margin-bottom: 4vh;
+}

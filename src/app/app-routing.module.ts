@@ -7,12 +7,15 @@ import { StudentComponent } from './student/student.component';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
+import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
+
 
 const routes: Routes = [
   { path: '', component: LoginComponent},
   { path: 'organization', component: OrganizationComponent },
   { path: 'student', component: StudentComponent },
-  { path: 'signup', component: SignupComponent }
+  { path: 'signup', component: SignupComponent },
+  { path: 'issue/single', component: SingleCertificateComponent}
 ];
 
 @NgModule({

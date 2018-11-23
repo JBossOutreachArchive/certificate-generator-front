@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';''
+import { ReactiveFormsModule } from '@angular/forms';
 
 // Ag grid angular
 import { AgGridModule } from 'ag-grid-angular';
@@ -14,6 +15,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +26,14 @@ import { NavbarComponent } from './navbar/navbar.component';
     OrganizationComponent,
     BasicComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    SingleCertificateComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
