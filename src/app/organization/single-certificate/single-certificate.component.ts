@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./single-certificate.component.css']
 })
 export class SingleCertificateComponent implements OnInit {
-
+  template: string;
   certificateForm: FormGroup;
 
   constructor(private formBuilder: FormBuilder) {
@@ -19,7 +19,8 @@ export class SingleCertificateComponent implements OnInit {
     })
 
     this.certificateForm.get('template').valueChanges.subscribe(val => {
-      alert(val);
+      // change template variable to chosen template.
+      this.template = val;
     });
   }
 
