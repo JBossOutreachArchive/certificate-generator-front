@@ -20,7 +20,7 @@
       <div class="login-wrapper">
         <img src="assets/jboss.svg" class="header-logo">
         <h1 class="login-title text-center"> Certificate Generator</h1>
-        <form>
+        <form [formGroup]="loginForm" (submit)="onSubmit()">
           <div *ngIf="error" class="alert alert-danger" role="alert">
       		  <i class="fa fa-exclamation-circle"></i>
       		  <span class="sr-only">Error:</span>
@@ -28,11 +28,11 @@
       		</div>
          <div class="form-group">
            <label for="email" class="input-label">Username: </label>
-           <input type="text" class="form-control" id="email" formControlName="username">
+           <input type="text" class="form-control" formControlName="username">
          </div>
          <div class="form-group">
            <label for="pwd" class="input-label">Password:</label>
-           <input type="password" class="form-control" id="pwd" formControlName="password">
+           <input type="password" class="form-control" formControlName="password">
          </div>
          <h5 class="reset-wrap"> Forgot password? </h5>
 
@@ -45,7 +45,7 @@
                <button type="submit" class="col">SIGN IN</button>
              </div>
              <div class="col">
-               <button type="submit" class="col">SIGN UP</button>
+               <button type="button" routerLink="/signup" class="col">SIGN UP</button>
              </div>
            </div>
          </div>
