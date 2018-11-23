@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { StudentService } from "../services/student.service"
-
+import { CertDisplayService } from "../services/cert-display.service"
 @Component({
   selector: 'app-student',
   templateUrl: './student.component.html',
@@ -11,7 +11,8 @@ export class StudentComponent implements OnInit {
   mode:string;
   columns: any[];
   certs: any[];
-  constructor(private studentService: StudentService) { }
+
+  constructor(private studentService: StudentService,private certDisplayService:CertDisplayService) { }
 
   switchDisplayMode(){
     console.log(this.mode)
@@ -20,6 +21,11 @@ export class StudentComponent implements OnInit {
     }else{
       this.mode="list"
     }
+  }
+  certDisplayHandler(event){
+    const {id} = event.currentTarget
+    const cert = this.certs.filter(cert=>cert.id.toString()===id)[0]
+    this.certDisplayService.displayCert(cert)
   }
   ngOnInit() {
     this.mode="list"

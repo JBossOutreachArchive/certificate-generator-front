@@ -1,0 +1,23 @@
+<div class="certificate-container">
+  <div class="certificate-content">
+    <div class="cert-id">ID: {{cert.id}}</div>
+    <div class="certificate-body">
+      <img src="/assets/star.png">
+      <div class="cert-title">For achieving</div>
+      <div class="certificate-entry">{{cert.name}},</div>
+      <div class="cert-title">This certificate is awarded to</div>
+      <div class="certificate-entry">{{cert.awardedTo}}</div>
+    </div>
+    <div class="certificate-footer">
+        <div class="certificate-date">
+          Issued on: <br>
+          {{cert.date}}
+        </div>
+        <div class="certificate-signature">
+          ________________________<br>
+          Signature<br>
+          Issuing organization: {{cert.issuer}}
+        </div>
+    </div>
+  </div>
+</div>

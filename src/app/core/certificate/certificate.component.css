@@ -1,0 +1,39 @@
+.certificate-container{
+  background-color: #ffffff;
+  padding:50px;
+  height:fit-content;
+  border:5px solid red;
+}
+.certificate-body img{
+  height:200px;
+  width:200px;
+  padding:10px 20px;
+}
+.cert-id{
+  font-weight: bold;
+}
+.certificate-body{
+  margin: 50px 100px;
+  text-align: center;
+}
+.certificate-entry{
+  font-size:300%;
+  color:#e83737;
+  font-weight:bold;
+}
+.cert-title{
+  font-size:125%;
+}
+.certificate-footer {
+  padding-bottom:50px;
+}
+.certificate-footer div{
+  display:inline-block;
+  text-align: center;
+}
+.certificate-footer .certificate-date{
+  float:right;
+}
+.certificate-footer .certificate-signature{
+  float:left;
+}

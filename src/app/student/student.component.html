@@ -7,6 +7,11 @@
 </div>
 <br>
 <div class="container container-grid">
+  <div class="cdk-overlay-container">
+    <div id="cdk-overlay-0" class="cdk-overlay-pane" dir="ltr">
+      <!-- Component goes here -->
+    </div>
+  </div>
   <ag-grid-angular *ngIf="mode==='list'"
     style="width: 600px;" 
     class="ag-theme-balham"
@@ -18,7 +23,7 @@
     >
   </ag-grid-angular>
   <div class="cert-display-thumbnail-container" *ngIf="mode==='thumbnail'">
-    <div *ngFor="let cert of certs" class="cert-display-thumbnail">
+    <div (click)="certDisplayHandler($event)" id={{cert.id}} *ngFor="let cert of certs" class="cert-display-thumbnail">
         <div *ngFor="let column of columns" class="cert-display-thumbnail-info">
           <span class="thumbnail-info-title">{{column.headerName}}:</span> {{cert[column.field]}}
         </div>

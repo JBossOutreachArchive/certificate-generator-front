@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'ag-grid-community/dist/styles/ag-grid.css';
 @import 'ag-grid-community/dist/styles/ag-theme-balham.css';
+@import '~@angular/cdk/overlay-prebuilt.css';
 .footer{
     position: fixed;
     left: 0;
@@ -8,4 +9,8 @@
     width: 100%;
     background-color: #7A7C7C;
     color: white;
+}
+div.cdk-overlay-backdrop.dark-backdrop.cdk-overlay-backdrop-showing{
+    background-color: black !important;
+    opacity: 0.85;
 }
