@@ -16,7 +16,6 @@ this.user=state.authState;
         (user) => {
           if (user) {
             this.information = user;
-            console.log(this.information);
           }
           else {
             this.information = null;
