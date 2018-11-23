@@ -1,8 +1,12 @@
 <div class="container container-grid">
   <h1>Issued Certificates</h1>
+  <div *ngIf="error">
+    <p>Error getting issued certificates: {{error}}</p>
+  </div>
   <ag-grid-angular 
     style="width: 500px; height: 500px;" 
     class="ag-theme-balham"
+    *ngIf="!error"
     [rowData]="rowData"
     [enableSorting]="true"
     [enableFilter]="true"    

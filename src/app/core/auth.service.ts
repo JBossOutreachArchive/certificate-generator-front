@@ -20,7 +20,6 @@ export class AuthService {
 
     let options = {
       headers: new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded')
-                                .set('Access-Control-Allow-Origin', '*')
     };
 
     return this.http.post(this.baseUrl+"api-token-auth/", body.toString(), options)
