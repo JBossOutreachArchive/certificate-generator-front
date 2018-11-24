@@ -20,9 +20,9 @@ export class FileUploadService {
     this.http.request(req)
     .subscribe(e=>{
       if(e.type=== HttpEventType.UploadProgress){
-        const percentDone = Math.round(100 * event.loaded / event.total)
+        const percentDone = Math.round(100 * e.loaded / e.total)
         progress.next(percentDone)
-      } else if (event instanceof HttpResponse) {
+      } else if (e instanceof HttpResponse) {
         progress.complete()
       }
     })
