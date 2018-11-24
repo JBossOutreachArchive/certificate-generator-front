@@ -22,8 +22,6 @@
     "@angular/router": "^6.1.0",
     "ag-grid-angular": "^19.0.0",
     "ag-grid-community": "^19.0.0",
-    "firebase": "^5.5.9",
-    "angularfire2": "^5.1.0",
     "bootstrap": "^4.1.3",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
