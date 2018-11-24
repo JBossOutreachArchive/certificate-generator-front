@@ -1,0 +1,21 @@
+<form  [formGroup]="signupForm"  novalidate>
+<div class="f">
+    <label for="email">Enter your email</label>
+  <input placeholder="email" type="email" formControlName="email" class="form-control" type="text">
+<br>
+   <label for="name">Enter your Name</label>
+ <input placeholder="name" formControlName="name" class="form-control" type="text" ><br>
+ <label for="password">Enter your Password</label>
+<input placeholder="password" formControlName="password" class="form-control" type="password" ><br>
+ <label for="description">Description</label>
+<input placeholder="description" formControlName="description" class="form-control" type="text" >
+
+<div *ngIf=" email.invalid&&email.touched" class="notification is-danger inf">
+    This email already exists. You just have to sign in</div>
+
+
+<br>
+<div class="b">
+<button [disabled]="signupForm.invalid" onclick="alert('Your registration was successful!')">Sign up</button></div>
+</div>
+</form>
