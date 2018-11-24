@@ -6,7 +6,7 @@
         <span class="file-name">
           {{file.name}}
         </span>
-        <mat-progress-bar mode="determinate" [value]="progress[file.name].progress | async"></mat-progress-bar>
+        <mat-progress-bar mode="determinate" [value]="progress[file.name] | async"></mat-progress-bar>
       </div>
     </div>
     <input id="file-upload-select" type="file" #file (change)="uploadFile()" accept=".csv" style="display: none;">
