@@ -2,3 +2,13 @@
     height:60vh !important;
     width: 100% !important;
 }
+
+button {
+    background-color: #F1002C;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 30px;
+    margin: 40px 0;
+    color: white;
+    letter-spacing: 1.5px;
+}

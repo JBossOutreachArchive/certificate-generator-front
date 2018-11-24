@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Ag grid angular
 import { AgGridModule } from 'ag-grid-angular';
 
@@ -14,6 +16,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FileUploadComponent } from './organization/file-upload/file-upload.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,14 +28,20 @@ import { NavbarComponent } from './navbar/navbar.component';
     OrganizationComponent,
     BasicComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    FileUploadComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
+    MatDialogModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    MatProgressBarModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[FileUploadComponent]
 })
 export class AppModule { }

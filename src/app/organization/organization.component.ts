@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import {MatDialog} from '@angular/material/dialog';
+import {FileUploadComponent} from "./file-upload/file-upload.component"
 @Component({
   selector: 'app-organization',
   templateUrl: './organization.component.html',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrganizationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit() {
   }
@@ -26,5 +27,10 @@ export class OrganizationComponent implements OnInit {
         { name: 'Phoebe', date: '10/10/2018', desc: 'For being the normal one' }
     ];
 
-    
+    openFileDialog(){
+        const dialogRef = this.dialog.open(FileUploadComponent,{
+            height:'400px',
+            width:'700px'
+        })
+    }
 }

@@ -1,0 +1,15 @@
+<div class="file-upload-container">
+  <div class="file-upload-body">
+    <h2>Upload CSV files</h2>
+    <div class="file-list">
+      <div *ngFor="let file of files">
+        <span class="file-name">
+          {{file.name}}
+        </span>
+        <mat-progress-bar mode="determinate" [value]="progress[file.name].progress | async"></mat-progress-bar>
+      </div>
+    </div>
+    <input id="file-upload-select" type="file" #file (change)="uploadFile()" accept=".csv" style="display: none;">
+    <button onclick="document.getElementById('file-upload-select').click()">Select file</button>
+  </div>
+</div>
