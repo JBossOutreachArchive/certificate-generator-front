@@ -1,0 +1,39 @@
+<div class="row">
+
+    <form [formGroup]="certificateForm" (submit)="onSubmit()">
+  
+     <div class="generate_w">
+       <div class="form-group" >
+        <label for="template">Template: </label>
+        <select class="form-control" formControlName="template" required>
+          <option>Certificate</option>
+          <option>Other Certificates</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="name">Name: </label>
+        <input type="text" class="form-control" formControlName="name" (input)="inputs[1]=$event.target.value" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="description">Description: </label>
+        <input type="text_des" class="form-control" formControlName="description"  (input)="inputs[2]=$event.target.value" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="date">Date Issued: </label>
+        <input type="date" class="form-control" formControlName="date" (input)="inputs[3]=$event.target.value" required>
+      </div>
+      
+      <div>
+        <button type="button" ngx-scroll-to 
+        [ngx-scroll-to-offset]="3000000">Generate</button>
+      </div>
+     </div>
+  
+    </form>
+  
+    <app-certificate [inputs]="inputs"></app-certificate>
+  
+  </div>  

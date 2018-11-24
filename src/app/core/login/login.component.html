@@ -1,3 +1,56 @@
-<p>
-  login works!
-</p>
+<link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-8">
+      <div class="section">
+        <div class="section-title">What is Certificate Generator?</div>
+        Certificate Generator aims to automatically generate <br> certificates based on the data provided using input files <br> like CSV or Excel.
+      </div>
+      <div class="section">
+        <div class="section-title">New to our website? Sign up now!</div>
+      </div>
+      <div class="section">
+        <div class="section-title">Development Stack</div>
+        HTML <br>
+        CSS <br>
+        Angular 6 for Front-End
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="login-wrapper">
+        <img src="assets/jboss.svg" class="header-logo">
+        <h1 class="login-title text-center"> Certificate Generator</h1>
+        <form [formGroup]="loginForm" (submit)="onSubmit()">
+          <div *ngIf="error" class="alert alert-danger" role="alert">
+      		  <i class="fa fa-exclamation-circle"></i>
+      		  <span class="sr-only">Error:</span>
+      		  {{ error }}
+      		</div>
+         <div class="form-group">
+           <label for="email" class="input-label">Username: </label>
+           <input type="text" class="form-control" id="email" formControlName="username">
+         </div>
+         <div class="form-group">
+           <label for="pwd" class="input-label">Password:</label>
+           <input type="password" class="form-control" id="pwd" formControlName="password">
+         </div>
+         <h5 class="reset-wrap"> Forgot password? </h5>
+
+         <div class="checkbox">
+           <label><input type="checkbox"> Remember me</label>
+         </div>
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col">
+               <button type="submit" class="col">SIGN IN</button>
+             </div>
+             <div class="col">
+               <button type="submit" class="col">SIGN UP</button>
+             </div>
+           </div>
+         </div>
+       </form>
+      </div>
+    </div>
+  </div>
+</div>
