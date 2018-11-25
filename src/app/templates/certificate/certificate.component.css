@@ -1,0 +1,182 @@
+.outer {
+position: absolute;
+width: 655px;
+height: 490px;
+background: #000000;
+}
+
+.design-1 {
+position: absolute;
+width: 299px;
+height: 383px;
+background: #F1C40F;
+border: 1px solid #F1C40F;
+margin-top: 0px;
+margin-left: 356px;
+}
+
+.design-2 {
+margin-left: 0px;
+margin-top: 0px;
+position: absolute;
+width: 370.5px;
+height: 178.5px;
+background: #2ECC71;
+border: 1px solid #2ECC71;
+}
+
+.design-3 {
+margin-left: 0px;
+margin-top: 178px;
+position: absolute;
+width: 292px;
+height: 312px;
+background: #3498DB;
+border: 1px solid #3498DB;
+}
+
+.design-4 {
+margin-top: 383px;
+margin-left: 240.36px;
+position: absolute;
+width: 415px;
+height: 107.02px;
+background: #E74C3C;
+border: 1px solid #E74C3C;
+}
+
+.inner {
+position: absolute;
+margin-top: 50px;
+margin-left: 70px;
+width: 515px;
+height: 378px;
+background: #FFFFFF;
+border: 3px solid #000000;
+box-sizing: border-box;
+}
+
+.text-1 {
+position: absolute;
+margin-top: 77px;
+margin-left: 91px;
+width: 149px;
+height: 25px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 20px;
+color: #000000;
+}
+
+.logo {
+margin-top: 67px;
+margin-left: 462px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+position: absolute;
+width: 105px;
+height: 101px;
+}
+
+.title {
+margin-top: 131px;
+margin-left: 280px;
+position: absolute;
+width: 185px;
+height: 47px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 34px;
+color: #e74c3c;
+}
+
+.text-2{
+margin-top: 190px;
+margin-left:208px;
+position: absolute;
+width: 335px;
+height: 42px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 20px;
+color: #000000;
+}
+
+.name {
+margin-top: 232px;
+margin-left: 282px;
+position: absolute;
+width: 185px;
+height: 47px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 34px;
+color: #e74c3c;
+}
+
+.description {
+margin-top: 291px;
+margin-left: 280px;
+position: absolute;
+width: 185px;
+height: 47px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 20px;
+color: #000000;
+}
+
+.line-1 {
+margin-top: 371px;
+margin-left: 91px;
+position: absolute;
+width: 102px;
+height: 0px;
+border: 3px solid #000000;
+}
+
+.line-2 {
+margin-top: 371px;
+margin-left: 441px;
+position: absolute;
+width: 102px;
+height: 0px;
+border: 3px solid #000000;
+}
+
+.date {
+position: absolute;
+margin-top: 380px;
+margin-left: 114px;
+width: 126px;
+height: 47px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 24px;
+color: #000000;
+}
+
+.signature {
+margin-top: 380px;
+margin-left: 450px;
+position: absolute;
+width: 126px;
+height: 47px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 24px;
+color: #000000;
+}
