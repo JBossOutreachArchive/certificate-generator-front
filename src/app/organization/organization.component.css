@@ -2,14 +2,3 @@
     height:60vh !important;
     width: 100% !important;
 }
-
-a{
-  display: block;
-  margin-bottom: 15px;
-  width: fit-content;
-  border-radius: 20px;
-  border: 0;
-  padding: 10px;
-  background-color: #ed0000;
-  color: white;
-}
