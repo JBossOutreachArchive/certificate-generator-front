@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One");
+@import url("https://fonts.googleapis.com/css?family=Calligraffitti");
+
+.inset-border {
+  border: 5px inset #9cb8e1;
+}
+.double-border {
+  border: 5px double #a2d5d0;
+}
+
+body {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+img {
+  margin-top: 0px;
+  margin-left: 600px;
+  width: 15%;
+}
+
+.id {
+  font-family: "Julius Sans One", sans-serif;
+  margin: 10px;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-right: 10px;
+  color: #333333;
+}
+
+.certificate {
+  font-size: 80px;
+  color: #333333;
+  font-family: "Julius Sans One", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-family: "Julius Sans One", sans-serif;
+  width: 100%;
+  text-align: center;
+  font-size: 38px;
+  color: #333333;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0px 20px;
+}
+
+h2 span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.text {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 20px;
+  color: #333333;
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+
+.name {
+  font-family: "Calligraffitti", cursive;
+  font-size: 60px;
+  color: #9cb8e1;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+.description {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 20px;
+  color: #333333;
+  margin-top: 3px;
+}
+
+.date {
+  margin-right: 10em;
+  display: inline-block;
+  margin-top: 25px;
+  margin-left: 425px;
+}
+
+.dateText {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 20px;
+  color: #333333;
+}
+
+.signature {
+  margin-left: 10em;
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.signatureText {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 20px;
+  color: #333333;
+}
