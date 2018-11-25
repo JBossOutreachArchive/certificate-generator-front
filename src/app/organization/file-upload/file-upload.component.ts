@@ -1,5 +1,8 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild} from '@angular/core';
 import { FileUploadService } from "../file-upload.service";
+import { HttpResponse } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import {CertStoreService} from "../cert-store.service";
 
 @Component({
   selector: 'app-file-upload',
@@ -12,7 +15,7 @@ export class FileUploadComponent implements OnInit {
   progress = {};
   @ViewChild('file') file
 
-  constructor(private uploadService:FileUploadService) { }
+  constructor(private uploadService:FileUploadService,private certStore:CertStoreService) { }
 
   ngOnInit() {
   }
@@ -28,8 +31,24 @@ export class FileUploadComponent implements OnInit {
       alert("The file you selected is not a CSV file.")
       throw new Error("File is not CSV")
     }
-    const progress = this.uploadService.uploadFile(file)
+    let progress
+    let request : Observable<any>
+    [progress,request] = this.uploadService.uploadFile(file)
     this.files.push(file)
     this.progress[file.name] = progress
+    request.subscribe(e=>{
+      if(e instanceof HttpResponse){
+        const certs = e.body.map(cert=>{
+          console.log(cert)
+          return {
+            name: cert.student,
+            desc: cert.issued_for,
+            date: new Date().toLocaleString().split(",")[0]
+          }
+        })
+        this.certStore.addCerts(certs)
+      }
+    })
+    return 
   }
 }

@@ -2,7 +2,7 @@
   organization works!
 </p>
 <div class="container container-grid">
-  <ag-grid-angular 
+  <ag-grid-angular
     style="width: 500px; height: 500px;" 
     class="ag-theme-balham"
     [rowData]="rowData"
@@ -10,6 +10,7 @@
     [enableFilter]="true"    
     [columnDefs]="columnDefs"
     [enableColResize] = "true"
+    (gridReady)="onGridReady($event)"
     >
   </ag-grid-angular>
   <button class="mat-raised-button" (click)="openFileDialog()">Upload CSV file</button>
