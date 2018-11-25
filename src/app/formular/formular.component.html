@@ -1,0 +1,37 @@
+<form [formGroup]="certificate"  (ngSubmit)="onSubmit()">
+  <div class=form1>
+    <h1> Generate certificate</h1>
+
+
+    <div class="form ">
+    <label for="name">Name</label><br>
+    <input type="name" formControlName="name" class="form-control" placeholder="name"  type="text" >
+    </div>
+    <div class="alert alert-danger " *ngIf=" name.invalid&&name.touched"> This field is required</div>
+
+
+    <div class="form">
+    <label for="description">Description</label><br>
+    <textarea type="description" formControlName="description" class="form-control" placeholder="description"  type="text" ></textarea>
+    </div>
+    <div *ngIf=" description.invalid&& description.touched" class="alert alert-danger">This field is required</div>
+
+      <div  class="form3">
+        <label for="date">Date</label><br>
+        <input type="date" formControlName="date" class="form-control" >
+        </div>
+        <div *ngIf=" date.invalid &&date.touched"  class="alert alert-danger ">    This field is required  </div>
+
+
+           <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle button" type="button" data-toggle="dropdown">Preview
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a routerLink="#certificate1">Preview certificate 1</a></li>
+        <li><a routerLink="#certificate2">Preview certificate 2</a></li>
+      </ul>
+    </div>
+    <button  [disabled]="certificate.invalid" type="submit" class="button" value="Publish">Publish</button>
+
+        </div>
+    </form>
