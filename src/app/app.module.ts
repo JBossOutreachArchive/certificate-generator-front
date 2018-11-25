@@ -19,10 +19,12 @@ import { StudentComponent } from './student/student.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
+
 const routes: Routes=
 [
   {path:'signup', component:SignupComponent}
 ]
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,9 @@ const routes: Routes=
     SignupComponent,
     StudentComponent,
     OrganizationComponent,
-    BasicComponent
+    BasicComponent,
+    FooterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
