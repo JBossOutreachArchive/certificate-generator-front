@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto Condensed");
+
+.outer {
+position: absolute;
+width: 859px;
+height: 568px;
+background: #161825;
+border: 5px solid #00C4CC;
+box-sizing: border-box;
+}
+
+.line-1 {
+position: absolute;
+margin-left: 68px;
+margin-top:  88px;
+width: 257px;
+height: 0px;
+border: 4px solid #FFBD60;
+}
+
+.logo {
+position: absolute;
+width: 105px;
+height: 101px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin-top: 37px;
+margin-left: 377px;
+}
+
+.line-2 {
+position: absolute;
+width: 257px;
+height: 0px;
+border: 4px solid #FFBD60;
+margin-top: 89px;
+margin-left: 525px;
+}
+
+.text-1 {
+position: absolute;
+margin-top: 55px;
+margin-left: 68px;
+width: 167px;
+height: 26px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 24px;
+color: #FFFFFF;
+}
+
+.title {
+position: absolute;
+margin-left: 385px;
+margin-top: 159px;
+width: 90px;
+height: 47px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 40px;
+color: #00DAE3;
+}
+
+.text-2 {
+position: absolute;
+margin-top: 234px;
+margin-left: 266px;
+width: 431px;
+height: 57px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 24px;
+color: #FFFFFF;
+}
+
+.name {
+position: absolute;
+margin-top: 291px;
+margin-left: 385px;
+width: 93px;
+height: 47px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 40px;
+color: #00DAE3;
+}
+
+.description {
+position: absolute;
+margin-top: 366px;
+margin-left: 377px;
+width: 431px;
+height: 57px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 24px;
+color: #FFFFFF;
+}
+
+.line-3 {
+position: absolute;
+width: 112.02px;
+height: 0px;
+border: 4px solid #FFBD60;
+margin-top: 468px;
+margin-left: 85px;
+}
+
+.line-4 {
+position: absolute;
+width: 112.02px;
+height: 0px;
+border: 4px solid #FFBD60;
+margin-top: 468px;
+margin-left: 632px;
+}
+
+.line-5 {
+position: absolute;
+width: 112.02px;
+height: 0px;
+border: 4px solid #FFBD60;
+margin-top: 468px;
+margin-left: 374px;
+}
+
+
+.date {
+position: absolute;
+margin-top: 484px;
+margin-left: 109px;
+width: 431px;
+height: 57px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 24px;
+color: #FFFFFF;
+}
+
+.signature {
+position: absolute;
+margin-top: 484px;
+margin-left: 643px;
+width: 431px;
+height: 57px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 24px;
+color: #FFFFFF;
+}
+
+.checked {
+position: absolute;
+margin-top: 484px;
+margin-left: 374px;
+width: 431px;
+height: 57px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 24px;
+color: #FFFFFF;
+}
+
+
+.validtill {
+position: absolute;
+margin-top: 55px;
+margin-left: 528px;
+width: 167px;
+height: 26px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 24px;
+color: #FFFFFF;
+}
