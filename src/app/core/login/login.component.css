@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+
 * {
   font-family: 'Poppins', sans-serif;
 }
@@ -13,12 +15,25 @@
   font-weight: bold;
 }
 
+form input[type="radio"] {
+  display: inline-block;    
+}
+.section-title {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.section-content{
+  font-size: 25px;
+}
+
 .col-4 {
   height: 90vh;
 }
 
 .login-wrapper {
   border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 5px !important;
   border-radius: 55px;
   padding: 0 40px;
   margin: 10% 0;
@@ -30,7 +45,8 @@
 .header-logo {
   display: block;
   margin: 40px auto 10px auto;
-  width: 45%;
+  width: 50%;
+  margin-top: 10px;
   min-height: 150px;
   min-width: 250px;
 }
@@ -38,10 +54,10 @@
 .login-title {
   color: #384851;
   font-weight: bold;
+  font-size: 25px;
   letter-spacing: 1.5px;
   margin: 20px 0;
 }
-
 
 .input-label {
   font-size: 150%;
@@ -49,6 +65,15 @@
   color: #526E7A;
   font-weight: bold;
   margin-top: 20px;
+}
+
+.input-label-radio{
+  font-size: 100%;
+  float: left;
+  color: #526E7A;
+  font-weight: bold;
+  margin-top: 0px;
+  padding-right: 10px;
 }
 
 .reset-wrap {
