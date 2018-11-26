@@ -8,6 +8,7 @@
   margin: 0 auto;
   margin-top: 5%;
 }
+
 .id-wrapper {
   float: left;
   text-align: left;
@@ -15,9 +16,11 @@
   padding: 15px;
   font-weight: bold;
 }
+
 #cert_id {
   font-weight: normal;
 }
+
 .certificate-content {
   width: 96%;
   height: 96%;

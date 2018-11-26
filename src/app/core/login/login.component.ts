@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
 
        this.mAuth.login(this.user).subscribe(
          data => {
-           debugger;
+       
            this.expiration_date = new Date();
            this.expiration_date.setTime(this.expiration_date.getTime() + (60 * 60 * 1000));
            localStorage.setItem("token", data['token']);
