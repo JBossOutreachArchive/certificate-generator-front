@@ -1,0 +1,59 @@
+body
+{
+	text-align: center;
+}
+.bordir
+{
+	height:85%;
+	width: 75%;
+	border:3px dotted black;
+	border-radius: 3px;
+}
+img
+{
+	width: 20%;
+	margin-bottom: 25px;
+}
+.myid
+{
+	font-size:px;
+	margin:15;
+	color: red;
+	font-weight: bold;
+}
+.gci
+{
+	font-size: 25px;
+}
+.cof
+{
+    font-size: 40px;
+	margin: 15px;
+	color: red;
+	
+}
+.cp
+{
+	font-size: 25px;
+}
+.yourname
+
+{
+	margin-top: 10px;
+	font-size: 37px;
+	
+}
+.date
+{
+	font-weight: bold;
+	position: absolute;
+	bottom: 150px;
+	left: 30px;
+}
+.signa
+{
+	font-weight: bold;
+	position: absolute;
+	bottom:150px;
+	right:365px;
+}
