@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+* {
+    font-family: 'Varela Round', sans-serif;
+   }
+  
+  .student_w {
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    border-radius: 50px;
+    padding: 10px 40px;
+    margin: 25px auto auto auto;
+    -webkit-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
+  }
+
+  .title {
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 130%;
+  }
+  
+  .student_t {
+    color: #B22222;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 200%;
+    margin: 20px 0;
+  }
+  
+  .button {
+    background-color: #B22222;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 30px;
+    margin-top: 20px;
+    margin-left: 47px;
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+    letter-spacing: 1px;
+  }
+  
+  @media all and (max-width: 1000px) {
+    * {
+      font-size: 100%;
+    }
+  
+    .student_t {
+      display: none;
+    }
+  }
+  
+  @media all and (max-width: 1000px) {
+    .col-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .col-8 {
+      display: none;
+    }
+  
+    .student_w {
+      -webkit-box-shadow: none;
+      -moz-box-shadow:    none;
+      box-shadow:         none;
+      border: none;
+    }
+  }
