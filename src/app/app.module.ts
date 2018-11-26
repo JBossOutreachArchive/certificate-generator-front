@@ -12,6 +12,10 @@ import { StudentComponent } from './student/student.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
+import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,12 +24,16 @@ import { BasicComponent } from './templates/basic/basic.component';
     SignupComponent,
     StudentComponent,
     OrganizationComponent,
-    BasicComponent
+    BasicComponent,
+    FooterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
+    ScrollToModule.forRoot(),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
