@@ -1,0 +1,21 @@
+
+h1
+{
+  text-align: center;
+  margin-top: 70px;
+    font-family:Courier New;
+    color: #990000;
+}
+.container
+{width:300px;
+  padding:5px;
+}
+.certificate
+{float:left;
+  width:300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin-left: 100px;
+  margin-top: 100px;
+  position:relative;
+}
