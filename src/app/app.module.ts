@@ -1,8 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 // Ag grid angular
 import { AgGridModule } from 'ag-grid-angular';
+
+//forms modules
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 //components
 import { AppComponent } from './app.component';
@@ -33,6 +37,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     AgGridModule.withComponents([]),
     ScrollToModule.forRoot(),
+    FormsModule,
+    HttpClientModule,
     ReactiveFormsModule
   ],
   providers: [],
