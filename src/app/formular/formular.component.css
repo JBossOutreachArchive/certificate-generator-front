@@ -17,6 +17,11 @@ font-style: oblique;
   border-color: #333;
   background-color: white;
 }
+.option
+{
+  margin-top:30px;
+  margin-left: 120px;
+}
 
 .button
 {

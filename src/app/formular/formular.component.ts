@@ -12,13 +12,14 @@ export class FormularComponent implements OnInit {
 
   ngOnInit() {
     this.certificate= this.fb.group({
+      template:['',Validators.required],
       name:['', Validators.required],
       description:['', Validators.required],
       date:['', Validators.required]
     });
-  
-  }
 
+  }
+ get template(){   return this.certificate.get('template') }
    get name(){   return this.certificate.get('name') }
    get description(){   return this.certificate.get('description') }
    get date(){   return this.certificate.get('date') }
