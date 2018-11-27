@@ -7,7 +7,7 @@
   position: relative;
   margin-top: 80px;
 margin-left: 20%;
- background-image: linear-gradient(to bottom right,#7db6e0,#1d5177,#066856);
+ background-image: linear-gradient(to bottom right,#9dcef2,#3c7aa8,#157c69);
 }
 .image
 {
@@ -20,7 +20,7 @@ h1
 {
   margin-top: 30px;
   text-align: center;
-color:#a8a639;
+color:black;
  font-family: Snell Roundhand, cursive;
   font-size: 40px;
 }

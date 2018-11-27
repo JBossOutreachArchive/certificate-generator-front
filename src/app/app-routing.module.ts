@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { TemplateComponent } from './template/template.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { StudentComponent } from './student/student.component';
 import { AppComponent } from './app.component';
@@ -15,7 +14,7 @@ const routes: Routes = [
 
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  {path:'template', component:TemplateComponent}
+ 
 
 ];
 

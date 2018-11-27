@@ -9,7 +9,6 @@ import { AgGridModule } from 'ag-grid-angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 //components
-import { TemplateComponent } from './template/template.component';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
@@ -27,7 +26,6 @@ import { NavbarComponent } from './navbar/navbar.component';
     SignupComponent,
     StudentComponent,
     OrganizationComponent,
-    TemplateComponent,
     BasicComponent
 
   ],
