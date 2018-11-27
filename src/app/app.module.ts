@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AgGridModule } from 'ag-grid-angular';
 
 //components
+import { TemplateComponent } from './template/template.component';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
@@ -20,6 +21,7 @@ import { BasicComponent } from './templates/basic/basic.component';
     SignupComponent,
     StudentComponent,
     OrganizationComponent,
+    TemplateComponent,
     BasicComponent
   ],
   imports: [
