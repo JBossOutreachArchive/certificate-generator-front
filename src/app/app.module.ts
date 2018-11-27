@@ -18,6 +18,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TemplateComponent } from './templates/certificate_vittal2/template.component';
+import { CertificateComponent } from './templates/certificate/certificate.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     StudentComponent,
     OrganizationComponent,
     BasicComponent,
+    TemplateComponent,
+    CertificateComponent,
     FooterComponent,
     NavbarComponent
   ],
