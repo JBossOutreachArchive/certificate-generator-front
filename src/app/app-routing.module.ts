@@ -9,13 +9,16 @@ import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
 
 const routes: Routes = [
+  { path: '', component: LoginComponent},
   { path: 'organization', component: OrganizationComponent },
   { path: 'student', component: StudentComponent },
+
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   {path:'template', component:TemplateComponent}
+
 ];
- 
+
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ]
