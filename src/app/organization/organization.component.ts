@@ -14,6 +14,7 @@ export class OrganizationComponent implements OnInit {
 
   title = 'app';
 
+
    columnDefs = [
     {headerName: 'Student Name', field: 'name',checkboxSelection:true},
     {headerName: 'Date', field: 'date' },
