@@ -1,4 +1,44 @@
-.ag-theme-balham{
-    height:60vh !important;
-    width: 100% !important;
+h1
+{
+
+  margin-top:70px;
+  text-align: center;
+font-size:45px;
+  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
+.side
+{
+  position: relative;
+  width: 20%;
+  height: 500px;
+  margin-top: 40px;
+  margin-left: 76%;
+}
+h3
+{
+  margin-left: 20px;
+  margin-top:30px;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
+.button
+{margin-left: 50px;
+  margin-top: 70px;
+  width:196px;
+  height: 45px;
+  border-radius: 8px;
+  color: white;
+   text-align: center;
+   text-decoration: none;
+   font-size: 16px;
+    background-color:#990000;
+}
+.cert1
+{
+  position: relative;
+  border-color: #333;
+  border-style: solid;
+  width: 70%;
+  height: 500px;
+  margin-left: 5%;
+  margin-top: -500px;
 }

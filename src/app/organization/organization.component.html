@@ -1,15 +1,23 @@
-<p>
-  organization works!
-</p>
-<div class="container container-grid">
-  <ag-grid-angular 
-    style="width: 500px; height: 500px;" 
-    class="ag-theme-balham"
-    [rowData]="rowData"
-    [enableSorting]="true"
-    [enableFilter]="true"    
-    [columnDefs]="columnDefs"
-    [enableColResize] = "true"
-    >
-  </ag-grid-angular>
+<h1><u>Dashboard</u></h1>
+<h3><b>Certificates:</b></h3>
+<div>
+<div class="side">
+<button class="button">Generate</button>
+<button class="button">Upload</button>
+<button class="button">Add field</button>
 </div>
+<div class="cert1">
+  <div class="container container-grid">
+     <ag-grid-angular
+       style="width: 1030px; height: 470px; margin-top:12px;"
+       class="ag-theme-balham"
+       [rowData]="rowData"
+       [enableSorting]="true"
+       [enableFilter]="true"
+       [columnDefs]="columnDefs"
+       [enableColResize] = "true"
+       >
+     </ag-grid-angular>
+   </div>
+  </div>
+  </div>

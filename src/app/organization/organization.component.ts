@@ -14,17 +14,20 @@ export class OrganizationComponent implements OnInit {
 
   title = 'app';
 
-    columnDefs = [
-        {headerName: 'Student Name', field: 'name',checkboxSelection:true},
-        {headerName: 'Date', field: 'date' },
-        {headerName: 'Certificate Description', field: 'desc'}
-    ];
+   columnDefs = [
+    {headerName: 'Student Name', field: 'name',checkboxSelection:true},
+    {headerName: 'Date', field: 'date' },
+    {headerName: 'Certificate Description', field: 'desc'},
+    {headerName:'Certificate ID', field:'id'},
+      {headerName:'Status', field:'status'}
+];
 
     rowData = [
-        { name: 'Chandler', date: '10/10/2018', desc: 'For being Sarcastic' },
-        { name: 'Joey', date: '10/10/2018', desc: 'For eating all the food' },
-        { name: 'Phoebe', date: '10/10/2018', desc: 'For being the normal one' }
-    ];
+    { name: 'Chandler', date: '10/10/2018', desc: 'For being Sarcastic', id:'...',status:'...' },
+    { name: 'Joey', date: '10/10/2018', desc: 'For eating all the food' ,id:'...',status:'...'},
+    { name: 'Phoebe', date: '10/10/2018', desc: 'For being the normal one',id:'...',status:'...' }
+
+];
 
     
 }
