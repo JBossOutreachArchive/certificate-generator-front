@@ -27,6 +27,7 @@
               "src/styles.css",
               "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css",
               "https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+              "node_modules/font-awesome/css/font-awesome.min.css"
             ],
             "scripts": []
           },
