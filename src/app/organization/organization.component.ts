@@ -11,7 +11,18 @@ export class OrganizationComponent implements OnInit {
 
   ngOnInit() {
   }
+  File(event) {
+    for (var i = 0; i < event.target.files.length; i++) {
+      var type = event.target.files[i].type;
+      var size = event.target.files[i].size;
+       if(type!=='text/csv'&& type!=='application/vnd.ms-excel')
+        window.alert("This file is not CSV")
+        else
+        if(size/1048576>5)
+        window.alert('This file has more than 5MB')
 
+      }
+    }
   title = 'app';
 
   columnDefs = [

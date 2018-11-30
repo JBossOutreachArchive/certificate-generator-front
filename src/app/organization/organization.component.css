@@ -1,39 +1,8 @@
-.ag-theme-balham{
-    height:60vh !important;
-    width: 100% !important;
-}
-
-* {
-  color: #384850;
-}
-
-.details-wrapper {
-  margin: 40px 15%;
-}
-
-.org-title {
-  font-weight: bold;
-}
-
-.rtl {
-  float: right;
-  text-align: right;
-}
-
-.action-wrapper {
-  margin-top: 30px;
-}
-
-button {
-  font-size: 1.5rem;
-  min-height: 40px;
-  font-weight: bold;
-  background: #64C13A;
-  color: white;
-  border-radius: 25px;
-  border: none;
-}
-
-.blue-btn {
-  background: #1F8CE9;
+input[type=file]
+{
+  margin-left: 20px;
+  margin-top:70px;
+  border-radius: 8px;
+  border-color: black;
+  border-style: solid;
 }
