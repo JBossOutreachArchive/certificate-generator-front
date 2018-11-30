@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AgGridModule } from 'ag-grid-angular';
 
 //components
+import { UploadComponent } from './upload/upload.component';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
@@ -16,6 +17,7 @@ import { BasicComponent } from './templates/basic/basic.component';
 @NgModule({
   declarations: [
     AppComponent,
+    UploadComponent,
     LoginComponent,
     SignupComponent,
     StudentComponent,
