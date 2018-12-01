@@ -1,0 +1,30 @@
+.navbar * {
+  color: white;
+}
+.navbar {
+   background: #B22222;
+   border-radius: 0;
+   margin: auto;
+   padding: 7px;
+ }
+ .navbar_t {
+   font-size: 200%;
+   margin: 0 3.5%;
+   font-weight: bold;
+ }
+
+ .navbar_b {
+   font-size: 150%;
+   margin-right: 40px;
+ }
+
+ .navbar_s * {
+  color: white;
+}
+
+ @media all and (max-width: 1000px) {
+   * {
+     font-size: 100%;
+   }
+
+ }
