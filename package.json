@@ -27,6 +27,7 @@
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
     "rxjs": "^6.0.0",
+    "typescript": "^3.1.6",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
@@ -47,7 +48,6 @@
     "karma-jasmine-html-reporter": "^1.4.0",
     "protractor": "^5.4.1",
     "ts-node": "~7.0.1",
-    "tslint": "~5.11.0",
-    "typescript": "^3.1.6"
+    "tslint": "~5.11.0"
   }
 }
