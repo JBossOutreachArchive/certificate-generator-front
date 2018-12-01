@@ -4,3 +4,7 @@
 .container button:last-child{
     margin-right:0px;
 }
+
+* {
+  background-color: #F5F5F5;
+}

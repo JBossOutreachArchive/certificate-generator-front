@@ -1,0 +1,54 @@
+.body {
+  margin-top: 50px;
+  color: #3c535d;
+}
+
+.profile-pic {
+  width: 170px;
+  height: 170px;
+  display: block;
+  margin: 0px auto 5% auto;
+  border: 2px solid #3c535d;
+}
+
+.main-btn {
+  width: 65%;
+  font-size: 1.2rem;
+  display: block;
+  margin: 20px auto;
+  background: none;
+  border: 1px solid #3c535d;
+}
+
+.socials-wrapper {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+.socials-wrapper *{
+  margin-top: 5px;
+}
+
+.social-content {
+  display: flex; /* align horizontal */
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.table-responsive {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 75px;
+}
+
+.table td {
+  vertical-align: middle !important;
+}
+.table th {
+  vertical-align: middle !important;
+}

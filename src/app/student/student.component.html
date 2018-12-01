@@ -1,3 +1,63 @@
-<p>
-  student works!
-</p>
+<app-navbar></app-navbar>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-md-3 body">
+      <img class="profile-pic center-block" src="https://amp.businessinsider.com/images/566eccdedd08952f058b4581-750-563.jpg">
+      <h2 class="text-center"> Elon Musk </h2>
+      <button type="button" class="main-btn"> Edit Profile </button>
+
+      <div class="socials-wrapper">
+        <div class="row">
+          <div class="col-3 text-center">
+            <i class="fa fa-2x fa-home"></i>
+          </div>
+          <div class="col-9 social-content">
+            Hawthorne, California
+          </div>
+          <div class="col-3 text-center">
+            <i class="fa fa-2x fa-envelope"></i>
+          </div>
+          <div class="col-9 social-content">
+            elon.musk@spacex.com
+          </div>
+          <div class="col-3 text-center">
+            <i class="fa fa-2x fa-phone"></i>
+          </div>
+          <div class="col-9 social-content">
+            (888) 518-3752
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-sm-12 col-md-9 body">
+      <h2 class="text-center"> <i class="fa fa-map"></i>&nbsp;&nbsp; Your Certificates <strong>(1) </strong></h2>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col"><i class="fa fa-image"></i> &nbsp;Thumbnail</th>
+              <th scope="col"><i class="fa fa-pencil"></i> &nbsp;Issued by</th>
+              <th scope="col"><i class="fa fa-calendar"></i> &nbsp;Date </th>
+              <th scope="col"><i class="fa fa-angle-double-down"></i> &nbsp;Action </th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- We should loop here throught students certificates variable  -->
+            <!-- We can set routerlink variables while we loop using ng-repeat -->
+            <tr>
+              <th scope="row">1</th>
+              <td><img class="thumbnail" src="https://user-images.githubusercontent.com/37747169/49333954-645c8880-f5e2-11e8-8a30-7a76ba269ac6.png"></td>
+              <td><strong> JBoss Outreach </strong></td>
+              <td> 27/01/2015 </td>
+              <td >
+                <button type="button" routerLink="/khukhuna/certificate/1" class="btn btn-danger"><i class="fa fa-eye"></i>&nbsp; View</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
