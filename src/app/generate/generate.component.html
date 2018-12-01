@@ -1,0 +1,31 @@
+<form [formGroup]="certificate" >
+ <ng-template #elseBlock>  <div class=form1>
+    <h1> Generate certificate</h1>
+     <div  class="option" >
+      <label for="template">Template</label><br>
+      <select formControlName="template" >
+      <option value="certificate1">Certificate 1</option>
+      <option value="certificate2">Certificate 2</option>
+      </select> </div>
+    <div class="form ">
+    <label for="name" >Name</label><br>
+    <input type="name" formControlName="name" class="form-control" placeholder="name"  type="text"(input)="details[1]=$event.target.value" >
+    </div>
+    <div class="alert alert-danger " *ngIf=" name.invalid&&name.touched"> This field is required</div>
+     <div class="form">
+    <label for="description">Description</label><br>
+    <textarea type="description" formControlName="description" class="form-control" placeholder="description"  type="text"(input)="details[2]=$event.target.value"></textarea>
+    </div>
+    <div *ngIf=" description.invalid&& description.touched" class="alert alert-danger">This field is required</div>
+       <div  class="form3">
+        <label for="date">Date</label><br>
+        <input type="date" formControlName="date" class="form-control" (input)="details[3]=$event.target.value">
+        </div>
+        <div *ngIf=" date.invalid &&date.touched"  class="alert alert-danger ">    This field is required  </div>
+          <button  [disabled]="certificate.invalid" type="submit"   (click)="show = !show" class="button" value="Preview">Preview</button>
+    <button  [disabled]="certificate.invalid" type="submit" class="button" value="Publish">Publish</button>
+         </div></ng-template>
+    </form>
+  <div *ngIf="show; else elseBlock">
+      <app-certificate1 [details]="details"></app-certificate1>
+    </div>

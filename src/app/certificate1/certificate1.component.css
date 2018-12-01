@@ -1,0 +1,86 @@
+.template{
+  border-radius: 8px;
+  border-color: black;
+  border-style: solid;
+  width:60%;
+  height:640px;
+  position: relative;
+  margin-top: 68px;
+margin-left: 20%;
+ background-image: linear-gradient(to bottom right,#9dcef2,#3c7aa8,#157c69);
+}
+.image
+{
+  position: relative;
+  margin-top: -630px;
+  margin-left:350px;
+  height: 100px;
+}
+h1
+{
+  margin-top: 30px;
+  text-align: center;
+color:black;
+ font-family: Snell Roundhand, cursive;
+  font-size: 40px;
+}
+h2
+{
+   font-family: Snell Roundhand, cursive;
+   margin-left: 500px;
+}
+h3
+{
+
+  font-family: Snell Roundhand, cursive;
+  margin-top: -25px;
+  margin-left: 30px;
+  font-size: 30px;
+ }
+.id
+{
+  margin-top: 70px;
+  margin-left: -270px;
+}
+.d2
+{
+  text-align: center;
+  margin-top: -8px;
+}
+.description
+{
+  padding: 10px ;
+  text-align: center;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #0a3e63;
+  width: 400px;
+  height: 70px;
+  margin-top: 3px;
+  margin-left: -80px;
+}
+.d1
+{
+  margin-top: 40px;
+  margin-left: 30px;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #0a3e63;
+  width: 180px;
+  height: 30px;
+ }
+.d
+{
+  margin-top: -30px;
+margin-left: 70px;
+}
+.sign{
+  margin-top: -40px;
+  margin-left: 55%;
+}
+.info
+{
+  margin-top: 85px;
+  margin-left: 36%;
+  font-size: 20px;
+}
