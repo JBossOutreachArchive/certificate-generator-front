@@ -162,6 +162,21 @@ font-size: 24px;
 color: #FFFFFF;
 }
 
+.name-1 {
+position: absolute;
+margin-top: 434px;
+margin-left: 396px;
+width: 431px;
+height: 57px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 24px;
+color: #FFFFFF;
+}
+
+
 .checked {
 position: absolute;
 margin-top: 484px;
