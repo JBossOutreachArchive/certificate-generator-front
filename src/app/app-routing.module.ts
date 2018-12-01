@@ -10,13 +10,15 @@ import { SignupComponent } from './core/signup/signup.component';
 import { GenerateComponent } from './generate/generate.component';
 
 const routes: Routes = [
+  { path: '', component: LoginComponent},
   { path: 'organization', component: OrganizationComponent },
   { path: 'student', component: StudentComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
     {path:'generate',component:GenerateComponent}
+
 ];
- 
+
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ]
