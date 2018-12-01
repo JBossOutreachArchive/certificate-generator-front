@@ -10,7 +10,7 @@ h1
   margin-top: -290px;
 }
 .b
-{
+{  cursor: pointer;
   margin-left:40px;
   padding:12px;
   width:130px;

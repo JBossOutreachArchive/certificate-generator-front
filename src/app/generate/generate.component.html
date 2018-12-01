@@ -26,9 +26,9 @@
     <button  [disabled]="certificate.invalid" type="submit" class="button" value="Publish">Publish</button>
          </div></ng-template>
     </form>
-  <div *ngIf="show; else elseBlock">
+   <div *ngIf="show; else elseBlock">
     <ul >
-    <a href="generate"><li class="b" style="margin-top:150px;">Edit</li></a>
+    <li class="b"style="margin-top:150px;"  (click)="show = !show" >Edit</li>
     <li class="b" style="margin-top:50px;">Publish</li>
     </ul><div class="cert">
       <app-certificate1 [details]="details"></app-certificate1></div>
