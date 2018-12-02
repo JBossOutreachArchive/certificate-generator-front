@@ -7,10 +7,10 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {userSignup} from './user.service';
 import {environment} from '../environments/environments';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class AuthenticationService {
+ @Injectable({
+   providedIn: 'root'
+ })
+ export class AuthenticationService {
 
   private user: Observable<firebase.User>;
   private information: firebase.User = null;
@@ -57,4 +57,3 @@ export class AuthenticationService {
     }
   }
 }
-
