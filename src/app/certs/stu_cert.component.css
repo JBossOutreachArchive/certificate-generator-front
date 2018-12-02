@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Kodchasan');
+    body{
+    font-family: 'Kodchasan', sans-serif;
+    }
+    .org_logo{
+        margin-top: 18%;
+        margin-left: 10%;
+    }
+    .cert_text{
+        color: #bf1a46;
+        font-size: 36px;
+        margin-top: 0%;
+    }
+    .cert_v{
+        width: 15%;
+        height: 15%;
+        margin-left: 3%;
+    }
+    .certs{
+        margin-top: 3%;
+    }
+    .profile_pic{
+        width: 10%;
+        height: 10%;
+    }
+    .stu_name{
+     font-size: 16px;
+     margin-top: 0%;
+     color: #1a7dbf;
+    }
+    #v_btn{
+        margin-top: 5%;
+        margin-right: 10%;
+    }
