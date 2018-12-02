@@ -70,7 +70,7 @@ export class SignupComponent implements OnInit {
         .then((res) => {
           console.log(res);
           this.loading = '';
-          if (this.userSignup.role === 'student') {
+          if (this.userSignup.role == 'user') {
             this.router.navigate(['/student']);
           } else {
             this.router.navigate(['/organization']);
