@@ -22,6 +22,8 @@
     </div>
   </div>
   <div class="container container-grid">
+  	<h2>Bulk Upload:</h2>
+  	<input id="input" type="file" accept=".csv" #input (change)="uploadCSV($event)"/>
     <ag-grid-angular
       style="width: 500px; height: 500px;"
       class="ag-theme-balham"
