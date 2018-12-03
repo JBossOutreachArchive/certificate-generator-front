@@ -1,0 +1,26 @@
+.ag-theme-balham{
+    height:60vh !important;
+    width: 100% !important;
+    margin: auto;
+}
+
+* {
+  color: #384850;
+}
+
+.details-wrapper {
+  margin: 40px 15%;
+}
+
+.student-title {
+  font-weight: bold;
+}
+
+.rtl {
+  float: right;
+  text-align: right;
+}
+
+.action-wrapper {
+  margin-top: 30px;
+}
