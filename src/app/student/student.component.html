@@ -1,3 +1,29 @@
-<p>
-  student works!
-</p>
+<app-navbar></app-navbar>
+
+<div class="container-fluid">
+  <div class="row details-wrapper">
+    <div class="col">
+      <h1 class="org-title"> @JBossOutreach </h1>
+      <h4> Student @ JBoss </h4>
+      <h4> DELHI, IN </h4>
+    </div>
+    <div class="col rtl" >
+      <h1 class="org-title"> Certificates: {{this.rowData.length}} </h1>
+      <h4> Download </h4>
+    </div>
+  </div>
+  <div class="container container-grid">
+    <ag-grid-angular
+      style="width: 500px; height: 500px;"
+      class="ag-theme-balham"
+      [rowData]="rowData"
+      [enableSorting]="true"
+      [enableFilter]="true"
+      [columnDefs]="columnDefs"
+      [enableColResize] = "true"
+      (gridReady)="onGridReady($event)"
+      >
+    </ag-grid-angular>
+  </div>
+</div>
+
