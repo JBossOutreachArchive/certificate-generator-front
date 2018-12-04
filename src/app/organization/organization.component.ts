@@ -11,6 +11,16 @@ export class OrganizationComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  uploadCSV(event) {
+	    const csv = event.target.files[0];
+	    if (csv.size > 5_242_880) {
+	      alert(`CSV is larger than 5MBs.`);
+	    }
+	    if (csv.type !== 'text/csv' && csv.type !== 'application/vnd.ms-excel') {
+	      alert('Invalid file selected!');
+	    }
+	  }
 
   title = 'app';
 

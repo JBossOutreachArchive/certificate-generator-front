@@ -32,8 +32,19 @@ button {
   color: white;
   border-radius: 25px;
   border: none;
+  margin: 10px;
 }
 
 .blue-btn {
   background: #1F8CE9;
+}
+
+#input {
+  width:20%;
+  margin-bottom: 28px;
+  border-radius: 15px;
+  border-width: 5px;
+  border-color: #ed0000;
+  border-style: solid;
+  border-spacing: 8px;
 }
