@@ -1,6 +1,24 @@
-.container button{ /* You Can Name it what you want*/
-    margin-right:16px;
+
+
+ul{
+  margin:0;
+  overflow:hidden;
+list-style-type: none;
+width: 100%;
+position: fixed;
+top:0;
+background-color: #333;
 }
-.container button:last-child{
-    margin-right:0px;
+li {
+  float:left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ li a:hover {
+    background-color: black;
 }

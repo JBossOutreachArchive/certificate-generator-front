@@ -1,0 +1,31 @@
+h1
+{
+  font-size: 25px;
+ font-style: oblique;
+  text-align: center;
+}
+
+.form{
+  width:95%;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 44px;
+  height:50px;
+}
+.form1
+{
+  margin-left:30%;
+  margin-top: 10%;
+  height:400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width:600px;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #333;
+  background-color: white;
+}
+.button
+{
+  margin-top: 30px;
+  margin-left: 41%;
+}

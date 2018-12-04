@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // Ag grid angular
 import { AgGridModule } from 'ag-grid-angular';
 
@@ -12,6 +12,9 @@ import { StudentComponent } from './student/student.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
+import { CertificateComponent } from './certificate/certificate.component';
+import { CustomizeComponent } from './customize/customize.component';
+import { IssuerComponent } from './issuer/issuer.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +22,17 @@ import { BasicComponent } from './templates/basic/basic.component';
     LoginComponent,
     SignupComponent,
     StudentComponent,
+      IssuerComponent,
     OrganizationComponent,
-    BasicComponent
+    BasicComponent,
+      CertificateComponent,
+    CustomizeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+      FormsModule,
+    ReactiveFormsModule,
     AgGridModule.withComponents([])
   ],
   providers: [],

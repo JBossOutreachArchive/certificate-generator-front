@@ -1,0 +1,24 @@
+<ng-template #elseBlock>
+<form [formGroup]="customize"> <div class=form1>
+   <h1> Customize Certificate</h1>
+  <div class="form ">
+     <label for="background" >Background image</label><br>
+     <input  formControlName="background" class="form-control" placeholder="Please enter a link"  type="text"(input)="details[1]=$event.target.value" >
+     </div>
+      <div class="form">
+     <label for="textfont">Text Font</label><br>
+     <input type="textfont" formControlName="textfont" class="form-control" placeholder="Enter font type "  type="text"(input)="details[2]=$event.target.value">
+     </div>
+        <div  class="form">
+         <label for="textcolor">Text Color</label><br>
+         <input type="textcolor" formControlName="textcolor" class="form-control"  placeholder="Enter color "(input)="details[3]=$event.target.value">
+         </div>
+
+<button class="button btn btn-secondary" (click)="show = !show" > See certificate </button>
+</div>
+</form>
+</ng-template>
+<div *ngIf="show; else elseBlock">
+<app-certificate [details]="details"></app-certificate>
+
+   </div>
