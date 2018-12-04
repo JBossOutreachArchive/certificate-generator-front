@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrganizationComponent implements OnInit {
 
+  uploadCSV(event) {
+    const csv = event.target.files[0];
+    if (csv.size > 5_242_880) {
+      alert(`CSV larger than 5MB`);
+    }
+    if (csv.type !== 'text/csv' && csv.type !== 'application/vnd.ms-excel') {
+      alert('Invalid file');
+    }
+  }
+
   constructor() { }
 
   ngOnInit() {

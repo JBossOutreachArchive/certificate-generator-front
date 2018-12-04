@@ -35,5 +35,33 @@ button {
 }
 
 .blue-btn {
+  font-size: 1.5rem;
+  min-height: 40px;
+  font-weight: bold;
+  padding-left: 50px;
+  padding-right: 50px;
   background: #1F8CE9;
+  color: white;
+  border-radius: 25px;
+  border: none;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.label {
+  font-size: 1.5rem;
+  text-align: center;
+  min-height: 40px;
+  font-weight: bold;
+  margin-left: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #64C13A;
+  color: white;
+  border-radius: 25px;
+  border: none;
 }
