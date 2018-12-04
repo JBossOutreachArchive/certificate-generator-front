@@ -12,6 +12,7 @@ import { CustomizeComponent } from './customize/customize.component';
 import { IssuerComponent } from './issuer/issuer.component';
 
 const routes: Routes = [
+  { path: '', component: LoginComponent},
   { path: 'organization', component: OrganizationComponent },
     {path:'certificate1', component:CertificateComponent},
     {path:'customize', component:CustomizeComponent},
@@ -19,8 +20,9 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   {path:'issuer', component:IssuerComponent}
+
 ];
- 
+
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ]
