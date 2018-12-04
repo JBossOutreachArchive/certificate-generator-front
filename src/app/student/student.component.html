@@ -1,3 +1,13 @@
-<p>
-  student works!
-</p>
+<app-navbar></app-navbar>
+<div class="body">
+  <div class="row">
+    <img class="avatar" src="{{imageSrc}}">
+    <div class="about">
+      <h2>{{name}}</h2>
+      <p>{{mail}}</p>
+    </div>
+    <button type="button" class="edit" (click)="onClickEdit()">Edit Profile</button>
+  </div>
+</div>
+<app-student-groups></app-student-groups>
+<app-footer></app-footer>

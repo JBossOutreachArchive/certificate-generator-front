@@ -1,0 +1,28 @@
+<div class="body" *ngIf="!groupsModule">
+  <h2>Your certificates</h2>
+  <div class="table-responsive">
+    <table class="table">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col"><i class="fa fa-image"></i>&nbsp;Logo</th>
+        <th scope="col"><i class="fa fa-pencil"></i>&nbsp;Company</th>
+        <th scope="col"><i class="fa fa-calendar"></i> &nbsp;Count</th>
+        <th scope="col"><i class="fa fa-angle-double-down"></i>&nbsp;Action</th>
+      </tr>
+      <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td><img class="logo" src="assets/jboss.svg"></td>
+        <td><strong>JBoss Community</strong></td>
+        <td>1</td>
+        <td>
+          <button type="button" (click)="onClickView()" class="btn btn-danger"><i class="fa fa-eye"></i>
+            &nbsp;View
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<app-student-certificates *ngIf="groupsModule"></app-student-certificates>

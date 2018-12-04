@@ -1,12 +1,13 @@
-body {
-  text-align: center;
-  background-color: #ffffff;
+.arrow {
+  margin-left: 25px;
 }
 
 .frame {
-  width: 50%;
+  text-align: center;
+  background-color: #ffffff;
+  width: 60%;
   font-family: 'Arial', serif;
-  margin: 3px;
+  margin: 5%;
   border: 10px solid transparent;
   -webkit-border-image: -webkit-linear-gradient(#0075ff, #028806);
   border-image-slice: 1;

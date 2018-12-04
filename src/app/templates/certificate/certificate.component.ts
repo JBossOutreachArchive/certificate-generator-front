@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CertificateComponent implements OnInit {
 
+  certificatesFragment;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onClickArrow() {
+    this.certificatesFragment = '0';
   }
 
 }
