@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OrganizationService } from "../services/organization.service"
 
 @Component({
   selector: 'app-organization',
@@ -7,24 +8,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrganizationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private orgService: OrganizationService) { }
 
   ngOnInit() {
+    this.orgService.getAllCertificates().subscribe(
+      (data: any[]) => {
+        this.rowData = data.map(row => {
+          var dateSplit: number[] = row.date.split("-").map(part => parseInt(part))
+
+          return {
+            name: row.student.name,
+            date: new Date(dateSplit[0], dateSplit[1], dateSplit[2]),
+            desc: row.desc
+          };
+        });
+      },
+      error => {
+        this.error = error.message;
+      }
+    );
   }
 
   title = 'app';
 
   columnDefs = [
       {headerName: 'Student Name', field: 'name',checkboxSelection:true},
-      {headerName: 'Date', field: 'date' },
+      {headerName: 'Date', field: 'date', sort: 'date', cellRenderer: (date) => date.value.toLocaleDateString()},
       {headerName: 'Certificate Description', field: 'desc'}
   ];
 
-  rowData = [
-      { name: 'Chandler', date: '10/10/2018', desc: 'For being Sarcastic' },
-      { name: 'Joey', date: '10/10/2018', desc: 'For eating all the food' },
-      { name: 'Phoebe', date: '10/10/2018', desc: 'For being the normal one' }
-  ];
-
+  rowData: any
+  error: string
 
 }
