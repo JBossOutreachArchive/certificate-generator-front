@@ -22,7 +22,6 @@ import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
 import { CertificateComponent } from './certificate/certificate.component';
 import { CustomizeComponent } from './customize/customize.component';
-import { IssuerComponent } from './issuer/issuer.component';
 
 
 @NgModule({
@@ -31,7 +30,6 @@ import { IssuerComponent } from './issuer/issuer.component';
     LoginComponent,
     SignupComponent,
     StudentComponent,
-      IssuerComponent,
     OrganizationComponent,
     BasicComponent,
       CertificateComponent,
