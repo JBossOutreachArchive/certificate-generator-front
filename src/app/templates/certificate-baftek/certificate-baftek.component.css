@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css?family=Roboto');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+hr {
+    background-color: #9a1a1f;
+}
+
+.certificate-border {
+    width: 60%;
+    height: 60vh;
+    margin: 0 auto;
+    border: 6px solid #9a1a1f;
+    margin-top: 2%;
+}
+
+.certificate-content {
+    width: 95%;
+    height: 95%;
+    vertical-align: middle;
+    margin: 1vh auto;
+    border: 3px solid #c02127;
+}
+
+#section-text {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#section-quotation {
+    float: left;
+}
+
+#quotation {
+    padding-left: 2em;
+    padding-top: 8em;
+    margin-top: auto;
+    font-style: italic;
+}
+
+#section-signatures {
+    float: right;
+    margin-right: 5em;
+}
+
+.text {
+    display: inline;
+}
+
+.highlighted {
+    font-weight: bold;
+}
+
+.title {
+    font-weight: bold;
+    margin-top: 0.5em;
+    font-size: 3em;
+}
