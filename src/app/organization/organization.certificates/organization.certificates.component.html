@@ -1,0 +1,33 @@
+<img *ngIf="!certificate && !foldersFragment" class="arrow" (click)="onClickArrow()"
+     src="assets/ic_arrow_back_black_48x48.png"/>
+<div *ngIf="!certificate && !foldersFragment" class="body">
+  <h2>Generated Certificates</h2>
+  <div class="table-responsive">
+    <table class="table">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col"><i class="fa fa-image"></i>&nbsp;Preview</th>
+        <th scope="col"><i class="fa fa-pencil"></i>&nbsp;Event</th>
+        <th scope="col"><i class="fa fa-calendar"></i> &nbsp;Date</th>
+        <th scope="col"><i class="fa fa-angle-double-down"></i>&nbsp;Action</th>
+      </tr>
+      <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td><img class="preview"
+                 src="assets/ic_certificate_template.png">
+        </td>
+        <td><strong>Google Code In 2018</strong></td>
+        <td>04.12.2018</td>
+        <td>
+          <button type="button" (click)="onClickCertificate()" class="btn btn-danger"><i class="fa fa-eye"></i>
+            &nbsp;View
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<app-certificate *ngIf="certificate"></app-certificate>
+<app-organization-folders *ngIf="foldersFragment"></app-organization-folders>

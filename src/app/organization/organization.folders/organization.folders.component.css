@@ -1,0 +1,14 @@
+.body {
+  margin-top: 3%;
+  text-align: center;
+}
+.table-responsive {
+  margin-top: 2%;
+}
+.logo {
+  width: 100px;
+  height: 75px;
+}
+.table td {
+  vertical-align: middle;
+}

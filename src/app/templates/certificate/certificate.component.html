@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Certificate</title>
-</head>
-<body>
-<div class="frame">
+<img *ngIf="!certificatesFragment" class="arrow" (click)="onClickArrow()"
+     src="assets/ic_arrow_back_black_48x48.png"/>
+<div *ngIf="!certificatesFragment" class="frame">
   <div class="certificate">
     <div align="left" class="id">ID: #1</div>
     <h2 class="company">
-      <img src="https://files.gitter.im/JBossOutreach/gci/b5qU/logo.png"
+      <img src="assets/jboss.svg"
            align="center"
            width="80px" height="50px"/> JBoss Community
     </h2>
@@ -28,5 +23,4 @@
     </div>
   </div>
 </div>
-</body>
-</html>
+<app-organization-certificates *ngIf="certificatesFragment"></app-organization-certificates>

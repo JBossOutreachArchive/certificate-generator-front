@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-certificate',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CertificateComponent implements OnInit {
 
-  constructor() { }
+  certificatesFragment;
+
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  onClickArrow() {
+    this.certificatesFragment = '0';
   }
 
 }

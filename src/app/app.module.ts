@@ -18,6 +18,9 @@ import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { OrganizationFoldersComponent } from './organization/organization.folders/organization.folders.component';
+import { OrganizationCertificatesComponent } from './organization/organization.certificates/organization.certificates.component';
+import {CertificateComponent} from './templates/certificate/certificate.component';
 
 
 @NgModule({
@@ -29,7 +32,10 @@ import { NavbarComponent } from './navbar/navbar.component';
     OrganizationComponent,
     BasicComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    OrganizationFoldersComponent,
+    OrganizationCertificatesComponent,
+    CertificateComponent
   ],
   imports: [
     BrowserModule,

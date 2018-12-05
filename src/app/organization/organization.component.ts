@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-organization',
@@ -7,24 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrganizationComponent implements OnInit {
 
-  constructor() { }
+  title;
+  role;
+  place;
+  certificates;
 
-  ngOnInit() {
+  constructor() {
   }
 
-  title = 'app';
-
-  columnDefs = [
-      {headerName: 'Student Name', field: 'name',checkboxSelection:true},
-      {headerName: 'Date', field: 'date' },
-      {headerName: 'Certificate Description', field: 'desc'}
-  ];
-
-  rowData = [
-      { name: 'Chandler', date: '10/10/2018', desc: 'For being Sarcastic' },
-      { name: 'Joey', date: '10/10/2018', desc: 'For eating all the food' },
-      { name: 'Phoebe', date: '10/10/2018', desc: 'For being the normal one' }
-  ];
-
+  ngOnInit() {
+    // TODO: get data from server
+    this.title = '@JBossOutreach';
+    this.role = 'Mentor @ JBoss';
+    this.place = 'Mumbai, IN';
+    this.certificates = 1;
+  }
 
 }
