@@ -1,15 +1,24 @@
-<p>
-  organization works!
-</p>
-<div class="container container-grid">
-  <ag-grid-angular 
-    style="width: 500px; height: 500px;" 
-    class="ag-theme-balham"
-    [rowData]="rowData"
-    [enableSorting]="true"
-    [enableFilter]="true"    
-    [columnDefs]="columnDefs"
-    [enableColResize] = "true"
-    >
-  </ag-grid-angular>
+
+<ng-template #elseBlock>
+<button  class="button b" onclick="document.getElementById('form1').style.display='block'">Add field</button>
+<div id="form1" class="modal">
+  <form [formGroup]="optional" class="modal-content animate" >
+    <div class="container">
+      <h2>Add Optional Field</h2>
+      <label><b>Name</b></label><br>
+      <input type="text" placeholder="Enter name of field" formControlName="name" type="text" (input)="info[1]=$event.target.value" >
+ <div class="a alert alert-danger " *ngIf=" name.invalid&&name.touched"> This field is required</div><br>
+      <label ><b>Position</b></label><br>
+    <div>  <input type="text" placeholder="Enter margin left " formControlName="left" type="text"(input)="info[2]=$event.target.value" >
+      <div *ngIf=" left.invalid&& left.touched" class="a alert alert-danger">This field is required</div></div><br>
+  <input type="text" placeholder="Enter margin top " formControlName="top"  type="text"(input)="info[3]=$event.target.value">
+  <div *ngIf=" top.invalid&& top.touched" class="a alert alert-danger">This field is required</div><br>
+      <button  [disabled]="optional.invalid" (click)="show = !show" class=" button button1">Add</button>
+
+    </div>
+  </form>
 </div>
+</ng-template>
+<div *ngIf="show; else elseBlock">
+<app-template [info]="info"></app-template>
+    </div>

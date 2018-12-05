@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import {FormGroup, FormBuilder,Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-organization',
@@ -6,25 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./organization.component.css']
 })
 export class OrganizationComponent implements OnInit {
-
-  constructor() { }
+optional:FormGroup;
+info: string[] = ['','left', 'top'];
+  constructor(private fb:FormBuilder) { }
 
   ngOnInit() {
+    this.optional= this.fb.group({
+      name:['',Validators.required],
+    left:['',Validators.required],
+   top:['',Validators.required]
+  })
   }
+  get name(){   return this.optional.get('name') }
+    get left(){ return this.optional.get('left') }
+    get top(){   return this.optional.get('top') }
 
-  title = 'app';
 
-    columnDefs = [
-        {headerName: 'Student Name', field: 'name',checkboxSelection:true},
-        {headerName: 'Date', field: 'date' },
-        {headerName: 'Certificate Description', field: 'desc'}
-    ];
 
-    rowData = [
-        { name: 'Chandler', date: '10/10/2018', desc: 'For being Sarcastic' },
-        { name: 'Joey', date: '10/10/2018', desc: 'For eating all the food' },
-        { name: 'Phoebe', date: '10/10/2018', desc: 'For being the normal one' }
-    ];
-
-    
 }
