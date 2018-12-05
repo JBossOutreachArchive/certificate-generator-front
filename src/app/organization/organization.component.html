@@ -8,7 +8,7 @@
       <h4> Mumbai, IN </h4>
     </div>
     <div class="col rtl" >
-      <h1 class="org-title"> Certificates: 8 </h1>
+      <h1 class="org-title"> Certificates: {{ this.rowData.length }} </h1>
       <h4> Download </h4>
     </div>
     <div class="container-fluid">
@@ -22,6 +22,9 @@
     </div>
   </div>
   <div class="container container-grid">
+    <h2>Bulk Upload:</h2>
+    <input id="input" type="file" accept=".csv" #input (change)="uploadCSV($event)"/>
+    <mat-progress-bar mode="determinate" [value]="progress[file.name] | async"></mat-progress-bar>
     <ag-grid-angular
       style="width: 500px; height: 500px;"
       class="ag-theme-balham"
@@ -30,6 +33,7 @@
       [enableFilter]="true"
       [columnDefs]="columnDefs"
       [enableColResize] = "true"
+      (gridReady)="onGridReady($event)"
       >
     </ag-grid-angular>
   </div>

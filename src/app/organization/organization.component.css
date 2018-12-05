@@ -37,3 +37,12 @@ button {
 .blue-btn {
   background: #1F8CE9;
 }
+
+#input {
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border-width: 5px;
+  border-color: #ed0000;
+  border-style: solid;
+  border-spacing: 8px;
+}
