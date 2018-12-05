@@ -24,5 +24,18 @@ info: string[] = ['','left', 'top'];
     get top(){   return this.optional.get('top') }
 
 
+  columnDefs = [
+      {headerName: 'Student Name', field: 'name',checkboxSelection:true},
+      {headerName: 'Date', field: 'date' },
+      {headerName: 'Certificate Description', field: 'desc'}
+  ];
+
+  rowData = [
+      { name: 'Chandler', date: '10/10/2018', desc: 'For being Sarcastic' },
+      { name: 'Joey', date: '10/10/2018', desc: 'For eating all the food' },
+      { name: 'Phoebe', date: '10/10/2018', desc: 'For being the normal one' }
+  ];
+
+
 
 }
