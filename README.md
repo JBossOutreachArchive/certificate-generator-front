@@ -60,6 +60,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ![Signup](https://raw.githubusercontent.com/JBossOutreach/certificate-generator-front/master/src/assets/wire_signup.jpg)
 
+#### Issuer Dashboard
+
+![Signup](https://raw.githubusercontent.com/JBossOutreach/certificate-generator-front/master/src/assets/dash_ment.jpg)
+
+#### Student Dashboard
+
+![Signup](https://raw.githubusercontent.com/JBossOutreach/certificate-generator-front/master/src/assets/dash_stud.jpg)
+
 #### Help
 
 If you need any help anywhere in the process, you can always ask a question on our [Gitter Chat](https://gitter.im/jboss-outreach/gci).
