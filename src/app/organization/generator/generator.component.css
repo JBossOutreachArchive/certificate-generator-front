@@ -1,0 +1,21 @@
+/* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #ed0000;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #ed0000;
+   }
+   .btn{
+    margin-bottom: 20px;
+   }
+   .card{
+    border-radius: 15px;
+   }
+   .row{
+    margin:10px;
+    align-content: center;
+   }
+   .s4{
+    width: 40%;
+   }

@@ -18,6 +18,9 @@ import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CertificateTemplateComponent } from './templates/certificate-template/certificate-template.component'
+
+import { GeneratorComponent } from './organization/generator/generator.component';
 
 
 @NgModule({
@@ -29,6 +32,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     OrganizationComponent,
     BasicComponent,
     FooterComponent,
+    GeneratorComponent,
+    CertificateTemplateComponent,
     NavbarComponent
   ],
   imports: [

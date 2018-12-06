@@ -1,0 +1,26 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<app-navbar></app-navbar>      
+<div class="row">
+    <form class="card white darken-15 col s4" [formGroup]="model">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="input-field" type="text" (input)="data[0]=$event.target.value">
+          <label for="icon_prefix">Name</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">notes</i>
+          <textarea id="description" class="materialize-textarea" (input)="data[1]=$event.target.value"></textarea>
+          <label for="description">Description</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">calendar_today</i>
+          <input id="date" type="text" (input)="data[2]=$event.target.value">
+          <label for="date">Date</label>
+        </div>
+      </div>
+    </form>
+  </div>
+  <app-certificate-template [data]="data"></app-certificate-template>
+  <footer><app-footer></app-footer></footer>
