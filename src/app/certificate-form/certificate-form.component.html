@@ -1,0 +1,77 @@
+<div class="outer-container">
+  <img id="close_icon" src="https://image.flaticon.com/icons/svg/148/148766.svg">
+  <img id="cert_icon" src="https://image.flaticon.com/icons/svg/169/169176.svg">
+  <div class="title">Create new certificate</div>
+  <div class="inner-container input">
+    <form>
+      <div class="form-group">
+        <label for="name">Student</label>
+        <input id="name" name="name" class="form-control" placeholder="Young Hacker" required 
+          minlength="5" [(ngModel)]="certificate_data.name" #name="ngModel">
+
+          <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+      
+            <div *ngIf="name.errors.required">
+              Name is required.
+            </div>
+            <div *ngIf="name.errors.minlength">
+              Name must be at least 5 characters long.
+            </div>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <label for="mentor">Student</label>
+          <input id="mentor" name="mentor" class="form-control" placeholder="Aaron Swartz" required 
+            minlength="5" [(ngModel)]="certificate_data.mentor" #mentor="ngModel">
+  
+            <div *ngIf="mentor.invalid && (mentor.dirty || mentor.touched)" class="alert alert-danger">
+        
+              <div *ngIf="mentor.errors.required">
+                Mentor's name is required.
+              </div>
+              <div *ngIf="mentor.errors.minlength">
+                Mentor's name must be at least 5 characters long.
+              </div>
+            </div>
+        </div>
+
+      <div class="form-group">
+        <label for="skill">Enter the certified skill</label>
+        <input id="skill" name="skill" class="form-control"  placeholder="Android Fragments" required 
+          minlength="6" [(ngModel)]="certificate_data.skill" #skill="ngModel">
+
+          <div *ngIf="skill.invalid && (skill.dirty || skill.touched)" class="alert alert-danger">
+    
+            <div *ngIf="skill.errors.required">
+              Skill is required.
+            </div>
+            <div *ngIf="skill.errors.minlength">
+              Skill must be at least 5 characters long.
+            </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+          <label for="date">When the certificate was issued?</label>
+          <input id="date" name="date" class="form-control" placeholder="29 04 2002" required
+          minlength="10" maxlength="10" #date="ngModel" [(ngModel)]="certificate_data.date">
+
+          <div *ngIf="date.invalid && (date.dirty || date.touched)" class="alert alert-danger">
+
+          <div *ngIf="date.errors.required">
+            Date is required.
+          </div>
+          <div *ngIf="date.errors.minlength || date.errors.maxlength">
+            Date must be entered in DD MM YYYY format.
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <a href="http://localhost:4200/basic"><button id="button-submit" type="submit" class='btn btn-danger'>Preview</button></a>
+</div>
+
+<!-- <div class="credits">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+<!-- <div class="credits">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->

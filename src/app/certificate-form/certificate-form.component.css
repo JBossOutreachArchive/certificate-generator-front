@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.outer-container {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 3%;
+    padding: 1em;
+    background-color: white;
+    border: 2px solid #F1002C;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.inner-container {
+    margin: 0 auto;
+    padding: 0.5em;
+    background-color: white;
+    border: 1px solid #F1002C;
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.credits {
+    margin-left: 2em;
+    margin-bottom: 2em;
+    font-size: 0.7em;
+}
+
+#button-submit {
+    margin: 0 auto;
+    margin-top: 1em;
+    float: right;
+}
+
+#cert_icon {
+    padding-top: 0.1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75px;
+}
+
+#close_icon {
+    width: 25px;
+    height: 25px;
+    display: block;
+}
