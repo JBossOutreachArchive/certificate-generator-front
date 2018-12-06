@@ -1,11 +1,6 @@
 @import url(https://zavoloklom.github.io/material-design-iconic-font/css/docs.md-iconic-font.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Great+Vibes);
-body {
-  text-align: center;
-  height: 100%;
-  background-color: #fff;
-}
 
 .certificate {
   height: 520px;
@@ -26,6 +21,8 @@ body {
   background-color: #f5f6fa;
 }
 .logo img{
+  width: 130px;
+  height: 80px;
 	margin-top: 120px;
 }
 
