@@ -1,3 +1,31 @@
-<p>
-  student works!
-</p>
+<app-navbar></app-navbar>
+
+<div class="container-fluid">
+  <div class="row details-wrapper">
+    <div class="col">
+      <h1 class="student-title"> @JBossOutreach </h1>
+      <h4> Student @ JBoss </h4>
+      <h4> Mumbai, IN </h4>
+    </div>
+    <div class="col rtl" >
+      <h1 class="student-title"> Certificates: 3 </h1>
+      <h4> Download </h4>
+    </div>
+  </div>
+  <div class="container container-grid">
+      <div *ngIf="error">
+          <p>Error getting issued certificates: {{error}}</p>
+      </div>
+    <ag-grid-angular
+      style="width: 500px; height: 500px;"
+      class="ag-theme-balham"
+      *ngIf="!error"
+      [rowData]="rowData"
+      [enableSorting]="true"
+      [enableFilter]="true"
+      [columnDefs]="columnDefs"
+      [enableColResize] = "true"
+      >
+    </ag-grid-angular>
+  </div>
+</div>
