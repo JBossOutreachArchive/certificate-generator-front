@@ -27,8 +27,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     SignupComponent,
     StudentComponent,
     OrganizationComponent,
-    BasicComponent
-
+    BasicComponent,
+    FooterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
