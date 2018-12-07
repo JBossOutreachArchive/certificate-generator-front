@@ -1,70 +1,53 @@
-body {
+.frame {
   text-align: center;
   background-color: #ffffff;
-}
-
-.frame {
-  width: 50%;
   font-family: 'Arial', serif;
-  margin: 3px;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   border: 10px solid transparent;
   -webkit-border-image: -webkit-linear-gradient(#0075ff, #028806);
   border-image-slice: 1;
 }
-
 .certificate {
+  padding: 10px;
   margin: 5px;
   border: 4px solid transparent;
   -webkit-border-image: -webkit-linear-gradient(#0075ff, #028806);
   border-image-slice: 1;
 }
-
-.certificate h1 {
-  font-family: 'Brush Script MT', serif;
-  color: #0075ff;
-}
-
 .name {
   margin-top: 2em;
 }
-
 .certificate h3 {
   margin-top: 3em;
 }
-
 .company {
   margin-bottom: 1.5em;
 }
-
 .date-text {
   width: auto;
   margin-right: 1em;
   font-style: italic;
 }
-
 .date {
   width: auto;
   font-style: italic;
 }
-
 .sign-text {
   font-style: italic;
 }
-
 .sign {
   width: auto;
   font-style: italic;
 }
-
 .id {
   margin: 5px;
 }
-
 .a {
   margin-right: 14em;
   display: inline-block;
 }
-
 .b {
   margin-left: 14em;
   display: inline-block;
