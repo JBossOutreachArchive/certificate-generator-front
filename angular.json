@@ -25,9 +25,18 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css",
+<<<<<<< HEAD
+<<<<<<< HEAD
               "node_modules/font-awesome/css/font-awesome.min.css",
+=======
+              "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css",
+              "https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+>>>>>>> a0a4320... Added HTML CSS certificate template
+=======
+              "node_modules/font-awesome/css/font-awesome.min.css"
+>>>>>>> fc853cd... fix
             ],
-            "scripts": []
+            "scripts": ["node_modules/materialize-css/dist/js/materialize.min.js"]
           },
           "configurations": {
             "production": {

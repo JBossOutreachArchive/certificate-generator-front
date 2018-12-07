@@ -6,7 +6,9 @@ import { Component, OnInit, Input} from '@angular/core';
   styleUrls: ['./certificate-template.component.css']
 })
 export class CertificateTemplateComponent implements OnInit {
+
 	@Input() data;
+
   constructor() { }
 
   ngOnInit() {

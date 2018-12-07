@@ -21,8 +21,16 @@
   background-color: #f5f6fa;
 }
 .logo img{
+<<<<<<< HEAD
+<<<<<<< HEAD
 	width: 130px;
     height: 80px;
+=======
+>>>>>>> a0a4320... Added HTML CSS certificate template
+=======
+  width: 130px;
+  height: 80px;
+>>>>>>> fc853cd... fix
 	margin-top: 120px;
 }
 
@@ -51,7 +59,11 @@
 }
 
 .sign{
+<<<<<<< HEAD
 	margin-top: 20px;
+=======
+	margin-top: 80px;
+>>>>>>> a0a4320... Added HTML CSS certificate template
 }
 
 .certificate_id{

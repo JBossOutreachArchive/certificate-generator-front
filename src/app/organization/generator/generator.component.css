@@ -1,3 +1,4 @@
+@Import('http://fonts.googleapis.com/icon?family=Material+Icons');
 /* icon prefix focus color */
    .input-field .prefix.active {
      color: #ed0000;
@@ -19,3 +20,31 @@
    .s4{
     width: 40%;
    }
+
+  input:focus{ 
+    color: #222; 
+    background: #97ABBE; 
+    border-color:#999;
+  }
+
+  /*Only on valid*/
+  input:valid{
+    box-shadow: 0 0 2px rgba(0,200,0,0.2);
+  }
+
+  /*Only on focus and valid*/
+  input:valid:focus{ 
+    background: #80BE93; 
+    box-shadow: none;  
+  }
+
+  /*Only on invalid*/
+  input:invalid{
+    box-shadow: 0 0 2px rgba(255,0,0,0.2);
+  }
+
+  /*Only on focus and invalid*/
+  input:invalid:focus{
+   background: #CB9089;
+    box-shadow: none;
+  }
