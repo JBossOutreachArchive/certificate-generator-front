@@ -13,6 +13,7 @@ export class OrganizationComponent implements OnInit {
   }
 
   title = 'app';
+  error: String = '';
 
   columnDefs = [
       {headerName: 'Student Name', field: 'name',checkboxSelection:true},
@@ -26,5 +27,11 @@ export class OrganizationComponent implements OnInit {
       { name: 'Phoebe', date: '10/10/2018', desc: 'For being the normal one' }
   ];
 
+  onFileUpload(event){
+    this.error = '';
+    if(event.target.files[0].size > 5*1000){
+        this.error = "File's too big!"
+    }
+  }
 
 }
