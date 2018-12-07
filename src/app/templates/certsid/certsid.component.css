@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+
+.top {
+  width: 80%;
+  height: 80px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+  margin-top: 3%;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+.id {
+  width: 40px;
+  height: 40px;
+  color: #37474f;
+  float: left;
+}
+
+.id_number {
+    width: 80px;
+    height: 40px;
+    color: #e53935;
+    float: left;
+  }
+
+  .logo {
+    width: 12%;
+    float: right;
+  }
+
+.cert-head {
+  text-align: center;
+  font-size: 120px;
+  font-family: 'Great Vibes', cursive;
+  color: #37474f;
+}
+
+.cert-title {
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 45px;
+  color: #455a64;
+  margin-top: 2%;
+}
+
+.stud-name {
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #e53935;
+  margin: 2%;
+}
+
+.cert-body {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 45px;
+  color: #455a64;
+  text-align: center;
+}
+
+.valid_inputs {
+  width: 100%;
+  height: 40px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 5%;
+}
+.date_input {
+  width: 40%;
+  margin-left: 12%;
+  float: left;
+  color: #e53935;
+}
+
+/* .sign_input {
+  text-align: right;
+  width: 30%;
+  margin-right: 9%;
+  color: #e53935;
+  float: right;
+} */
+
+.valid {
+  width: 100%;
+  height: 40px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #37474f;
+}
+
+.date {
+  width: 40%;
+  margin-left: 10%;
+  float: left;
+}
+
+.sign {
+  text-align: right;
+  width: 40%;
+  margin-right: 10%;
+  float: right;
+}
