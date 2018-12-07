@@ -1,0 +1,27 @@
+.body {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.row {
+  margin-left: 10%;
+  align-items: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+}
+
+.about {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.edit {
+  height: 25%;
+  display: block;
+  border: 0;
+  background: #e10000;
+  color: white;
+}
