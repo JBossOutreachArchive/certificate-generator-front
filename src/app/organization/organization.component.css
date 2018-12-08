@@ -1,3 +1,23 @@
+.profileImage{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+
+.profileName{
+  margin-top: 7%;
+}
+
+.mentorText{
+  padding-left: 13%;
+  margin-top: 0%;
+}
+
+.certCount{
+  margin-top: 60px;
+  margin-right: 70px;
+}
+
 * {
   color: #384850;
 }
