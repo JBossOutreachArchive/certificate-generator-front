@@ -1,0 +1,46 @@
+@Import('https://fonts.googleapis.com/icon?family=Material+Icons');
+.profileImage{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+
+.profileName{
+  margin-top: 7%;
+}
+
+.profileEdit{
+  margin-left: 13%;
+  margin-top: 0%
+}
+
+.im{
+  width: 130px;
+  margin-top: 10px;
+  height: 130px;
+}
+
+.certCount{
+  margin-top: 60px;
+  margin-right: 70px;
+}
+
+.orgImg{
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  margin-left: 70px;
+}
+
+.orgCard{
+  width: 100px;
+  height: 240px;
+  margin: 140px;
+  margin-top: 5px;
+}
+
+.orgsHolder{
+  margin-top: 5px;
+  margin-left: 70px;
+  margin-right: 50px;
+}
