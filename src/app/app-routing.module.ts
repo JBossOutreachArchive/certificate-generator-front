@@ -7,8 +7,9 @@ import { StudentComponent } from './student/student.component';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
+import { GeneratorComponent } from './organization/generator/generator.component';
+import { CertificateTemplateComponent } from './templates/certificate-template/certificate-template.component'
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
-
 
 import { AuthGuard } from './guards/auth.guard';
 
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'organization', component: OrganizationComponent },
   { path: 'student', component: StudentComponent },
   { path: 'signup', component: SignupComponent },
+  { path: 'generator', component: GeneratorComponent }
   { path: 'issue/single', component: SingleCertificateComponent}
 ];
 
