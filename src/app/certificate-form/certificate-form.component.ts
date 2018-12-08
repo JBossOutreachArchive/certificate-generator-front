@@ -15,4 +15,8 @@ export class CertificateFormComponent implements OnInit {
   }
 
   certificate_data = new CertificateData(null, null, null, null);
+
+  preview() {
+    window.location.href = "http://localhost:4200/basic";
+  }
 }

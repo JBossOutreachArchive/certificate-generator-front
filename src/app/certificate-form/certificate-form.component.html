@@ -3,7 +3,7 @@
   <img id="cert_icon" src="https://image.flaticon.com/icons/svg/169/169176.svg">
   <div class="title">Create new certificate</div>
   <div class="inner-container input">
-    <form>
+    <form #certForm="ngForm">
       <div class="form-group">
         <label for="name">Student</label>
         <input id="name" name="name" class="form-control" placeholder="Young Hacker" required 
@@ -69,8 +69,7 @@
       </div>
     </form>
   </div>
-
-  <a href="http://localhost:4200/basic"><button id="button-submit" type="submit" class='btn btn-danger'>Preview</button></a>
+  <button (click)="preview()" [disabled]="!certForm.valid" id="button-submit" type="submit" class='btn btn-danger'>Preview</button>
 </div>
 
 <!-- <div class="credits">Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
