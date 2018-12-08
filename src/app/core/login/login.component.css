@@ -3,6 +3,9 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.container-fluid {
+  margin-top: 30px;
+}
 .section {
   margin-top: 7%;
   margin-left: 8%;
