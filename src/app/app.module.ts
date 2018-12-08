@@ -5,10 +5,10 @@ import { HttpClientModule } from '@angular/common/http';
 // Ag grid angular
 import { AgGridModule } from 'ag-grid-angular';
 
-//forms modules
+// Forms modules
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-//components
+// Components
 import { AppComponent } from './app.component';
 import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';

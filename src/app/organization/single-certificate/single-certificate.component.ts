@@ -16,7 +16,7 @@ export class SingleCertificateComponent implements OnInit {
       issued_to: ['', Validators.required],
       issued_for: ['', Validators.required],
       date: ['', Validators.required]
-    })
+    });
 
     this.certificateForm.get('template').valueChanges.subscribe(val => {
       // change template variable to chosen template.
