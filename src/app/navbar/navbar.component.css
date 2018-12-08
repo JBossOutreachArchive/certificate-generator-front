@@ -3,6 +3,7 @@
   border-radius: 0;
   margin: auto;
   padding: 7px;
+  height: 5vh;
 }
 
 .navbar * {
@@ -10,7 +11,7 @@
 }
 
 .navbar-brand {
-  font-size: 220%;
+  font-size: 200%;
   font-weight: bold;
 }
 .navbar-toggler * {
