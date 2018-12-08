@@ -1,6 +1,6 @@
 
 # Certificate-Front-End
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4350ebc02efb4442ba256e66d2e4d66e)](https://www.codacy.com/app/JbossOutreach/certificate-generator-front?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JbossOutreach/certificate-generator-front&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://travis-ci.org/JBossOutreach/certificate-generator-front.svg?branch=master)](https://travis-ci.org/JBossOutreach/certificate-generator-front) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4350ebc02efb4442ba256e66d2e4d66e)](https://www.codacy.com/app/JbossOutreach/certificate-generator-front?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JbossOutreach/certificate-generator-front&amp;utm_campaign=Badge_Grade)
 
 Certificate Generator aims to automatically generate certificates based on the data provided using input files like CSV and Excel.
 
@@ -59,6 +59,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 #### Application Sign Up Page
 
 ![Signup](https://raw.githubusercontent.com/JBossOutreach/certificate-generator-front/master/src/assets/wire_signup.jpg)
+
+#### Issuer Dashboard
+ ![Issuer](https://raw.githubusercontent.com/JBossOutreach/certificate-generator-front/master/src/assets/dash_ment.jpg)
+
+#### Students Dashboard
+
+![Students Dashboard](https://user-images.githubusercontent.com/37747169/49171905-08cb9a00-f359-11e8-8009-0ee8802a5a4b.png)
 
 #### Help
 
