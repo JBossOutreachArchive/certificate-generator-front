@@ -7,29 +7,22 @@
   margin-top: 7%;
   margin-left: 8%;
   color: #384851;
-  font-size: 220%;
+  font-size: 25px;
 }
 form input[type="radio"] {
-  display: inline-block;    
+  display: inline-block;
 }
 .section-title {
   font-weight: bold;
-  font-size: 25px;
 }
 
-.section-content{
-  font-size: 25px;
-}
-.col-4 {
-  height: 90vh;
-}
 
 .login-wrapper {
+  width: 90%;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  margin-top: 5px !important;
+  margin: 5px auto;
   border-radius: 55px;
   padding: 0 40px;
-  margin: 10% 0;
   -webkit-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
   -moz-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
   box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
@@ -98,10 +91,10 @@ button {
 }
 
 @media all and (max-width: 1180px) {
-  .col-8 {
+  .col-7 {
     display: none;
   }
-  .col-4 {
+  .col-5 {
     flex: 0 0 100%;
     max-width: 100%;
   }

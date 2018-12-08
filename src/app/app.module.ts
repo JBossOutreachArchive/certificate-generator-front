@@ -20,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
