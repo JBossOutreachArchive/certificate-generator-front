@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial|Roboto+Slab');
 
 .certificate-wrapper {
-  width: 50%;
+  width: 80%;
   height: 60vh;
   border: 10px solid #3F213B;
   font-family: 'Questrial', sans-serif;
@@ -21,7 +21,6 @@
   font-weight: normal;
 }
 
-
 .certificate-content {
   width: 96%;
   height: 96%;
@@ -29,11 +28,8 @@
   border: 3px solid #583259;
   position:relative;
 }
-
 .main-title {
-  background: #ED213A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #CB004C, #FF8A79);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #CB004C, #FF8A79); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to left, #CB004C, #FF8A79);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 5vh;
@@ -41,7 +37,6 @@
   margin-top: 7vh;
   font-family: 'Roboto Slab', serif;
 }
-
 
 #issued_to {
   font-size: 3.5vh;
@@ -53,7 +48,6 @@
   margin: 1.75vh 0;
   font-weight: bold;
 }
-
 .footer {
   position:absolute;
   bottom:0;

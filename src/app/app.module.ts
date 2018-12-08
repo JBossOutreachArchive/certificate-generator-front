@@ -24,6 +24,7 @@ import { CertificateComponent } from './certificate/certificate.component';
 import { CustomizeComponent } from './customize/customize.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,6 @@ import { CustomizeComponent } from './customize/customize.component';
     BasicComponent,
       CertificateComponent,
     CustomizeComponent
-
   ],
   imports: [
     BrowserModule,

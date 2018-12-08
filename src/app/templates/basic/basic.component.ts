@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-basic',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./basic.component.css']
 })
 export class BasicComponent implements OnInit {
-
+  @Input() certificateForm;
   constructor() { }
 
   ngOnInit() {
