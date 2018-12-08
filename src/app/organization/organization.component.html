@@ -14,32 +14,52 @@
     <div class="container-fluid">
       <div class="row action-wrapper">
         <div class="col-2"></div>
-        <button class="col-lg-3"> IMPORT </button>
+        <label class="label"> IMPORT <input id="input" type="file" accept=".csv" #input (change)="uploadCSV($event)"/></label>
         <div class="col-2"></div>
-        <button type="button" routerLink="/issue/single" class="col-lg-3 blue-btn"> GENERATE </button>
+        <button type="button" routerLink="/issue/single" class="blue-btn"> GENERATE </button>
         <div class="col-2"></div>
       </div>
     </div>
   </div>
   <h2 class="text-center org-title"><i class="fa fa-calendar"></i>&nbsp;&nbsp; Events: </h2>
-  <div class="container">
-    <div class="row">
+   <div class="container">
+     <div *ngIf="error">
+       <p>Error getting issued certificates in Folders: {{error}}</p>
+      </div>
+    <div class="row" *ngIf="!error">
       <div class="col-md-3 card">
         <img class="card-img-top" src="https://codein.withgoogle.com/static/img/og-image.png" alt="Card image cap">
         <div class="card-body">
           <h4 class="card-title title">Google Code-In</h4>
-          <p class="card-text">Certificates: 6590 </p>
+          <p class="card-text">Certificates: {{ this.certificateData.length }} </p>
           <a href="#" class="btn btn-danger">See certificates</a>
         </div>
       </div>
       <div class="col-md-3 card">
-        <img class="card-img-top" src="https://cdn-images-1.medium.com/max/1200/1*z__mBuA-_5LAzNo0dr0gCQ.png" alt="Card image cap">
+        <img class="card-img-top" src="https://developers.google.com/open-source/gsoc/resources/downloads/GSoC-icon-192.png" alt="Card image cap">
         <div class="card-body">
           <h4 class="card-title title">Summer of Code </h4>
-          <p class="card-text">Certificates: 3 </p>
+          <p class="card-text">Certificates: {{ this.certificateData.length }} </p>
           <a href="#" class="btn btn-danger">See certificates</a>
         </div>
       </div>
     </div>
+  </div>
+  <div class="container container-grid">
+    <div *ngIf="error">
+      <p>Error getting issued certificates in Grid: {{error}}</p>
+    </div>
+    <ag-grid-angular
+      style="width: 500px; height: 500px;"
+      class="ag-theme-balham"
+      *ngIf="!error"
+      [rowData]="rowData"
+      [enableSorting]="true"
+      [enableFilter]="true"
+      [columnDefs]="columnDefs"
+      [enableColResize] = "true"
+      (gridReady)="onGridReady($event)"
+      >
+    </ag-grid-angular>
   </div>
 </div>

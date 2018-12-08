@@ -11,6 +11,16 @@ export class OrganizationService {
 
   constructor(private http: HttpClient) { }
 
+   readonly baseUrl = environment.baseUrl;
+
+   public getAllCertificates() {
+     return this.http.get(this.baseUrl + "api/org/certificates", {
+       headers: {
+         'Authorization': 'JWT ' + localStorage.getItem('token')
+       }
+     });
+   }
+
   getCertificates():Observable<Certificate[]>{
     let token = 'JWT '+localStorage.getItem('token');
     let options = {

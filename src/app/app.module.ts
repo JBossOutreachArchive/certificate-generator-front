@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { MatDialogModule } from '@angular/material/dialog';
+ import { MatProgressBarModule } from '@angular/material/progress-bar';
+ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Ag grid angular
 import { AgGridModule } from 'ag-grid-angular';
@@ -39,6 +42,9 @@ import { SingleCertificateComponent } from './organization/single-certificate/si
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    MatDialogModule,
+    MatProgressBarModule,
+    BrowserAnimationsModule,
     AgGridModule.withComponents([])
   ],
   providers: [],
