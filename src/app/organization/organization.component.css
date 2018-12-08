@@ -1,8 +1,3 @@
-.ag-theme-balham{
-    height:60vh !important;
-    width: 100% !important;
-}
-
 * {
   color: #384850;
 }
@@ -60,4 +55,19 @@
 .bg-success {
   color: white;
   font-weight: bold;
+  
+.card {
+  margin-top: 40px;
+  margin-left: 6.25%;
+}
+
+.card .btn {
+  color: white;
+}
+
+.card .card-img-top {
+  width: 70%;
+  height: 80%;
+  margin: 15px auto 0 auto;
+  padding: 15px;
 }

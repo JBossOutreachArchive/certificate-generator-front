@@ -1,0 +1,42 @@
+.input-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-label {
+  font-size: 125%;
+  float: left;
+  color: #3F213B;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.title {
+  margin: 20px;
+  color: #3F213B;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ADBDC5;
+  border-radius: 8px;
+  color: #2b393f;
+  font-size: 120%;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #F1002C;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 30px;
+  margin: 40px 0;
+  color: white;
+  font-weight: bold;
+  font-size: 130%;
+  letter-spacing: 1.5px;
+}
