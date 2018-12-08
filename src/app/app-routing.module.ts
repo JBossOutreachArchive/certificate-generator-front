@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'organization', component: OrganizationComponent, canActivate: [AuthGuard] },
   { path: 'student', component: StudentComponent, canActivate: [AuthGuard] },
   { path: 'signup', component: SignupComponent },
-  { path: 'issue/single', component: SingleCertificateComponent}
+  { path: 'issue/single', component: SingleCertificateComponent, canActivate: [AuthGuard]}
 ];
 
 @NgModule({
