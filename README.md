@@ -52,10 +52,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-#### Application Login Page
-
-![Login](https://raw.githubusercontent.com/JBossOutreach/certificate-generator-front/master/src/assets/wire_login.jpg)
-
 #### Wireframes
 ![alt text](https://github.com/Roku234/certificate-generator-front/blob/master/src/assets/Dashboard.png)
 #### Help
