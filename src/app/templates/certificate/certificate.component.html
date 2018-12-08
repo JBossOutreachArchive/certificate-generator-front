@@ -1,32 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Certificate</title>
-</head>
-<body>
 <div class="frame">
-  <div class="certificate">
-    <div align="left" class="id">ID: #1</div>
-    <h2 class="company">
+  <div class="certificate" [ngStyle]="{'font-family': this.inputs[6],
+                                  'color':this.inputs[7],
+                                  'background-image':'url('+this.inputs[5]+')',
+                                  'background-size': 'cover'}">
+    <div align="left" class="id"
+         [ngStyle]="{'font-family': this.fonts[0], 'color':this.colors[0]}">ID: #1
+    </div>
+    <h2 class="company" [ngStyle]="{'font-family': this.fonts[1], 'color':this.colors[1]}">
       <img src="https://files.gitter.im/JBossOutreach/gci/b5qU/logo.png"
            align="center"
-           width="80px" height="50px"/> JBoss Community
+           width="80px" height="50px"/>{{this.inputs[0]}}
     </h2>
-    <h1>Google Code In 2018</h1>
-    <h2 class="name">Name Surname</h2>
-    <h3>Description</h3>
+    <h1 [ngStyle]="{'font-family': this.fonts[2], 'color':this.colors[2]}">{{this.inputs[1]}}</h1>
+    <h2 class="name" [ngStyle]="{'font-family': this.fonts[3], 'color':this.colors[3]}">{{this.inputs[2]}}</h2>
+    <h3 [ngStyle]="{'font-family': this.fonts[4], 'color':this.colors[4]}">{{this.inputs[3]}}</h3>
     <div class="bot">
       <div class="a">
-        <h4 class="sign-text" align="left">Signature</h4>
-        <h4 class="sign" align="left">________</h4>
+        <h4 class="sign-text" align="left"
+            [ngStyle]="{'font-family': this.fonts[5], 'color':this.colors[5]}">Signature</h4>
+        <h4 class="sign" align="left"
+            [ngStyle]="{'font-family': this.fonts[5], 'color':this.colors[5]}">________</h4>
       </div>
       <div class="b">
-        <h4 class="date-text" align="right">Date</h4>
-        <h4 class="date" align="right">17.11.2018</h4>
+        <h4 class="date-text" align="right"
+            [ngStyle]="{'font-family': this.fonts[6], 'color':this.colors[6]}">Date</h4>
+        <h4 class="date" align="right"
+            [ngStyle]="{'font-family': this.fonts[6], 'color':this.colors[6]}">{{this.inputs[4]}}</h4>
       </div>
     </div>
   </div>
 </div>
-</body>
-</html>

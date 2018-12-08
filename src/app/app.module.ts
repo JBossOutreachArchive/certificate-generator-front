@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AgGridModule } from 'ag-grid-angular';
 
 //forms modules
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {FormGroup, FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 //components
 import { AppComponent } from './app.component';
@@ -18,6 +18,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import {CertificateComponent} from './templates/certificate/certificate.component';
+import { GenerateComponent } from './core/generate/generate.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
 
 
@@ -31,7 +33,9 @@ import { SingleCertificateComponent } from './organization/single-certificate/si
     BasicComponent,
     FooterComponent,
     NavbarComponent,
-    SingleCertificateComponent,
+    CertificateComponent,
+    GenerateComponent,
+    SingleCertificateComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,9 @@ import { SingleCertificateComponent } from './organization/single-certificate/si
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
