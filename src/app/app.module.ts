@@ -5,10 +5,10 @@ import { HttpClientModule } from '@angular/common/http';
 // Ag grid angular
 import { AgGridModule } from 'ag-grid-angular';
 
-//forms modules
+// Forms modules
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-//components
+// Components
 import { AppComponent } from './app.component';
 import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
@@ -19,8 +19,7 @@ import { BasicComponent } from './templates/basic/basic.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CertificateFormComponent } from './certificate-form/certificate-form.component';
-import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
-
+import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component'
 
 @NgModule({
   declarations: [
@@ -32,7 +31,6 @@ import { SingleCertificateComponent } from './organization/single-certificate/si
     BasicComponent,
     FooterComponent,
     NavbarComponent,
-    feature-validation,
     CertificateFormComponent,
     SingleCertificateComponent
   ],
