@@ -1,0 +1,30 @@
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+img:hover {
+  box-shadow: 0 0 2px 1px rgb(158, 15, 15)
+}
+.img1
+{
+  margin-top:120px;
+}
+h1{
+  margin-left: 48%;
+  margin-top:-176px;
+  font-family: cursive;
+  font-size: 40px;
+  color: #990000;
+
+}
+.imgorg{
+  width: 200px;
+  height:200px;
+  margin-left:34%;
+  margin-top:70px;
+  background-image: url("https://zdnet2.cbsistatic.com/hub/i/2015/12/18/76f753d8-4015-4a70-82c2-cd79e715160e/b9a155bf35b06ad26501ac53b3158f55/jboss-logo.jpg");
+  background-repeat: no-repeat;
+  background-size:contain;
+}

@@ -1,0 +1,70 @@
+.im
+{
+  background-image: url("https://edsurge.imgix.net/uploads/post/image/6659/Computerscience-1444864521.jpg?auto=compress%2Cformat&w=2000&h=810&fit=crop");
+width:70%;
+margin-left: 15%;
+margin-top: 40px;
+height: 92%;
+position: absolute;
+  border: 2px solid black;
+   border-radius: 5px;
+}
+h1
+{
+  color: black;
+  text-align: left;
+  margin-left: 20px;
+  font-family:  Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
+h2
+{
+  color:#251E1E;
+  margin-left:20%;
+}
+p{
+  font-size: 20px;
+margin-left: 38px;}
+.inf2 {
+    width: 25%;
+    height:110px;
+    font-family: cursive;
+    font-size:20px;
+      background-color: #C6CCD0;
+       font-family:  Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+    margin-top: 30px;
+      margin-left: 20px;
+}
+.inf {
+    width: 20%;
+    font-family: cursive;
+    font-size:20px;
+      background-color: #C6CCD0;
+       font-family:  Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+    margin-top: 38px;
+      margin-left: 50px;
+}
+p.s {
+word-spacing: 6cm;
+font-size: 15px;
+}
+textarea
+{
+  background-color:#C6CCD0;
+  width: 29%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+    margin-left: 15px;
+}
