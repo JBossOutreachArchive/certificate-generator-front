@@ -3,8 +3,13 @@ import { NgModule } from '@angular/core';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+
 // Ag grid angular
 import { AgGridModule } from 'ag-grid-angular';
+
+//forms modules
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 //components
 import { AppComponent } from './app.component';
@@ -18,6 +23,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FileUploadComponent } from './organization/file-upload/file-upload.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     NavbarComponent,
     FileUploadComponent
+    SingleCertificateComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +46,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     HttpClientModule,
     MatProgressBarModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

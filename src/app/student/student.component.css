@@ -1,0 +1,58 @@
+.body {
+  margin-top: 50px;
+  color: #404F57;
+}
+
+.img-wrapper {
+  float: right;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+}
+
+.title {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.details-wrapper {
+  padding-left: 30px;
+}
+
+.outline-btn {
+  width: 30%;
+  background-color: white;
+  outline: none;
+  border: 1px solid #404F57;
+  margin-top: 15px;
+  padding: 3px 15px;
+}
+
+.section-title {
+  margin-top: 60px;
+}
+
+.card {
+  margin-top: 40px;
+  margin-left: 6.25%;
+}
+
+.card .card-img-top {
+  width: 70%;
+  height: 80%;
+  margin: 15px auto 0 auto;
+  padding: 15px;
+}
+
+@media (max-width: 768px){
+  .details-wrapper *{
+    text-align: center;
+  }
+  .outline-btn {
+    width: 50%;
+    display: block;
+    margin: 10px auto;
+  }
+}

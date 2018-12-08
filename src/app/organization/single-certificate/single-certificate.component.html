@@ -1,0 +1,37 @@
+<h1 class="text-center title"> <i class="fa fa-pencil"></i> Issue Certificate </h1>
+<hr>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-7">
+      <app-basic *ngIf="template == 'Basic'" [certificateForm]="this.certificateForm"></app-basic>
+    </div>
+    <div class="col-5 ">
+        <form class="input-wrapper" [formGroup]="certificateForm" (submit)="onSubmit()">
+            <div *ngIf="error" class="alert alert-danger" role="alert">
+              <i class="fa fa-exclamation-circle"></i>
+              <span class="sr-only">Error:</span>
+              {{ error }}
+            </div>
+           <div class="form-group">
+             <label for="email" class="input-label">Template: </label>
+             <select class="form-control" formControlName="template">
+               <option selected> Basic </option>
+             </select>
+           </div>
+          <div class="form-group">
+            <label for="email" class="input-label">Students name: </label>
+            <input type="text" class="form-control" formControlName="issued_to">
+          </div>
+         <div class="form-group">
+           <label for="email" class="input-label">Awarded for: </label>
+           <input type="text" class="form-control" formControlName="issued_for">
+         </div>
+        <div class="form-group">
+          <label for="email" class="input-label">Date: </label>
+          <input type="date" class="form-control" formControlName="date">
+        </div>
+         <button type="submit" class="btn btn-block"> GENERATE </button>
+        </form>
+    </div>
+  </div>
+</div>

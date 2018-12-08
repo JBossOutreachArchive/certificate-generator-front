@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
 * {
   font-family: 'Poppins', sans-serif;
 }
@@ -6,22 +7,22 @@
   margin-top: 7%;
   margin-left: 8%;
   color: #384851;
-  font-size: 220%;
+  font-size: 25px;
 }
-
+form input[type="radio"] {
+  display: inline-block;
+}
 .section-title {
   font-weight: bold;
 }
 
-.col-4 {
-  height: 90vh;
-}
 
 .login-wrapper {
+  width: 90%;
   border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 5px auto;
   border-radius: 55px;
   padding: 0 40px;
-  margin: 10% 0;
   -webkit-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
   -moz-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
   box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
@@ -30,7 +31,8 @@
 .header-logo {
   display: block;
   margin: 40px auto 10px auto;
-  width: 45%;
+  width: 50%;
+  margin-top: 10px;
   min-height: 150px;
   min-width: 250px;
 }
@@ -38,6 +40,7 @@
 .login-title {
   color: #384851;
   font-weight: bold;
+  font-size: 25px;
   letter-spacing: 1.5px;
   margin: 20px 0;
 }
@@ -51,6 +54,14 @@
   margin-top: 20px;
 }
 
+.input-label-radio{
+  font-size: 100%;
+  float: left;
+  color: #526E7A;
+  font-weight: bold;
+  margin-top: 0px;
+  padding-right: 10px;
+}
 .reset-wrap {
   color: #526E7A;
   width: 100%;
@@ -80,10 +91,10 @@ button {
 }
 
 @media all and (max-width: 1180px) {
-  .col-8 {
+  .col-7 {
     display: none;
   }
-  .col-4 {
+  .col-5 {
     flex: 0 0 100%;
     max-width: 100%;
   }

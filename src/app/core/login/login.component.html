@@ -1,26 +1,24 @@
-<link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
 <div class="container-fluid">
   <div class="row">
-    <div class="col-8">
+    <div class="col-7">
       <div class="section">
         <div class="section-title">What is Certificate Generator?</div>
         Certificate Generator aims to automatically generate <br> certificates based on the data provided using input files <br> like CSV or Excel.
       </div>
-      <div class="section">
-        <div class="section-title">New to our website? Sign up now!</div>
+      <div class="section section-content">
+        <div class="section-title">New to our website? <a href="#" class="col" routerLink="/signup">Sign up now!</a></div>
       </div>
       <div class="section">
         <div class="section-title">Development Stack</div>
-        HTML <br>
-        CSS <br>
-        Angular 6 for Front-End
+        Angular 6 for Front-End<br>
+        Django for Back-End
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-5">
       <div class="login-wrapper">
         <img src="assets/jboss.svg" class="header-logo">
         <h1 class="login-title text-center"> Certificate Generator</h1>
-        <form>
+        <form [formGroup]="signinForm" (ngSubmit)="onSubmit()">
           <div *ngIf="error" class="alert alert-danger" role="alert">
       		  <i class="fa fa-exclamation-circle"></i>
       		  <span class="sr-only">Error:</span>
@@ -28,14 +26,25 @@
       		</div>
          <div class="form-group">
            <label for="email" class="input-label">Username: </label>
-           <input type="text" class="form-control" id="email" formControlName="username">
-         </div>
+           <input type="text" class="form-control" id="email" formControlName="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }">
+           <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+              <div *ngIf="f.username.errors.required" class="alert alert-danger">Email is required</div>
+            </div>
+          </div>
          <div class="form-group">
            <label for="pwd" class="input-label">Password:</label>
-           <input type="password" class="form-control" id="pwd" formControlName="password">
-         </div>
-         <h5 class="reset-wrap"> Forgot password? </h5>
-
+           <input type="password" class="form-control" id="pwd" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+           <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+              <div *ngIf="f.password.errors.required" class="alert alert-danger">Password is required</div>
+              <div *ngIf="f.password.errors.minlength" class="alert alert-danger">Password should be min length 8</div>
+          </div>
+          </div>
+         <h5 class="reset-wrap"> <a href="#" class="col">Forgot password?</a></h5>
+          <div class="form-group">
+              <label for="role" class="input-label-radio">Login As:</label>
+              <input type="radio" name="role" value="student" formControlName="role" selected> Student
+              <input type="radio" name="role" value="organization"  formControlName="role"> organization
+          </div>
          <div class="checkbox">
            <label><input type="checkbox"> Remember me</label>
          </div>
@@ -45,7 +54,7 @@
                <button type="submit" class="col">SIGN IN</button>
              </div>
              <div class="col">
-               <button type="submit" class="col">SIGN UP</button>
+               <button type="button" class="col" routerLink="/signup">SIGN UP</button>
              </div>
            </div>
          </div>
