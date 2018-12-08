@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrganizationComponent implements OnInit {
 
+  fileCSV(){
+    var csvSize = document.getElementById("csvupload").files[0];
+    if (csvSize.size > 5*1048576) // 5mb in bytes. 1 MB = 1048576 Bytes
+    {
+      alert("The File size should be less than 5MB!"); //Error Alert
+    }
+    else {
+      alert("File uploaded successfully!"); //Success Alert
+    }
+  }
+  
   constructor() { }
 
   ngOnInit() {

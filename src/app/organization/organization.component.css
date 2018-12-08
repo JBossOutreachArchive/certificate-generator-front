@@ -15,6 +15,21 @@
   font-weight: bold;
 }
 
+#csvupload {
+  display:none;
+}
+.upload {
+  border: none;
+  background: #E91E63;
+  border-radius: 20px;
+  font-size: 100%;
+  font-weight: bold;
+  align-content: center;
+  text-align: center;
+  width: 30%;
+  color: white;
+}
+
 .rtl {
   float: right;
   text-align: right;
