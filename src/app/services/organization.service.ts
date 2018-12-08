@@ -16,7 +16,7 @@ export class OrganizationService {
     let options = {
       headers: new HttpHeaders().set('Authorization', token)
     };
-    return this.http.get<Certificate[]>(environment.baseUrl+"/api/org/certificates", options);
+    return this.http.get<Certificate[]>(environment.baseUrl+"api/org/certificates", options);
   }
 
   private generateSingleCertificate(){

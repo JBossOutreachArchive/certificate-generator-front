@@ -1,0 +1,36 @@
+* {
+  color: #404F57;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.certificates-wrapper {
+  margin-top: 40px;
+}
+
+.thumbnail {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.card {
+  margin-top: 40px;
+  margin-left: 6.25%;
+}
+.card .card-img-top {
+  width: 225px;
+  height: 150px;
+  margin: 15px auto 0 auto;
+  padding: 15px;
+}
+
+.card .btn {
+  color: white;
+}

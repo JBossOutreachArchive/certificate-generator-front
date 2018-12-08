@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
-
+import { CertificatesListingComponent } from './templates/certificates-listing/certificates-listing.component';
 
 import { AuthGuard } from './guards/auth.guard';
 
@@ -17,7 +17,8 @@ const routes: Routes = [
   { path: 'organization', component: OrganizationComponent },
   { path: 'student', component: StudentComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'issue/single', component: SingleCertificateComponent}
+  { path: 'issue/single', component: SingleCertificateComponent},
+  { path: 'certificates/:org', component: CertificatesListingComponent}
 ];
 
 @NgModule({

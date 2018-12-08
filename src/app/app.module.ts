@@ -19,6 +19,7 @@ import { BasicComponent } from './templates/basic/basic.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
+import { CertificatesListingComponent } from './templates/certificates-listing/certificates-listing.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { SingleCertificateComponent } from './organization/single-certificate/si
     FooterComponent,
     NavbarComponent,
     SingleCertificateComponent,
+    CertificatesListingComponent,
   ],
   imports: [
     BrowserModule,
