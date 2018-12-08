@@ -8,9 +8,9 @@
     </div>
     <div class="fields col s9">
       <h1>Certificate of Achievement</h1>
-      <h3>Presented to </h3>
-      <h3>for </h3>
-      <h3>on </h3>
+      <h3>Presented to {{ this.certificateForm.value.issued_to }}</h3>
+      <h3>for {{ this.certificateForm.value.issued_for }}</h3>
+      <h3>on {{ this.certificateForm.value.date }}</h3>
       <h3 class="sign">___sign____</h3>
     </div>
   </div>

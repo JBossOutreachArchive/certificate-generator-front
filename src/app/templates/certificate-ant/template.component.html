@@ -6,11 +6,11 @@
 <div class="info">
   <b><p>This certificate is awarded to</p></b>
   <br>
-  <h3>Name Surname</h3>
+  <h3>{{ this.certificateForm.value.issued_to }}</h3>
   <br>
-  <b><p class="d">Description</p></b>
+  <b><p class="d">{{ this.certificateForm.value.issued_for }}</p></b>
 <div class="description"></div>
-<div class="d1"><p class="d">Date:</p></div>
+<div class="d1"><p class="d">Date: {{ this.certificateForm.value.date }}</p></div>
 <div class="id">
   <p>ID:___________</p>
   </div>
@@ -20,4 +20,5 @@
 </div>
 </div>
 <div class="image">
-<img src="https://cdn2.iconfinder.com/data/icons/seo-and-internet-marketing-glyphs-2/128/88-512.png" style="width:170px;"></div>
+<img src="https://cdn2.iconfinder.com/data/icons/seo-and-internet-marketing-glyphs-2/128/88-512.png" style="width:170px;">
+</div>
