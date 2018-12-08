@@ -22,7 +22,6 @@ import { BasicComponent } from './templates/basic/basic.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FileUploadComponent } from './organization/file-upload/file-upload.component';
-import { HttpClientModule } from '@angular/common/http';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
 
 @NgModule({
@@ -35,7 +34,7 @@ import { SingleCertificateComponent } from './organization/single-certificate/si
     BasicComponent,
     FooterComponent,
     NavbarComponent,
-    FileUploadComponent
+    FileUploadComponent,
     SingleCertificateComponent,
   ],
   imports: [
@@ -45,7 +44,7 @@ import { SingleCertificateComponent } from './organization/single-certificate/si
     MatDialogModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatProgressBarModule
+    MatProgressBarModule,
     FormsModule,
     ReactiveFormsModule,
   ],

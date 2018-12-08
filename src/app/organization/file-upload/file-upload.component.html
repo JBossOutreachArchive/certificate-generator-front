@@ -10,6 +10,6 @@
       </div>
     </div>
     <input id="file-upload-select" type="file" #file (change)="uploadFile()" accept=".csv" style="display: none;">
-    <button onclick="document.getElementById('file-upload-select').click()">Select file</button>
+    <button (click)="document.getElementById('file-upload-select').click()">Select file</button>
   </div>
 </div>
