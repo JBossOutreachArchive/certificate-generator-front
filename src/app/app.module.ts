@@ -19,6 +19,7 @@ import { BasicComponent } from './templates/basic/basic.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CertificateFormComponent } from './certificate-form/certificate-form.component';
+import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
 
 
 @NgModule({
@@ -31,7 +32,9 @@ import { CertificateFormComponent } from './certificate-form/certificate-form.co
     BasicComponent,
     FooterComponent,
     NavbarComponent,
-    CertificateFormComponent
+    feature-validation,
+    CertificateFormComponent,
+    SingleCertificateComponent
   ],
   imports: [
     BrowserModule,
