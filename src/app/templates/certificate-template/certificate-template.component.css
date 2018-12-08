@@ -1,0 +1,60 @@
+@import url(https://zavoloklom.github.io/material-design-iconic-font/css/docs.md-iconic-font.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes);
+
+.certificate {
+  height: 520px;
+  width: 70%;
+  background: #e53935;
+  display: block;
+  position: relative;
+  margin: 35px auto;
+  border: 2em solid #61615c;
+  border-radius: 1em;
+  border-style: solid;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 8px 8px rgba(0, 0, 0, 0.23);
+}
+
+.logo {
+  height: 465px;
+  background-color: #f5f6fa;
+}
+.logo img{
+  width: 130px;
+  height: 80px;
+	margin-top: 120px;
+}
+
+.icon {
+  color: #ffc048;
+  margin-top: 1em;
+}
+
+.fields {
+  height: 465px;
+  margin-top: 3em;
+}
+
+.fields h1 {
+  font-family: 'Great Vibes', cursive;
+  color: #fff;
+  font-size: 4em;
+}
+
+.fields h3 {
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  font-size: 1.75em;
+  padding-left: 4em;
+}
+
+.sign{
+	margin-top: 80px;
+}
+
+.certificate_id{
+	color: #000;
+	margin-top: 20px;
+}

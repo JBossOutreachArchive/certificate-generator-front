@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
  })
  export class AuthenticationService {
 
-  
+
    readonly baseUrl = environment.baseUrl;
 
    constructor(private http: HttpClient) { }
@@ -47,4 +47,19 @@ import { Injectable } from '@angular/core';
       return this.http.post(this.baseUrl+"api/org", details, options);
     }
    }
+
+   isAuthenticated(){
+     var token_exists = "token" in localStorage;
+     var date_exists = "expires_at" in localStorage;
+     // if date exists
+     if(date_exists){
+       // check if date expired
+       var date = new Date(localStorage.getItem("expires_at"));
+       if(date < new Date()){
+         date_exists = false;
+       }
+     }
+     return token_exists && date_exists;
+   }
+   
  }

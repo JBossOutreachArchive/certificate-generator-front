@@ -20,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {CertificateComponent} from './templates/certificate/certificate.component';
 import { GenerateComponent } from './core/generate/generate.component';
+import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { GenerateComponent } from './core/generate/generate.component';
     FooterComponent,
     NavbarComponent,
     CertificateComponent,
-    GenerateComponent
+    GenerateComponent,
+    SingleCertificateComponent
   ],
   imports: [
     BrowserModule,
