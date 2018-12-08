@@ -175,7 +175,7 @@
   height: 100%;
 }
 
-.certy {
+.cert_info_body {
   float: right;
   color: #37474f;
   font-size: 30px;
@@ -187,7 +187,7 @@
   float: right;
 }
 
-.cert {
+.cert_name {
   float: right;
   text-align: right;
   margin-right: 5px;
