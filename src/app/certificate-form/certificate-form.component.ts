@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 import { CertificateData } from './certificate-data';
 
 @Component({
@@ -9,14 +9,14 @@ import { CertificateData } from './certificate-data';
 })
 export class CertificateFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  certificate_data = new CertificateData(null, null, null, null);
 
   ngOnInit() {
   }
 
-  certificate_data = new CertificateData(null, null, null, null);
-
   preview() {
-    window.location.href = "http://localhost:4200/basic";
+    this.router.navigate(['basic']);
   }
 }
