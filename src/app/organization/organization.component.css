@@ -1,3 +1,168 @@
+@media only screen and (max-width: 420px) {
+
+  * {
+    color: #384850;
+  }
+  
+  .details-wrapper {
+    margin: 1%;
+    margin-top: 5%;
+  }
+  
+  .org-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 3%;
+  }
+
+  .mentor {
+    font-size: 15px;
+  }
+
+  .location {
+    font-size: 15px;
+  }
+
+  .rtl {
+    float: right;
+    text-align: right;
+  }
+  
+  .action-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .org-cert {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 3%;
+  }
+  
+
+  .download {
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .org-info {
+    font-size: 10px;
+  }
+
+  .col-2 {
+    display: none;
+  }
+
+  button {
+    float: left;
+    font-size: 15px;
+    margin: 10%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-height: 40px;
+    width: 30%;
+    font-weight: bold;
+    background: #64C13A;
+    color: white;
+    border-radius: 25px;
+    border: none;
+  }
+  
+  .blue-btn {
+    background: #1F8CE9;
+  }
+  
+  .jboss {
+    float: left;
+    margin: 10%;
+    height: 30%;
+    width: 80%;
+    border-radius: 30px;
+    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  .jboss:hover {
+    box-shadow: 3px 8px 16px 3px rgba(0,0,0,0.2);
+  }
+  
+  .jboss_logo {
+  padding-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  }
+  
+  .jboss_info {
+  height: 20%;
+  width: 100%;
+  }
+  
+  .jboss_name {
+  color: #37474f;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  }
+  
+  .jboss_body {
+  height: 40px;
+  margin: 5%;
+  }
+  
+  .certinf_jboss {
+  display: block;
+  color: #455a64;
+  width: 100%;
+  font-weight: 500;
+  }
+  
+  .certi_jboss {
+  font-size: 20px;
+  float: left;
+  margin-right: 5px;
+  }
+  
+  .jboss_count {
+  font-size: 20px;
+  float: left;
+  font-weight: 700;
+  }
+  
+  .button_jboss:hover {
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background: #f44336;
+    }
+  
+  
+  .button_jboss {
+  float: right;
+  border: none;
+  font-size: 15px;
+  color: #f44336;
+  background: none;
+  font-weight: 700;
+  height: 5%;
+  width: 25%;
+  cursor: pointer;
+  transition: 0.6s;
+  margin: 0%;
+  }
+  
+  .button_jboss:hover {
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background: #f44336;
+    }
+  
+  }
+
+@media only screen and (min-width: 600px) {
+
 * {
   color: #384850;
 }
@@ -8,6 +173,15 @@
 
 .org-title {
   font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.org-cert {
+  font-weight: bold;
+}
+
+.download {
+  cursor: pointer;
 }
 
 .rtl {
@@ -20,6 +194,7 @@
 }
 
 button {
+  cursor: pointer;
   font-size: 1.5rem;
   min-height: 40px;
   font-weight: bold;
@@ -33,18 +208,86 @@ button {
   background: #1F8CE9;
 }
 
-.card {
-  margin-top: 40px;
-  margin-left: 6.25%;
+.jboss {
+  float: left;
+  margin-left: 30%;
+  height: 30%;
+  width: 40%;
+  border-radius: 30px;
+  box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
+  transition: 0.3s;
 }
 
-.card .btn {
+.jboss:hover {
+  box-shadow: 3px 8px 16px 3px rgba(0,0,0,0.2);
+}
+
+.jboss_logo {
+padding-top: 10px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 30%;
+}
+
+.jboss_info {
+height: 20%;
+width: 100%;
+}
+
+.jboss_name {
+color: #37474f;
+text-align: center;
+font-size: 25px;
+font-weight: 700;
+}
+
+.jboss_body {
+height: 40px;
+margin: 5%;
+}
+
+.certinf_jboss {
+color: #455a64;
+width: 100%;
+font-weight: 500;
+}
+
+.certi_jboss {
+font-size: 20px;
+float: left;
+margin-right: 5px;
+}
+
+.jboss_count {
+font-size: 20px;
+float: left;
+font-weight: 700;
+}
+
+.button_jboss:hover {
+  border: none;
+  border-radius: 25px;
   color: white;
+  background: #f44336;
+  }
+
+
+.button_jboss {
+float: right;
+border: none;
+font-size: 20px;
+color: #f44336;
+background: none;
+font-weight: 700;
+transition: 0.6s;
 }
 
-.card .card-img-top {
-  width: 70%;
-  height: 80%;
-  margin: 15px auto 0 auto;
-  padding: 15px;
+.button_jboss:hover {
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background: #f44336;
+  }
+
 }
