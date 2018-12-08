@@ -10,6 +10,8 @@ import { SignupComponent } from './core/signup/signup.component';
 import { GeneratorComponent } from './organization/generator/generator.component';
 import { CertificateTemplateComponent } from './templates/certificate-template/certificate-template.component'
 
+import { AuthGuard } from './guards/auth.guard';
+
 const routes: Routes = [
   { path: '', component: LoginComponent},
   { path: 'organization', component: OrganizationComponent },
