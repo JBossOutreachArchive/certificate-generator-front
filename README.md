@@ -1,6 +1,7 @@
 
 # Certificate-Front-End
 [![Build Status](https://travis-ci.org/JBossOutreach/certificate-generator-front.svg?branch=master)](https://travis-ci.org/JBossOutreach/certificate-generator-front) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4350ebc02efb4442ba256e66d2e4d66e)](https://www.codacy.com/app/JbossOutreach/certificate-generator-front?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JbossOutreach/certificate-generator-front&amp;utm_campaign=Badge_Grade)
+[![Gitter](https://img.shields.io/gitter/room/JBossOutreach/certificate-generator.svg)](https://gitter.im/JBossOutreach/certificate-generator)
 
 Certificate Generator aims to automatically generate certificates based on the data provided using input files like CSV and Excel.
 
