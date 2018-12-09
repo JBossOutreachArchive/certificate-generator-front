@@ -21,6 +21,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
 import { CertificatesListingComponent } from './templates/certificates-listing/certificates-listing.component';
 
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,7 @@ import { CertificatesListingComponent } from './templates/certificates-listing/c
     ReactiveFormsModule,
     AgGridModule.withComponents([])
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
