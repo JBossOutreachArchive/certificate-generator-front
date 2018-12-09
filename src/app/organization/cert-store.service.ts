@@ -1,22 +1,21 @@
-import { Injectable } from '@angular/core';
-import { EventEmitter } from 'events';
+import { EventEmitter, Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CertStoreService extends EventEmitter{
+export class CertStoreService{
 
-  constructor() {
-    super()
-  }
-  certs: object[] = [];
+  certs: EventEmitter<any> = new EventEmitter()
+  
+  constructor() { }
+  private _certs: object[] = [];
   getCerts(){
-    return this.certs
+    return this._certs
   }
 
   addCerts(certs){
-    this.certs = [...certs,...this.certs]
-    this.emit("newCerts",this.certs)
-    return this.certs
+    this._certs = [...certs,...this._certs]
+    this.certs.emit(this._certs)
+    return this._certs
   }
 }
