@@ -15,18 +15,18 @@ export class StudentComponent implements OnInit {
   ngOnInit() {
     this.studService.getAllCertificates().subscribe((data: Certificate[]) => {
 
-      for(let certificate of data){
+      for (const certificate of data) {
         // add certificate in list
         this.certificates.push(certificate);
         // add folders
-        var name = certificate.issuing_organization.name;
-        var username = (certificate.issuing_organization as any).user.username;
+        const name = certificate.issuing_organization.name;
+        const username = (certificate.issuing_organization as any).user.username;
 
-        if(name in this.organizations){
-          this.organizations[name].count +=1;
-        }else{
+        if (name in this.organizations) {
+          this.organizations[name].count += 1;
+        } else {
           this.organizations[name] = { username: username, count: 1 };
-          console.log(this.organizations)
+          console.log(this.organizations);
         }
 
       }

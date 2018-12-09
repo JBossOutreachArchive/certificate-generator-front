@@ -17,8 +17,8 @@ export class CertificatesListingComponent implements OnInit {
     this.org = this.route.snapshot.paramMap.get('org');
     this.studService.getAllCertificates().subscribe((data: Certificate[]) => {
 
-      for(let certificate of data){
-        if((certificate.issuing_organization as any).user.username == this.org ){
+      for (const certificate of data) {
+        if ((certificate.issuing_organization as any).user.username == this.org ) {
           this.certificates.push(certificate);
         }
       }

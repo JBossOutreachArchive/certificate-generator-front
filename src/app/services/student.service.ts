@@ -11,11 +11,11 @@ export class StudentService {
 
   constructor(private http: HttpClient) { }
 
-  getAllCertificates():Observable<Certificate[]>{
-    let token = 'JWT '+localStorage.getItem('token');
-    let options = {
+  getAllCertificates(): Observable<Certificate[]> {
+    const token = 'JWT ' + localStorage.getItem('token');
+    const options = {
       headers: new HttpHeaders().set('Authorization', token)
     };
-    return this.http.get<Certificate[]>(environment.baseUrl+"api/get_certificates", options);
+    return this.http.get<Certificate[]>(environment.baseUrl + 'api/get_certificates', options);
   }
 }
