@@ -29,13 +29,7 @@ background-size:contain;
 }
 .org:hover{opacity: 0.5;}
 .first{background-image: url("https://zdnet2.cbsistatic.com/hub/i/2015/12/18/76f753d8-4015-4a70-82c2-cd79e715160e/b9a155bf35b06ad26501ac53b3158f55/jboss-logo.jpg");}
-.second{
-  background-image: url("https://talk.openmrs.org/uploads/default/original/2X/8/80fd6086dca0a3a38f9d3b81fdf48196e1fe307f.png");
-}
-.third
-{
-  background-image: url("http://leftexposed.org/wp-content/uploads/2016/08/wikimedia-foundation.jpg");
-}
+
 h1
 {text-align: center;
   font-family: cursive;
