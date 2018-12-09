@@ -10,6 +10,7 @@ import { SignupComponent } from './core/signup/signup.component';
 import { Certificate1Component } from './certificate1/certificate1.component';
 import { CertComponent } from './cert/cert.component';
 
+
 const routes: Routes = [
   { path: '', component: LoginComponent},
   { path: 'organization', component: OrganizationComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
     {path:'certificate1',component:Certificate1Component},
         {path:'certificate1JB',component:CertComponent}
+
 
 ];
 

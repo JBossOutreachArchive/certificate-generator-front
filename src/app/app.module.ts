@@ -20,6 +20,7 @@ import { Certificate1Component } from './certificate1/certificate1.component';
 import { CertComponent } from './cert/cert.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +31,7 @@ import { CertComponent } from './cert/cert.component';
     BasicComponent,
     Certificate1Component,
     CertComponent
+
   ],
   imports: [
     BrowserModule,
