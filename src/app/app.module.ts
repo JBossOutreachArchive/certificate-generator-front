@@ -23,6 +23,7 @@ import { SingleCertificateComponent } from './organization/single-certificate/si
 import { CustomizeComponent } from './organization/customize.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { CertificateComponent } from './templates/certificate_vittal2/certificate.component';
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,7 @@ import { CertificateComponent } from './templates/certificate_vittal2/certificat
     ScrollToModule.forRoot(),
     AgGridModule.withComponents([])
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
