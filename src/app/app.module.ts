@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
+
 // Ag grid angular
 import { AgGridModule } from 'ag-grid-angular';
 
@@ -19,7 +20,9 @@ import { BasicComponent } from './templates/basic/basic.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
-
+import { CustomizeComponent } from './organization/customize.component';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { CertificateComponent } from './templates/certificate_vittal2/certificate.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,8 @@ import { SingleCertificateComponent } from './organization/single-certificate/si
     FooterComponent,
     NavbarComponent,
     SingleCertificateComponent,
+    CustomizeComponent,
+    CertificateComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +44,7 @@ import { SingleCertificateComponent } from './organization/single-certificate/si
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    ScrollToModule.forRoot(),
     AgGridModule.withComponents([])
   ],
   providers: [],
