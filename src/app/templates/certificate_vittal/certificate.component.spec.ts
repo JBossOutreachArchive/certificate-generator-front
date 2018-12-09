@@ -22,4 +22,4 @@ import { CertificateComponent } from './certificate.component';
     it('should create', () => {
       expect(component).toBeTruthy();
     });
-  }); 
+  });

@@ -18,8 +18,8 @@ export class LoginComponent implements OnInit {
   error;
 
   constructor(
-    private formBuilder: FormBuilder, 
-    private mAuth: AuthenticationService, 
+    private formBuilder: FormBuilder,
+    private mAuth: AuthenticationService,
     private router: Router
   ) { }
 
@@ -35,25 +35,24 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
-    
-    if(this.signinForm.valid){
-      
+
+    if (this.signinForm.valid) {
+
       this.user = {
         username: this.signinForm.value.username,
         password: this.signinForm.value.password
-       }
+       };
 
        this.mAuth.login(this.user).subscribe(
          data => {
-       
+
            this.expiration_date = new Date();
            this.expiration_date.setTime(this.expiration_date.getTime() + (60 * 60 * 1000));
-           localStorage.setItem("token", data['token']);
-           localStorage.setItem("expires_at", this.expiration_date.toString());
-           if(this.signinForm.value.role == "student"){
+           localStorage.setItem('token', data['token']);
+           localStorage.setItem('expires_at', this.expiration_date.toString());
+           if (this.signinForm.value.role === 'student') {
              this.router.navigate(['/student']);
-           }
-           else{
+           } else {
              this.router.navigate(['/organization']);
            }
          },
@@ -61,7 +60,7 @@ export class LoginComponent implements OnInit {
            this.error = error.error.non_field_errors;
          }
        );
-    }else{
+    } else {
       return;
     }
   }
