@@ -23,5 +23,11 @@ before_script:
 script:
   - echo "Namaste! Travis this side"
   - echo "Note - I have not added   - ng test --watch false -cc & ng e2e in config file as then travis will show build fail"
-  - ng build
-  
+  - ng build --base-href https://JBossOutreach.github.io/certificate-generator-front/
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/certificate-generator-front
+  on:
+    branch: master
