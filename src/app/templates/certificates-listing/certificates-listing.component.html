@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <img src="https://lh3.googleusercontent.com/7Lo14ZuKL-nNlCYvOobYQwP8ou-50WUVfCVAsQqd5pWkvbNiAfWeXt8yS99eFuHpjid2mEfLiHfj9VQq_ZkUFRY=s300" class="logo" >
+  <h2 class="text-center"><strong> <i class="fa fa-map"></i>&nbsp;&nbsp; Certificates </strong></h2>
+
+  <div class="certificates-wrapper">
+    <div class="row">
+      <div *ngFor="let certificate of certificates" class="col-md-3 card">
+        <img class="card-img-top" src="https://user-images.githubusercontent.com/37747169/49333954-645c8880-f5e2-11e8-8a30-7a76ba269ac6.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title title">{{ certificate.issued_for }}</h4>
+          <p class="card-text"><strong>By:</strong> {{ certificate.issuing_organization.name }} </p>
+          <a href="#" class="btn btn-danger">See certificates</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

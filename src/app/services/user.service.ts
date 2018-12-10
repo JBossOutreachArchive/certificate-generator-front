@@ -6,7 +6,7 @@ export interface User {
 export interface userSignup {
     name: string;
     username: string;
-    email:string;
+    email: string;
     role: string;
     password: string;
 }
