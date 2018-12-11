@@ -9,7 +9,12 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class SingleCertificateComponent implements OnInit {
   template: string;
   certificateForm: FormGroup;
-
+  customize = 'hidden';
+  color: string[] = ['', '', '', '', '', ''];
+  font: string[] = ['', '', '', '', '', ''];
+  bgimage = ' ';
+  elementselector='ID';
+  i=0;
   constructor(private formBuilder: FormBuilder) {
     this.certificateForm = this.formBuilder.group({
       template: ['', Validators.required],
@@ -29,6 +34,40 @@ export class SingleCertificateComponent implements OnInit {
 
   onSubmit() {
     console.log(this.certificateForm);
+  }
+
+  onElement() {
+    switch (this.elementselector) {
+      case 'ID':
+        this.i = 0;
+        break;
+      case 'Heading':
+        this.i = 1;
+        break;
+      case 'Sub heading':
+        this.i = 2;
+        break;
+      case 'Name':
+        this.i = 3;
+        break;
+      case 'Description':
+        this.i = 4;
+        break;
+      case 'Signature':
+        this.i = 5;
+        break;
+      case 'Date':
+        this.i = 6;
+        break;
+    }
+  }
+
+  onCustom(){
+    if(this.customize=='hidden'){
+      this.customize = 'visible';
+    } else {
+      this.customize = 'hidden';
+    }
   }
 
 }

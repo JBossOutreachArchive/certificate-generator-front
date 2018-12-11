@@ -3,7 +3,8 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-7">
-      <app-basic *ngIf="template == 'Basic'" [certificateForm]="this.certificateForm"></app-basic>
+      <app-basic *ngIf="template == 'Basic'" [certificateForm]="this.certificateForm" [font]="font" [color]="color" [bgimage]="bgimage"></app-basic>
+      <button type="button" class="btn btn-block col-4" (click)="onCustom()" style="margin-left: 35%; "> Customize </button>
     </div>
     <div class="col-5 ">
         <form class="input-wrapper" [formGroup]="certificateForm" (submit)="onSubmit()">
@@ -30,8 +31,27 @@
           <label for="email" class="input-label">Date: </label>
           <input type="date" class="form-control" formControlName="date">
         </div>
-         <button type="submit" class="btn btn-block"> GENERATE </button>
+         <button type="submit" class="btn btn-block"> Generate </button>
         </form>
-    </div>
+	</div>
+  </div>
+  <div [ngStyle]="{'visibility': this.customize }" style="margin-left: 64%; margin-right: 4%; margin-bottom: 8%;">
+	    <h2>Customize</h2>
+	      <h4>Element: </h4>
+	      <select (change)="elementselector = $event.target.value; onElement(); ">
+	        <option selected>ID</option>
+	        <option>Heading</option>
+	        <option>Sub heading</option>
+	        <option>Name</option>
+	        <option>Description</option>
+	        <option>Signature</option>
+	        <option>Date</option>
+	      </select>
+	      <h4>Font: </h4>
+	      <input (input)="font[i]=$event.target.value">
+	      <h4>Color: </h4>
+	      <input (input)="color[i]=$event.target.value">
+	      <h4>Background Image: </h4>
+	      <input (input)="bgimage=$event.target.value">
   </div>
 </div>
