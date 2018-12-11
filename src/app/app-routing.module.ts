@@ -9,9 +9,6 @@ import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
 
 
-
-import { AuthGuard } from './guards/auth.guard';
-
 const routes: Routes = [
   { path: 'organization', component: OrganizationComponent },
   { path: 'student', component: StudentComponent },
