@@ -1,8 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { HttpClientModule } from '@angular/common/http';
+
 // Ag grid angular
 import { AgGridModule } from 'ag-grid-angular';
+
 
 //components
 import { AppComponent } from './app.component';
@@ -14,6 +19,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
 import { FormComponent } from './form/form.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,11 +29,13 @@ import { FormComponent } from './form/form.component';
     OrganizationComponent,
     BasicComponent,
       FormComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
       FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
     AgGridModule.withComponents([])
   ],

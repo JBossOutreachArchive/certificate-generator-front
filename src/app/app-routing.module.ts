@@ -8,6 +8,10 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
 
+
+
+import { AuthGuard } from './guards/auth.guard';
+
 const routes: Routes = [
   { path: 'organization', component: OrganizationComponent },
   { path: 'student', component: StudentComponent },
@@ -15,7 +19,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   {path:'form',component:FormComponent}
 ];
- 
+
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ]

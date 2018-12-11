@@ -1,15 +1,45 @@
-<p>
-  organization works!
-</p>
-<div class="container container-grid">
-  <ag-grid-angular 
-    style="width: 500px; height: 500px;" 
-    class="ag-theme-balham"
-    [rowData]="rowData"
-    [enableSorting]="true"
-    [enableFilter]="true"    
-    [columnDefs]="columnDefs"
-    [enableColResize] = "true"
-    >
-  </ag-grid-angular>
+<app-navbar></app-navbar>
+
+<div class="container-fluid">
+  <div class="row details-wrapper">
+    <div class="col">
+      <h1 class="org-title"> @JBossOutreach </h1>
+      <h4> Mentor @ JBoss </h4>
+      <h4> Mumbai, IN </h4>
+    </div>
+    <div class="col rtl" >
+      <h1 class="org-title"> Certificates: {{ this.rowData.length }} </h1>
+      <h4> Download </h4>
+    </div>
+    <div class="container-fluid">
+      <div class="row action-wrapper">
+        <div class="col-2"></div>
+        <button class="col-lg-3"> IMPORT </button>
+        <div class="col-2"></div>
+        <button type="button" routerLink="/issue/single" class="col-lg-3 blue-btn"> GENERATE </button>
+        <div class="col-2"></div>
+      </div>
+    </div>
+  </div>
+  <h2 class="text-center org-title"><i class="fa fa-calendar"></i>&nbsp;&nbsp; Events: </h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 card">
+        <img class="card-img-top" src="https://codein.withgoogle.com/static/img/og-image.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title title">Google Code-In</h4>
+          <p class="card-text">Certificates: 6590 </p>
+          <a href="#" class="btn btn-danger">See certificates</a>
+        </div>
+      </div>
+      <div class="col-md-3 card">
+        <img class="card-img-top" src="https://cdn-images-1.medium.com/max/1200/1*z__mBuA-_5LAzNo0dr0gCQ.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title title">Summer of Code </h4>
+          <p class="card-text">Certificates: 3 </p>
+          <a href="#" class="btn btn-danger">See certificates</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
