@@ -12,7 +12,7 @@ certificate:FormGroup;
   ngOnInit() {
     this.certificate= this.formbuilder.group({
     name:['',Validators.required],
-    description:['',Validators.required,Validators.minLength(4)],
+    description:['',Validators.required],
     date:['',Validators.required]
    })
   }
