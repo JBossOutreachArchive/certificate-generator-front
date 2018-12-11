@@ -20,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
 
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,7 @@ import { SingleCertificateComponent } from './organization/single-certificate/si
     ReactiveFormsModule,
     AgGridModule.withComponents([])
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
