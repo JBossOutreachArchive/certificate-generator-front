@@ -1,0 +1,19 @@
+<div class="form">
+  <form [formGroup]="certificate">
+    <div class=form1><br>
+     <u><h1> Generate Certificate</h1></u>
+      <b><p>Name</p></b>
+       <input  formControlName="name" class="form-control details" placeholder="Enter name"  type="text">
+ <div class="alert alert-danger " *ngIf=" name.invalid&&name.touched"> This field is required</div>
+ 
+    <b><p>Description</p></b>
+       <input type="text" formControlName="description" class="form-control details"  placeholder="Enter description">
+        <div *ngIf=" description.invalid&& description.touched" class="alert alert-danger">This field is required</div>
+          <b> <p>Date</p></b>
+           <input type="date" formControlName="date" class="form-control details">
+             <div *ngIf=" date.invalid &&date.touched"  class="alert alert-danger ">    This field is required  </div>
+            <div class="generate"> <img src='/assets/jboss.jpg'>
+   <button  [disabled]="certificate.invalid" > Generate certificate </button></div>
+  </div>
+  </form>
+</div>
