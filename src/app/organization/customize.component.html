@@ -1,0 +1,47 @@
+<div class="row">
+
+    <form [formGroup]="certificateForm" (submit)="onSubmit()"> 
+  
+     <div class="customize_w">
+       <div class="form-group" >
+        <label for="template">Template: </label>
+        <select class="form-control" formControlName="template">
+          <option>Certificate</option>
+          <option>Other Certificates</option>
+        </select>
+      </div>
+
+      <div class="form-group ">
+          <label for="background" >Background Image</label><br>
+          <input  formControlName="background" class="form-control" placeholder="Enter a link"  type="text" (input)="inputs[0]=$event.target.value" >
+      </div>
+  
+      <div class="form-group">
+          <label for="textfont">Text Font</label><br>
+          <input type="textfont" formControlName="textfont" class="form-control" placeholder="Enter a font type"  type="text" (input)="inputs[1]=$event.target.value">
+      </div>
+
+      <div class="form-group">
+          <label for="textcolor">Text Color</label><br>
+          <input type="textcolor" formControlName="textcolor" class="form-control"  placeholder="Enter a color" type="text" (input)="inputs[2]=$event.target.value">
+      </div>
+      
+      <div>
+        <button type="button" ngx-scroll-to 
+        [ngx-scroll-to-offset]="3000000">Generate</button>
+      </div>
+     </div>
+  
+    </form>
+ 
+    <app-certificate [inputs]="inputs"></app-certificate>
+
+    <div>
+        <button type="button" class="button_edit" ngx-scroll-to 
+        [ngx-scroll-to-offset]="-3000000">Edit</button>
+      </div>
+      <div>
+        <button type="submit" class="button_publish" routerLink="/certdisplay">Publish</button>
+      </div>
+      
+  </div>   

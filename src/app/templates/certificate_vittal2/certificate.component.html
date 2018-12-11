@@ -1,4 +1,9 @@
-<html>
+<div class="body" [ngStyle]="{'background-image':'url('+this.inputs[0]+')',
+                              'background-repeat': 'no-repeat',
+                              'background-size': 'cover',
+                              'font-family': this.inputs[1],
+                              'color':this.inputs[2]
+                                              }">
     <head>
     <title> Certificate of Excellence </title>
     </head>
@@ -23,4 +28,4 @@
       </div>
     </div>
    </body>
-</html>
+</div>

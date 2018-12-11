@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
-
+import { CustomizeComponent } from './organization/customize.component';
+import { CertificateComponent } from './templates/certificate_vittal2/certificate.component';
 
 import { AuthGuard } from './guards/auth.guard';
 
@@ -17,7 +18,9 @@ const routes: Routes = [
   { path: 'organization', component: OrganizationComponent, canActivate: [AuthGuard] },
   { path: 'student', component: StudentComponent, canActivate: [AuthGuard] },
   { path: 'signup', component: SignupComponent },
-  { path: 'issue/single', component: SingleCertificateComponent, canActivate: [AuthGuard]}
+  { path: 'issue/single', component: SingleCertificateComponent},
+  { path:'customize', component:CustomizeComponent},
+  { path: 'certdisplay', component: CertificateComponent}
 ];
 
 @NgModule({
