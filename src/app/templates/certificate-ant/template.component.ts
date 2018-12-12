@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-template',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./template.component.css']
 })
 export class TemplateComponent implements OnInit {
-
+@Input() certificateForm;
   constructor() { }
 
   ngOnInit() {

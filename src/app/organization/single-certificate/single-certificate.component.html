@@ -4,6 +4,13 @@
   <div class="row">
     <div class="col-7">
       <app-basic *ngIf="template == 'Basic'" [certificateForm]="this.certificateForm"></app-basic>
+      <app-certificate *ngIf="template == 'Certificate'" [certificateForm]="this.certificateForm"></app-certificate>
+      <app-certificate-vittal *ngIf="template == 'Certificate Vittal'" [certificateForm]="this.certificateForm"></app-certificate-vittal>
+      <app-certificate-vittal2 *ngIf="template == 'Certificate Vittal 2'" [certificateForm]="this.certificateForm"></app-certificate-vittal2>
+      <app-template *ngIf="template == 'Certificate Ant'" [certificateForm]="this.certificateForm"></app-template>
+      <app-certificate-geek *ngIf="template == 'Certificate Geek'" [certificateForm]="this.certificateForm"></app-certificate-geek>
+      <app-certificate-template *ngIf="template == 'Certificate Template'" [certificateForm]="this.certificateForm"></app-certificate-template>
+      <app-certsid *ngIf="template == 'Certsid'" [certificateForm]="this.certificateForm"></app-certsid>
     </div>
     <div class="col-5 ">
         <form class="input-wrapper" [formGroup]="certificateForm" (submit)="onSubmit()">
@@ -13,21 +20,28 @@
               {{ error }}
             </div>
            <div class="form-group">
-             <label for="email" class="input-label">Template: </label>
+             <label class="input-label">Template: </label>
              <select class="form-control" formControlName="template">
                <option selected> Basic </option>
+               <option> Certificate </option>
+               <option> Certificate Vittal </option>
+               <option> Certificate Vittal 2 </option>
+               <option> Certificate Ant </option>
+               <option> Certificate Geek </option>
+               <option> Certificate Template </option>
+               <option> Certsid </option>
              </select>
            </div>
           <div class="form-group">
-            <label for="email" class="input-label">Students name: </label>
+            <label class="input-label">Name: </label>
             <input type="text" class="form-control" formControlName="issued_to">
           </div>
          <div class="form-group">
-           <label for="email" class="input-label">Awarded for: </label>
+           <label class="input-label">Awarded for: </label>
            <input type="text" class="form-control" formControlName="issued_for">
          </div>
         <div class="form-group">
-          <label for="email" class="input-label">Date: </label>
+          <label class="input-label">Date: </label>
           <input type="date" class="form-control" formControlName="date">
         </div>
          <button type="submit" class="btn btn-block"> GENERATE </button>
