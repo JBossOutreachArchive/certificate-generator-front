@@ -27,6 +27,7 @@ import { CertificateTemplateComponent } from './templates/certificate-template/c
 import { CertsidComponent } from './templates/certsid/certsid.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
 
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,7 @@ import { SingleCertificateComponent } from './organization/single-certificate/si
     ReactiveFormsModule,
     AgGridModule.withComponents([])
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
