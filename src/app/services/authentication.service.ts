@@ -36,15 +36,15 @@ import { Injectable } from '@angular/core';
     }
 
     let options = {
-      headers: new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded')
+      headers: new HttpHeaders().set('Content-Type', 'application/json')
                                 .set('Access-Control-Allow-Origin', '*')
     }
 
     if(userSignup.role == "user"){
-      return this.http.post(this.baseUrl+"api/user", details, options);
+      return this.http.post(this.baseUrl+"api/user/", JSON.stringify(details), options);
     }
     else if(userSignup.role == "issuer"){
-      return this.http.post(this.baseUrl+"api/org", details, options);
+      return this.http.post(this.baseUrl+"api/org/", JSON.stringify(details), options);
     }
    }
 

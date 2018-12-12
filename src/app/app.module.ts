@@ -24,6 +24,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FileUploadComponent } from './organization/file-upload/file-upload.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
 
+import { AuthGuard } from './guards/auth.guard';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,8 +50,8 @@ import { SingleCertificateComponent } from './organization/single-certificate/si
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [],
   bootstrap: [AppComponent],
-  entryComponents:[FileUploadComponent]
+  entryComponents:[FileUploadComponent],
+  providers: [AuthGuard],
 })
 export class AppModule { }
