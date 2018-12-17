@@ -24,6 +24,7 @@ import { CertificateComponent } from './certificate/certificate.component';
 import { CustomizeComponent } from './customize/customize.component';
 
 
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,7 @@ import { CustomizeComponent } from './customize/customize.component';
     ReactiveFormsModule,
     AgGridModule.withComponents([])
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
