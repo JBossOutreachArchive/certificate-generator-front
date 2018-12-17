@@ -3,10 +3,10 @@ export interface User {
     password: string;
 }
 
-export interface userSignup {
+export interface UserSignup {
     name: string;
     username: string;
-    email:string;
+    email: string;
     role: string;
     password: string;
 }
