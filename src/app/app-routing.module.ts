@@ -11,6 +11,7 @@ import { CertificateComponent } from './certificate/certificate.component';
 import { CustomizeComponent } from './customize/customize.component';
 
 
+
 const routes: Routes = [
   { path: '', component: LoginComponent},
   { path: 'organization', component: OrganizationComponent },

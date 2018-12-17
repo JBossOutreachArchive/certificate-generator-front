@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthenticationService } from '../../services/authentication.service';
 import { Router } from '@angular/router';
-import { userSignup } from '../../services/user.service';
+import { UserSignup } from '../../services/user.service';
 
 @Component({
   selector: 'app-signup',
@@ -13,18 +13,18 @@ export class SignupComponent implements OnInit {
 
   signupForm: FormGroup;
   submitted = false;
-  userSignup: userSignup;
+  userSignup: UserSignup;
   passwordMismatch: boolean;
   expiration_date;
   error;
 
   constructor(
-    private formBuilder: FormBuilder, 
-    private mAuth: AuthenticationService, 
+    private formBuilder: FormBuilder,
+    private mAuth: AuthenticationService,
     private router: Router
   ) { }
 
-  ngOnInit() { 
+  ngOnInit() {
     this.signupForm = this.formBuilder.group({
       name: ['', [Validators.required]],
       username: ['', [Validators.required]],
@@ -37,28 +37,27 @@ export class SignupComponent implements OnInit {
 
   get f() { return this.signupForm.controls; }
 
-  checkPasswords(){
+  checkPasswords() {
     this.passwordMismatch = true;
-    let password = this.signupForm.value.password;
-    let confirmPassword = this.signupForm.value.confirmPassword;
+    const password = this.signupForm.value.password;
+    const confirmPassword = this.signupForm.value.confirmPassword;
 
-    if(password === confirmPassword){
+    if (password === confirmPassword) {
       this.passwordMismatch = false;
     }
   }
 
   onSubmit() {
     this.submitted = true;
-    
-    if(this.signupForm.valid){
-      
+
+    if (this.signupForm.valid) {
       this.userSignup = {
         name : this.signupForm.value.name,
         username: this.signupForm.value.username,
         password: this.signupForm.value.password,
         email: this.signupForm.value.email,
         role: this.signupForm.value.role
-       }
+       };
 
        this.mAuth.signup(this.userSignup).subscribe(
          data => {
@@ -68,7 +67,7 @@ export class SignupComponent implements OnInit {
            this.error = error.error.non_field_errors;
          }
        );
-    }else{
+    } else {
       return;
     }
   }

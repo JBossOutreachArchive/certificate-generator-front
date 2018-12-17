@@ -7,7 +7,7 @@ export class StudentService {
 
   constructor() { }
 
-  private getAllCertificates(){
-    //fetches all the certificates issued to student
+  private getAllCertificates() {
+    // Fetches all the certificates issued to student
   }
 }

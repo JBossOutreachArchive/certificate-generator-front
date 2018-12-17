@@ -2,7 +2,7 @@
 // `ng build ---prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export class environment {
+export class Environment {
     public static production = false;
     public static baseUrl = 'https://cert-gen-jboss.herokuapp.com/';
  }
