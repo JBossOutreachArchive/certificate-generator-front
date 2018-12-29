@@ -16,6 +16,7 @@ export class OrganizationComponent implements OnInit {
   ];
 
   rowData = [];
+  gridApi;
   
   constructor(private orgService: OrganizationService) { }
 
