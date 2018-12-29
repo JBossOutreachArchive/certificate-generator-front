@@ -14,25 +14,11 @@
     <div class="container-fluid">
       <div class="row action-wrapper">
         <div class="col-2"></div>
-        <label class="col-lg-3 main-button text-center">
-            <input type="file" class="d-none" (change)="onFileUpload($event)"/>
-            IMPORT
-        </label>
+        <button class="col-lg-3"> IMPORT </button>
         <div class="col-2"></div>
-        <button type="button" routerLink="/issue/single" class="col-lg-3 main-button blue-btn"> GENERATE </button>
+        <button type="button" routerLink="/issue/single" class="col-lg-3 blue-btn"> GENERATE </button>
         <div class="col-2"></div>
       </div>
-    </div>
-    <div [hidden]="percentage < 1" class="progress">
-      <div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar">
-        Uploading CSV ({{ percentage }})
-      </div>
-    </div>
-    <div *ngIf="error" class="alert alert-danger" role="alert">
-      {{ error }}
-    </div>
-    <div *ngIf="message" class="alert alert-success" role="alert">
-      {{ message }}
     </div>
   </div>
   <h2 class="text-center org-title"><i class="fa fa-calendar"></i>&nbsp;&nbsp; Events: </h2>
