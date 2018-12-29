@@ -28,7 +28,7 @@ export class OrganizationService {
     body.set('file', file);
 
     let token = 'JWT '+localStorage.getItem('token');
-    const req = new HttpRequest('POST', environment.baseUrl+'api/issue_certificate/csv/', body, {
+    const req = new HttpRequest('POST', Environment.baseUrl+'api/issue_certificate/csv/', body, {
       headers: new HttpHeaders().set('Authorization', token),
       reportProgress: true,
     });
