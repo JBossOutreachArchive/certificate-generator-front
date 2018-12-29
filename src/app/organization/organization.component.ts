@@ -11,6 +11,16 @@ export class OrganizationComponent implements OnInit {
 
   constructor(private orgService: OrganizationService) { }
 
+  title = 'app';
+
+  columnDefs = [
+      {headerName: 'Student Name', field: 'name', checkboxSelection: true},
+      {headerName: 'Date', field: 'date' },
+      {headerName: 'Certificate Description', field: 'desc'}
+  ];
+
+  rowData = [];
+
   ngOnInit() {
     this.getCertificates();
   }
@@ -43,7 +53,16 @@ export class OrganizationComponent implements OnInit {
 
   getCertificates(){
     this.orgService.getCertificates().subscribe((certificates: Certificate[]) => {
-      this.rowData = certificates;
-    })
+      // add certificates in ag-grid
+      for (const certificate of certificates){
+        this.rowData.push({ name: certificate.student.name, date: certificate.date, desc: certificate.issued_for });
+      }
+      this.gridApi.setRowData(this.rowData);
+    });
   }
+
+  onGridReady(event) {
+    this.gridApi = event.api;
+  }
+
 }

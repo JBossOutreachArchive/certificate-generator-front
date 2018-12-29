@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpRequest } from '@angular/common/http';
 import { Certificate } from './certificate.model';
-import { environment } from '../environments/environments';
+import { Environment } from '../environments/environments';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -11,16 +11,16 @@ export class OrganizationService {
 
   constructor(private http: HttpClient) { }
 
-  getCertificates():Observable<Certificate[]>{
-    let token = 'JWT '+localStorage.getItem('token');
-    let options = {
+  getCertificates(): Observable<Certificate[]> {
+    const token = 'JWT ' + localStorage.getItem('token');
+    const options = {
       headers: new HttpHeaders().set('Authorization', token)
     };
-    return this.http.get<Certificate[]>(environment.baseUrl+"api/org/certificates/", options);
+    return this.http.get<Certificate[]>(Environment.baseUrl+"api/org/certificates/", options);
   }
 
-  private generateSingleCertificate(){
-    //would be used when organization wants to generate single certificate
+  private generateSingleCertificate() {
+    // Would be used when organization wants to generate single certificate
   }
 
   generateBulkCertificate(file) {
