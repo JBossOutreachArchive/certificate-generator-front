@@ -15,21 +15,19 @@ export class OrganizationComponent implements OnInit {
       {headerName: 'Certificate Description', field: 'desc'}
   ];
 
-  rowData = [];
-  gridApi;
-  
-  constructor(private orgService: OrganizationService) { }
-
-  ngOnInit() {
-    this.getCertificates();
-  }
-
   title = 'app';
   error: String = '';
   message: String = '';
   percentage = 0;
   rowData = [];
+  gridApi;
+ 
+  constructor(private orgService: OrganizationService) { }
 
+  ngOnInit() {
+    this.getCertificates();
+  }
+  
   onFileUpload(event){
     this.error = '';
     if(event.target.files[0].size > 5*1000){
