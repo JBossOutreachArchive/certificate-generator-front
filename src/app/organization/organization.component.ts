@@ -9,10 +9,6 @@ import { HttpEventType, HttpResponse } from '@angular/common/http';
 })
 export class OrganizationComponent implements OnInit {
 
-  constructor(private orgService: OrganizationService) { }
-
-  title = 'app';
-
   columnDefs = [
       {headerName: 'Student Name', field: 'name', checkboxSelection: true},
       {headerName: 'Date', field: 'date' },
@@ -20,6 +16,8 @@ export class OrganizationComponent implements OnInit {
   ];
 
   rowData = [];
+  
+  constructor(private orgService: OrganizationService) { }
 
   ngOnInit() {
     this.getCertificates();
