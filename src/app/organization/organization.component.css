@@ -15,24 +15,12 @@
   text-align: right;
 }
 
-.progress-bar {
-  width: 0%;
-}
-
-.alert {
-  width: 60%;
-  margin: 30px auto 0 auto;
-}
-
 .action-wrapper {
   margin-top: 30px;
 }
 
-.main-button {
+button {
   font-size: 1.5rem;
-  height: 100%;
-  text-align: center;
-  vertical-align: center;
   min-height: 40px;
   font-weight: bold;
   background: #64C13A;
@@ -43,18 +31,6 @@
 
 .blue-btn {
   background: #1F8CE9;
-}
-
-.progress {
-  width: 70%;
-  margin: 30px auto 10px auto;
-  height: 30px;
-  color: white;
-}
-
-.bg-success {
-  color: white;
-  font-weight: bold;
 }
 
 .card {
