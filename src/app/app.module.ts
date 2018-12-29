@@ -5,10 +5,10 @@ import { HttpClientModule } from '@angular/common/http';
 // Ag grid angular
 import { AgGridModule } from 'ag-grid-angular';
 
-//forms modules
+// Forms modules
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-//components
+// Components
 import { AppComponent } from './app.component';
 import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
@@ -20,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
 
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,7 @@ import { SingleCertificateComponent } from './organization/single-certificate/si
     ReactiveFormsModule,
     AgGridModule.withComponents([])
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

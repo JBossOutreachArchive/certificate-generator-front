@@ -11,5 +11,4 @@ export class BasicComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

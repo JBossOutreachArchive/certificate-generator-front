@@ -1,6 +1,9 @@
 
-# Certificate-Front-End
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4350ebc02efb4442ba256e66d2e4d66e)](https://www.codacy.com/app/JbossOutreach/certificate-generator-front?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JbossOutreach/certificate-generator-front&amp;utm_campaign=Badge_Grade)
+# Certificate Generator Front End
+
+[![opensource](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/JbossOutreach/certificate-generator-front) 
+![license](https://img.shields.io/apm/l/vim-mode.svg?style=popout) [![Build Status](https://travis-ci.org/JBossOutreach/certificate-generator-front.svg?branch=master)](https://travis-ci.org/JBossOutreach/certificate-generator-front) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4350ebc02efb4442ba256e66d2e4d66e)](https://www.codacy.com/app/JbossOutreach/certificate-generator-front?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JbossOutreach/certificate-generator-front&amp;utm_campaign=Badge_Grade) ![angular](https://img.shields.io/badge/Angular-6-%23f74242.svg) ![node](https://img.shields.io/badge/Node.js-8-blue.svg) ![typescript](https://img.shields.io/badge/Typescript-3.1.1-%2300bfff.svg) [![contributors](https://img.shields.io/github/contributors/JBossOutreach/certificate-generator-front.svg)](https://github.com/JBossOutreach/certificate-generator-front/graphs/contributors/) [![issues](https://img.shields.io/github/issues/JBossOutreach/certificate-generator-front.svg)](https://github.com/JBossOutreach/certificate-generator-front/issues/) [![pull-requests](https://img.shields.io/github/issues-pr/JBossOutreach/certificate-generator-front.svg)](https://github.com/JBossOutreach/certificate-generator-front/pulls) [![Gitter](https://img.shields.io/gitter/room/JBossOutreach/certificate-generator.svg)](https://gitter.im/JBossOutreach/certificate-generator) [![twitter](https://img.shields.io/twitter/follow/jbossorg.svg?label=Follow&style=social)](https://twitter.com/jbossorg) 
+ [![forks](https://img.shields.io/github/forks/JBossOutreach/certificate-generator-front.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/JBossOutreach/certificate-generator-front/network/) [![stars](https://img.shields.io/github/stars/JBossOutreach/certificate-generator-front.svg?style=social&label=Star&maxAge=2592000)](https://github.com/JBossOutreach/certificate-generator-front/stargazers/) [![watchers](https://img.shields.io/github/watchers/JBossOutreach/certificate-generator-front.svg?style=social&label=Watch&maxAge=2592000)](https://github.com/JBossOutreach/certificate-generator-front/watchers/)
 
 Certificate Generator aims to automatically generate certificates based on the data provided using input files like CSV and Excel.
 
@@ -67,6 +70,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ![Students Dashboard](https://user-images.githubusercontent.com/37747169/49171905-08cb9a00-f359-11e8-8009-0ee8802a5a4b.png)
 
+### Steps to Contribute
+
+   1. Fork the repo  [![fork](https://img.shields.io/github/forks/JBossOutreach/certificate-generator-front.svg?label=Fork&style=social)](https://github.com/JBossOutreach/certificate-generator-front/fork)
+   2. Clone the forked repo ` https://github.com/YOUR_USERNAME/certificate-generator-front.git`
+   3. Commit changes on your fork.
+   4. Create a Pull Request. 
+   5. Make sure to follow the contributing guidelines.
+ 
+ You may also create an issue to report any bugs or implementation of a new feature.
+  
 #### Help
 
 If you need any help anywhere in the process, you can always ask a question on our [Gitter Chat](https://gitter.im/jboss-outreach/gci).
