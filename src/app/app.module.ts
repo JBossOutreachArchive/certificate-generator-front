@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+
 import { HttpClientModule } from '@angular/common/http';
+
 
 // Ag grid angular
 import { AgGridModule } from 'ag-grid-angular';
@@ -16,9 +19,9 @@ import { StudentComponent } from './student/student.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
-import { FooterComponent } from './footer/footer.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
+import { CertificateComponent } from './certificate/certificate.component';
+import { CustomizeComponent } from './customize/customize.component';
+
 
 import { AuthGuard } from './guards/auth.guard';
 
@@ -30,9 +33,8 @@ import { AuthGuard } from './guards/auth.guard';
     StudentComponent,
     OrganizationComponent,
     BasicComponent,
-    FooterComponent,
-    NavbarComponent,
-    SingleCertificateComponent,
+      CertificateComponent,
+    CustomizeComponent
   ],
   imports: [
     BrowserModule,

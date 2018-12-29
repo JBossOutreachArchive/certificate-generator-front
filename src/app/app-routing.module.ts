@@ -7,15 +7,20 @@ import { StudentComponent } from './student/student.component';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
-import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
-import { AuthGuard } from './guards/auth.guard';
+import { CertificateComponent } from './certificate/certificate.component';
+import { CustomizeComponent } from './customize/customize.component';
+
+
 
 const routes: Routes = [
   { path: '', component: LoginComponent},
-  { path: 'organization', component: OrganizationComponent, canActivate: [AuthGuard] },
-  { path: 'student', component: StudentComponent, canActivate: [AuthGuard] },
-  { path: 'signup', component: SignupComponent },
-  { path: 'issue/single', component: SingleCertificateComponent, canActivate: [AuthGuard]}
+  { path: 'organization', component: OrganizationComponent },
+    {path:'certificate1', component:CertificateComponent},
+    {path:'customize', component:CustomizeComponent},
+  { path: 'student', component: StudentComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent }
+
 ];
 
 @NgModule({
