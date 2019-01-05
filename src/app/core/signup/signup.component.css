@@ -1,5 +1,5 @@
 * {
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Poppins', sans-serif;
  }
 
  .col-4 {
@@ -10,10 +10,10 @@
    overflow: hidden;
   margin: 5% 0% 0% 5%;
   color: #384850;
-  font-size: 180%;
+  font-size: 25px;
 }
 
-.section_t {
+.section-title {
   font-weight: bold;
 }
 
@@ -25,23 +25,24 @@
   -webkit-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
   -moz-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
   box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
-  height: 100%;
+  height: 145%;
+  width: 115%;
 }
 
 .logo {
   display: block;
   margin: auto auto auto auto;
-  width: 30%;
-  margin-top: 5%;
-  min-height: 50px;
-  min-width: 50px;
+  width: 50%;
+  margin-top: 10px;
+  min-height: 150px;
+  min-width: 250px;
 }
 
 .signup_t {
-  color: #B22222;
+  color: #384851;
   font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 150%;
+  letter-spacing: 1.5px;
+  font-size: 25px;
   margin: 20px 0;
 }
 
@@ -73,14 +74,14 @@ input[type="text"], input[type="password"], input[type="email"] {
  }
 
  .checkboxes label{
-   margin: 0px 40px 0px 60px;
+   margin: 0px 40px 0px 50px;
    font-size: 100%;
    float: center;
    color: #526E7A;
  }
 
 button {
-  background-color: #B22222;
+  background-color: #F1002C;
   border: none;
   float: center;
   border-radius: 30px;
