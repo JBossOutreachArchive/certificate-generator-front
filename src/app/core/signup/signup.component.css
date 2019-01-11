@@ -19,9 +19,9 @@
 
 .signup_w {
   border: 1px solid rgba(0, 0, 0, 0.0);
-  border-radius: 50px;
+  border-radius: 55px;
   padding: 0 40px;
-  margin: 5% auto 8% auto;
+  margin: 5% 36.453px 10% 36.453px;
   -webkit-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
   -moz-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
   box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
@@ -88,7 +88,7 @@ button {
   margin: 5% 10px 5% 65px;
   color: white;
   font-weight: bold;
-  font-size: 100%;
+  font-size: 130%;
   letter-spacing: 1px;
 }
 
