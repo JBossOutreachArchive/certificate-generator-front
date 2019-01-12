@@ -7,6 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BasicComponent implements OnInit {
   @Input() certificateForm;
+  @Input() color;
+  @Input() font;
+  @Input() bgimage;
   constructor() { }
 
   ngOnInit() {
