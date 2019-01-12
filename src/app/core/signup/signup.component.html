@@ -47,8 +47,8 @@
             </div>
           </div>
           <div class="checkboxes">
-              <label class="radio-inline"><input type="radio"  name="role" formControlName="role" value="issuer"> Issuer</label>
               <label class="radio-inline"><input type="radio" name="role" formControlName="role" value="user"> Student</label>
+              <label class="radio-inline"><input type="radio" name="role" formControlName="role" value="issuer"> Organization</label>
               <div *ngIf="submitted && f.role.errors" class="invalid-feedback">
                   <div *ngIf="f.role.errors.required" class="alert alert-danger">Please select a role</div>
               </div>

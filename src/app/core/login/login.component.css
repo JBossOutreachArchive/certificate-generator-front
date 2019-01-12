@@ -4,8 +4,8 @@
 }
 
 .section {
-  margin-top: 7%;
-  margin-left: 8%;
+  overflow: hidden;
+  margin: 5% 0% 0% 5%;
   color: #384851;
   font-size: 25px;
 }
@@ -20,7 +20,7 @@ form input[type="radio"] {
 .login-wrapper {
   width: 90%;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  margin: 5px auto;
+  margin: 5% auto 10% auto;
   border-radius: 55px;
   padding: 0 40px;
   -webkit-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.45);
@@ -47,7 +47,7 @@ form input[type="radio"] {
 
 
 .input-label {
-  font-size: 150%;
+  font-size: 100%;
   float: left;
   color: #526E7A;
   font-weight: bold;
