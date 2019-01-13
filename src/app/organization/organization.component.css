@@ -44,7 +44,18 @@ button {
 
 .card .card-img-top {
   width: 70%;
-  height: 80%;
   margin: 15px auto 0 auto;
   padding: 15px;
+}
+
+.grid {
+  margin: 10%;
+  margin-top: 3%;
+}
+
+.issue_cert {
+  font-size: 30px;
+  margin-bottom: 1%;
+  font-weight: bold;
+  text-align: center;
 }
