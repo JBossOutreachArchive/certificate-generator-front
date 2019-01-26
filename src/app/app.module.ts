@@ -20,6 +20,7 @@ import { BasicComponent } from './templates/basic/basic.component';
 import { CertificateComponent} from './templates/certificate/certificate.component';
 import { CertificateVittal1Component} from './templates/certificate_vittal/certificate.component';
 import { CertificateVittal2Component} from './templates/certificate_vittal2/certificate.component';
+import { CertificateAntComponent } from './templates/certificate-ant/template.component';
 
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -38,6 +39,7 @@ import { AuthGuard } from './guards/auth.guard';
     CertificateComponent,
     CertificateVittal1Component,
     CertificateVittal2Component,
+    CertificateAntComponent,
     FooterComponent,
     NavbarComponent,
     SingleCertificateComponent,
