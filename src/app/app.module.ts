@@ -22,6 +22,8 @@ import { CertificateVittal1Component} from './templates/certificate_vittal/certi
 import { CertificateVittal2Component} from './templates/certificate_vittal2/certificate.component';
 import { CertificateAntComponent } from './templates/certificate-ant/template.component';
 import { CertificateGCIComponent } from './templates/certificate-geek/certificate-gci18.component';
+import { CertificateTemplateComponent } from './templates/certificate-template/certificate-template.component';
+import { CertsidComponent } from './templates/certsid/certsid.component';
 
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -42,6 +44,8 @@ import { AuthGuard } from './guards/auth.guard';
     CertificateVittal2Component,
     CertificateAntComponent,
     CertificateGCIComponent,
+    CertificateTemplateComponent,
+    CertsidComponent,
     FooterComponent,
     NavbarComponent,
     SingleCertificateComponent,
