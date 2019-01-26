@@ -14,6 +14,7 @@ import { CertificateComponent} from './templates/certificate/certificate.compone
 import { CertificateVittal1Component } from './templates/certificate_vittal/certificate.component';
 import { CertificateVittal2Component } from './templates/certificate_vittal2/certificate.component';
 import { CertificateAntComponent } from './templates/certificate-ant/template.component';
+import { CertificateGCIComponent } from './templates/certificate-geek/certificate-gci18.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent},
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'template/certificateVittal1', component: CertificateVittal1Component},
   { path: 'template/certificateVittal2', component: CertificateVittal2Component},
   { path: 'template/certificateAnt', component: CertificateAntComponent},
+  { path: 'template/certificateGeek', component: CertificateGCIComponent}
 ];
 
 @NgModule({
