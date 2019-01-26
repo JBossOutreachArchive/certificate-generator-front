@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
- import { CertificateComponent } from './certificate.component';
+ import { CertificateVittal2Component } from './certificate.component';
 
- describe('CertificateComponent', () => {
-   let component: CertificateComponent;
-   let fixture: ComponentFixture<CertificateComponent>;
+ describe('CertificateVittal2Component', () => {
+   let component: CertificateVittal2Component;
+   let fixture: ComponentFixture<CertificateVittal2Component>;
 
    beforeEach(async(() => {
      TestBed.configureTestingModule({
-       declarations: [ CertificateComponent ]
+       declarations: [ CertificateVittal2Component ]
      })
      .compileComponents();
    }));
 
    beforeEach(() => {
-     fixture = TestBed.createComponent(CertificateComponent);
+     fixture = TestBed.createComponent(CertificateVittal2Component);
      component = fixture.componentInstance;
      fixture.detectChanges();
    });

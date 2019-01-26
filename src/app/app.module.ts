@@ -15,7 +15,12 @@ import { SignupComponent } from './core/signup/signup.component';
 import { StudentComponent } from './student/student.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { AppRoutingModule } from './/app-routing.module';
+
 import { BasicComponent } from './templates/basic/basic.component';
+import { CertificateComponent} from './templates/certificate/certificate.component';
+import { CertificateVittal1Component} from './templates/certificate_vittal/certificate.component';
+import { CertificateVittal2Component} from './templates/certificate_vittal2/certificate.component';
+
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
@@ -30,6 +35,9 @@ import { AuthGuard } from './guards/auth.guard';
     StudentComponent,
     OrganizationComponent,
     BasicComponent,
+    CertificateComponent,
+    CertificateVittal1Component,
+    CertificateVittal2Component,
     FooterComponent,
     NavbarComponent,
     SingleCertificateComponent,
