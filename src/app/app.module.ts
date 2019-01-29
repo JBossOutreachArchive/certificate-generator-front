@@ -18,8 +18,8 @@ import { AppRoutingModule } from './/app-routing.module';
 
 import { Template1Component } from './templates/template1/template1.component';
 import { Template2Component} from './templates/template2/template2.component';
-import { CertificateVittal1Component} from './templates/certificate_vittal/certificate.component';
-import { CertificateVittal2Component} from './templates/certificate_vittal2/certificate.component';
+import { Template3Component} from './templates/template3/template3.component';
+import { Template4Component} from './templates/template4/template4.component';
 import { CertificateAntComponent } from './templates/certificate-ant/template.component';
 import { CertificateGCIComponent } from './templates/certificate-geek/certificate-gci18.component';
 import { CertificateTemplateComponent } from './templates/certificate-template/certificate-template.component';
@@ -40,8 +40,8 @@ import { AuthGuard } from './guards/auth.guard';
     OrganizationComponent,
     Template1Component,
     Template2Component,
-    CertificateVittal1Component,
-    CertificateVittal2Component,
+    Template3Component,
+    Template4Component,
     CertificateAntComponent,
     CertificateGCIComponent,
     CertificateTemplateComponent,

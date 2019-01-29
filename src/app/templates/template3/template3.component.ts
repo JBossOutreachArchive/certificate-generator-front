@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
   @Component({
     selector: 'app-certificate',
-    templateUrl: './certificate.component.html',
-    styleUrls: ['./certificate.component.css']
+    templateUrl: './template3.component.html',
+    styleUrls: ['./template3.component.css']
   })
-  export class CertificateVittal1Component implements OnInit {
+  export class Template3Component implements OnInit {
 
     ifFieldChosen = true;
 

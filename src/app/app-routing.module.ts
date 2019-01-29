@@ -11,8 +11,8 @@ import { SingleCertificateComponent } from './organization/single-certificate/si
 import { AuthGuard } from './guards/auth.guard';
 import { Template1Component } from './templates/template1/template1.component';
 import { Template2Component} from './templates/template2/template2.component';
-import { CertificateVittal1Component } from './templates/certificate_vittal/certificate.component';
-import { CertificateVittal2Component } from './templates/certificate_vittal2/certificate.component';
+import { Template3Component } from './templates/template3/template3.component';
+import { Template4Component } from './templates/template4/template4.component';
 import { CertificateAntComponent } from './templates/certificate-ant/template.component';
 import { CertificateGCIComponent } from './templates/certificate-geek/certificate-gci18.component';
 import { CertificateTemplateComponent } from './templates/certificate-template/certificate-template.component';
@@ -27,8 +27,8 @@ const routes: Routes = [
   { path: 'issue/single', component: SingleCertificateComponent, canActivate: [AuthGuard]},
   { path: 'templates/template1', component: Template1Component},
   { path: 'templates/template2', component: Template2Component},
-  { path: 'template/certificateVittal1', component: CertificateVittal1Component},
-  { path: 'template/certificateVittal2', component: CertificateVittal2Component},
+  { path: 'templates/template3', component: Template3Component},
+  { path: 'templates/template4', component: Template4Component},
   { path: 'template/certificateAnt', component: CertificateAntComponent},
   { path: 'template/certificateGeek', component: CertificateGCIComponent},
   { path: 'template/certificateTemplate', component: CertificateTemplateComponent},
