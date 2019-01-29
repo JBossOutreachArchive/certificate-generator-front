@@ -16,8 +16,8 @@ import { StudentComponent } from './student/student.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { AppRoutingModule } from './/app-routing.module';
 
-import { BasicComponent } from './templates/basic/basic.component';
-import { CertificateComponent} from './templates/certificate/certificate.component';
+import { Template1Component } from './templates/template1/template1.component';
+import { Template2Component} from './templates/template2/template2.component';
 import { CertificateVittal1Component} from './templates/certificate_vittal/certificate.component';
 import { CertificateVittal2Component} from './templates/certificate_vittal2/certificate.component';
 import { CertificateAntComponent } from './templates/certificate-ant/template.component';
@@ -38,8 +38,8 @@ import { AuthGuard } from './guards/auth.guard';
     SignupComponent,
     StudentComponent,
     OrganizationComponent,
-    BasicComponent,
-    CertificateComponent,
+    Template1Component,
+    Template2Component,
     CertificateVittal1Component,
     CertificateVittal2Component,
     CertificateAntComponent,

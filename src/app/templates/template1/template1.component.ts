@@ -2,10 +2,10 @@ import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-basic',
-  templateUrl: './basic.component.html',
-  styleUrls: ['./basic.component.css']
+  templateUrl: './template1.component.html',
+  styleUrls: ['./template1.component.css']
 })
-export class BasicComponent implements OnInit {
+export class Template1Component implements OnInit {
   @Input() certificateForm;
   constructor() { }
 
