@@ -1,88 +1,60 @@
-@import url('https://fonts.googleapis.com/css?family=Audiowide|Chakra+Petch|Sacramento|Srisakdi|Unica+One');
+@import url(https://zavoloklom.github.io/material-design-iconic-font/css/docs.md-iconic-font.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes);
 
-body {
-  text-align: center;
-  background-color: #ffffff;
+.certificate {
+  height: 520px;
+  width: 70%;
+  background: #e53935;
+  display: block;
+  position: relative;
+  margin: 35px auto;
+  border: 2em solid #61615c;
+  border-radius: 1em;
+  border-style: solid;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 8px 8px rgba(0, 0, 0, 0.23);
 }
-img {
-  width: 15%;
+
+.logo {
+  height: 465px;
+  background-color: #f5f6fa;
 }
- .center {
-  width: 50%;
-  font-family: 'Unica One', serif;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: dashed;
-  border-radius: 10px;
-  border-width: 5px;
-  border-color: #3b9fde;
-  margin-top: 5%;
+.logo img{
+  width: 130px;
+  height: 80px;
+	margin-top: 120px;
 }
- .org_name {
-  font-size: 42px;
-  font-family: 'Chakra Petch', serif;
-  color: #ffa700;
-  margin-top: 0px;
-  margin-bottom: 0px;
+
+.icon {
+  color: #ffc048;
+  margin-top: 1em;
 }
-.company {
- margin-bottom: 1.5em;
+
+.fields {
+  height: 465px;
+  margin-top: 3em;
 }
-.id {
- margin:10px;
- color: #d62d20;
+
+.fields h1 {
+  font-family: 'Great Vibes', cursive;
+  color: #fff;
+  font-size: 4em;
 }
- .candidate-name {
-  font-size: 38px;
-  font-family: 'Audiowide', cursive;
-  color: #0057e7;
-  margin-top: 0px;
-  margin-bottom: 0px;
+
+.fields h3 {
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  font-size: 1.75em;
+  padding-left: 4em;
 }
-.coa {
-  font-size: 32px;
-  color: #db3236;
-  margin-top: 0px;
-  margin-bottom: 0px;
+
+.sign{
+	margin-top: 80px;
 }
-.pre_text {
-  font-family: "Sacramento", cursive;
-  font-size: 18px;
-  color: #bbaca9;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
- .desc {
-  font-size: 18px;
-  font-family: 'Sacramento', cursive;
-  color: #008744
-}
-/* . {
- margin-left: 1em;
- display: inline-block;
-} */
-  .dateHead {
-  width: auto;
-  margin-right: 1em;
-  font-family: 'Sirsakdi', cursive;
-}
- .date {
-  width: auto;
-  font-style: italic;
-  margin-bottom: 5em;
-}
- .signHead {
-  font-family: 'Sirsakdi', cursive;
-}
- .sign {
-  width: auto;
-  margin-bottom: 5em;
-}
- .signature-area {
-  margin-right: 10em;
-  display: inline-block;
-}
-.date-area {
- margin-left: 10em;
- display: inline-block;
+
+.certificate_id{
+	color: #000;
+	margin-top: 20px;
 }

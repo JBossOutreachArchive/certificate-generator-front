@@ -22,8 +22,8 @@ import { Template3Component} from './templates/template3/template3.component';
 import { Template4Component} from './templates/template4/template4.component';
 import { Template5Component } from './templates/template5/template5.component';
 import { CertificateGCIComponent } from './templates/certificate-geek/certificate-gci18.component';
-import { CertificateTemplateComponent } from './templates/certificate-template/certificate-template.component';
-import { CertsidComponent } from './templates/certsid/certsid.component';
+import { Template6Component } from './templates/template6/template6.component';
+import { Template7Component } from './templates/template7/template7.component';
 
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -44,8 +44,8 @@ import { AuthGuard } from './guards/auth.guard';
     Template4Component,
     Template5Component,
     CertificateGCIComponent,
-    CertificateTemplateComponent,
-    CertsidComponent,
+    Template6Component,
+    Template7Component,
     FooterComponent,
     NavbarComponent,
     SingleCertificateComponent,
