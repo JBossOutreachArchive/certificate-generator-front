@@ -8,7 +8,7 @@ body {
   font-family: 'Arial', serif;
   margin: 3px;
   border: 10px solid transparent;
-  -webkit-border-image: -webkit-linear-gradient(#0075ff, #028806);
+  -webkit-border-image:-webkit-linear-gradient(#0075ff, #028806);
   border-image-slice: 1;
 }
 

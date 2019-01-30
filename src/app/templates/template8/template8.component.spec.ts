@@ -1,16 +1,16 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
- import { CertificateGCIComponent } from './certificate-gci18.component';
- describe('CertificateGCIComponent', () => {
-  let component: CertificateGCIComponent;
-  let fixture: ComponentFixture<CertificateGCIComponent>;
+ import { Template8Component } from './template8.component';
+ describe('Template8Component', () => {
+  let component: Template8Component;
+  let fixture: ComponentFixture<Template8Component>;
    beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CertificateGCIComponent ]
+      declarations: [ Template8Component ]
     })
     .compileComponents();
   }));
    beforeEach(() => {
-    fixture = TestBed.createComponent(CertificateGCIComponent);
+    fixture = TestBed.createComponent(Template8Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

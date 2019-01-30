@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
- import { CertificateComponent } from './certificate.component';
+ import { Template4Component } from './template4.component';
 
- describe('CertificateComponent', () => {
-   let component: CertificateComponent;
-   let fixture: ComponentFixture<CertificateComponent>;
+ describe('CertificateVittal2Component', () => {
+   let component: Template4Component;
+   let fixture: ComponentFixture<Template4Component>;
 
    beforeEach(async(() => {
      TestBed.configureTestingModule({
-       declarations: [ CertificateComponent ]
+       declarations: [ Template4Component ]
      })
      .compileComponents();
    }));
 
    beforeEach(() => {
-     fixture = TestBed.createComponent(CertificateComponent);
+     fixture = TestBed.createComponent(Template4Component);
      component = fixture.componentInstance;
      fixture.detectChanges();
    });

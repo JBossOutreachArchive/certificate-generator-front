@@ -15,7 +15,17 @@ import { SignupComponent } from './core/signup/signup.component';
 import { StudentComponent } from './student/student.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { AppRoutingModule } from './/app-routing.module';
-import { BasicComponent } from './templates/basic/basic.component';
+
+import { Template1Component } from './templates/template1/template1.component';
+import { Template2Component} from './templates/template2/template2.component';
+import { Template3Component} from './templates/template3/template3.component';
+import { Template4Component} from './templates/template4/template4.component';
+import { Template5Component } from './templates/template5/template5.component';
+import { Template6Component } from './templates/template6/template6.component';
+import { Template7Component } from './templates/template7/template7.component';
+import { Template8Component } from './templates/template8/template8.component';
+
+
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
@@ -29,7 +39,14 @@ import { AuthGuard } from './guards/auth.guard';
     SignupComponent,
     StudentComponent,
     OrganizationComponent,
-    BasicComponent,
+    Template1Component,
+    Template2Component,
+    Template3Component,
+    Template4Component,
+    Template5Component,
+    Template6Component,
+    Template7Component,
+    Template8Component,
     FooterComponent,
     NavbarComponent,
     SingleCertificateComponent,
