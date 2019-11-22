@@ -15,7 +15,7 @@ Certificate Generator aims to automatically generate certificates based on the d
 ## Development Stack
 * HTML
 * CSS
-* Angular 6 for Front-End
+* Angular 7 for Front-End
 
 ## Work Flow for Developers
 * _**For Certificate Issuers:**_
