@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthenticationService } from '../../services/authentication.service';
 import { Router } from '@angular/router';
 import { User } from '../../services/user.service';
+import {VERSION} from '@angular/core';
 
 @Component({
   selector: 'app-login',
@@ -11,6 +12,7 @@ import { User } from '../../services/user.service';
 })
 export class LoginComponent implements OnInit {
 
+  angularVersion = VERSION.major;
   signinForm: FormGroup;
   submitted = false;
   user: User;
