@@ -11,15 +11,14 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^7.1.1",
-    "@angular/common": "^7.1.1",
-    "@angular/compiler": "^7.1.1",
-    "@angular/core": "^7.1.1",
-    "@angular/forms": "^7.1.1",
-    "@angular/http": "^7.1.1",
-    "@angular/platform-browser": "^7.1.1",
-    "@angular/platform-browser-dynamic": "^7.1.1",
-    "@angular/router": "^7.1.1",
+    "@angular/animations": "^8.2.14",
+    "@angular/common": "^8.2.14",
+    "@angular/compiler": "^8.2.14",
+    "@angular/core": "^8.2.14",
+    "@angular/forms": "^8.2.14",
+    "@angular/platform-browser": "^8.2.14",
+    "@angular/platform-browser-dynamic": "^8.2.14",
+    "@angular/router": "^8.2.14",
     "ag-grid-angular": "^19.0.0",
     "ag-grid-community": "^19.0.0",
     "angular-font-awesome": "^3.1.2",
@@ -27,18 +26,20 @@
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
     "materialize-css": "^1.0.0",
+    "ng": "0.0.0",
+    "ng-cli": "^0.7.0",
     "rxjs": "^6.0.0",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.11.0",
-    "@angular/cli": "~7.1.0",
-    "@angular/compiler-cli": "^7.1.1",
-    "@angular/language-service": "^7.1.1",
+    "@angular-devkit/build-angular": "~0.803.20",
+    "@angular/cli": "~8.3.20",
+    "@angular/compiler-cli": "^8.2.14",
+    "@angular/language-service": "^8.2.14",
     "@types/jasmine": "~3.3.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~10.12.11",
-    "codelyzer": "~4.5.0",
+    "codelyzer": "^5.0.1",
     "jasmine-core": "~3.3.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "^3.1.1",
@@ -49,6 +50,6 @@
     "protractor": "^5.4.1",
     "ts-node": "~7.0.1",
     "tslint": "~5.11.0",
-    "typescript": "^3.1.1"
+    "typescript": "3.5.3"
   }
 }
