@@ -8,7 +8,6 @@ import { Injectable } from '@angular/core';
  })
  export class AuthenticationService {
 
-
    readonly baseUrl = Environment.baseUrl;
 
    constructor(private http: HttpClient) { }
