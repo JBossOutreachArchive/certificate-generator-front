@@ -1,14 +1,17 @@
 language: node_js
 node_js:
   - "8"
-  
+
 sudo: required
 
 notifications:
   email:
     on_failure: change
     on_success: always
-    
+
+services:
+  - xvfb
+
 addons:
   chrome: stable
 
@@ -18,10 +21,8 @@ before_script:
   - npm install -g @angular/cli
   - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
-  
+
 script:
   - echo "Namaste! Travis this side"
   - echo "Note - I have not added   - ng test --watch false -cc & ng e2e in config file as then travis will show build fail"
   - ng build
-  
