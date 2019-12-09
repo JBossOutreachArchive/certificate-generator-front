@@ -49,8 +49,11 @@ export class LoginComponent implements OnInit {
            localStorage.setItem('token', data['token']);
            localStorage.setItem('expires_at', this.expiration_date.toString());
            if (this.signinForm.value.role === 'student') {
+             localStorage.setTime('user_name', this.signinForm.value.username)
              this.router.navigate(['/student']);
+
            } else {
+             localStorage.setTime('user_name', this.signinForm.value.username)
              this.router.navigate(['/organization']);
            }
          },
