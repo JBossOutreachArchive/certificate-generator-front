@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
+import { ErrorComponent } from './errors/error/error.component';
 import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'student', component: StudentComponent, canActivate: [AuthGuard] },
   { path: 'signin', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
+  { path: '**', component: ErrorComponent },
   { path: 'issue/single', component: SingleCertificateComponent, canActivate: [AuthGuard]}
 ];
 

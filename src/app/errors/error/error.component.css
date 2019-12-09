@@ -1,0 +1,9 @@
+.header-logo {
+  display: block;
+  margin: 40px auto 10px auto;
+  padding-top: 10%;
+  width: 15%;
+  margin-top: 10px;
+  min-height: 75px;
+  min-width: 150px;
+}
