@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from '../services/authentication.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
-  constructor() { }
+  public show:boolean = false;
+  constructor(private mAuth: AuthenticationService) { }
 
   ngOnInit() {
+    if(this.mAuth.isAuthenticated()){
+      this.show = true;
+    } else {
+      this.show = false;
+    }
+  }
+
+  onLogOut(){
+    localStorage.removeItem('token');
+    localStorage.removeItem('expires_at');
   }
 
 }
