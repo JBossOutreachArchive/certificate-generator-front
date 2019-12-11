@@ -1,45 +1,77 @@
-<app-navbar></app-navbar>
+<div class="nav-bar">
+    <span class="logo">
+        <a href="#">Certificate Generator</a>
+    </span>
+    <span class="links">
+        <a href="home">Home</a>
+        <a href="signup">SignUp</a>
+    </span>
+  </div>
 
-<div class="container-fluid">
-  <div class="row details-wrapper">
-    <div class="col">
-      <h1 class="org-title"> @JBossOutreach </h1>
-      <h4> Mentor @ JBoss </h4>
-      <h4> Mumbai, IN </h4>
+  <div>
+    <div class="row div-1">
+        <div class="card-1 row col s6">
+            <div class="icon col s4">
+                <i class="fas fa-user fa-5x"></i>
+            </div>
+            <div class="info col s4">
+                <h4>Organisation</h4>
+                <p>Lorem Ipsum</p>
+            </div>
+            <div class="extras col s4">
+                <p class="chip-ex">12 new</p>
+                <p class="desg">@Mentor</p>
+                </div>
+        </div>
+        <div class="buttons col s6">
+            <div class="div-import">
+                <button class="btn-import ">Import</button>
+            </div>
+            <div class="div-generate">
+                <button class="btn-generate ">Generate</button>
+            </div>
+        </div>
     </div>
-    <div class="col rtl" >
-      <h1 class="org-title"> Certificates: {{ this.rowData.length }} </h1>
-      <h4> Download </h4>
-    </div>
-    <div class="container-fluid">
-      <div class="row action-wrapper">
-        <div class="col-2"></div>
-        <button class="col-lg-3"> IMPORT </button>
-        <div class="col-2"></div>
-        <button type="button" routerLink="/issue/single" class="col-lg-3 blue-btn"> GENERATE </button>
-        <div class="col-2"></div>
-      </div>
+
+    <div class="row div-2">
+            <div class="card-2 col s4 ">
+                <div class="row ">
+                    <div class="icon-sm col s4">
+                        <i class="fas fa-user fa-3x"></i>
+                    </div>
+                    <div class="info-sm col s4">
+                        <h4>Tony Stark</h4>
+                    </div>
+                    <div class="extras-sm col s4">
+                        <p class="chip-sm">12 new</p>
+                    </div>
+                </div>  
+            </div>
+            <div class="card-3 col s4 ">
+                <div class="row ">
+                    <div class="icon-sm col s4">
+                        <i class="fas fa-user fa-3x"></i>
+                    </div>
+                    <div class="info-sm col s4">
+                        <h4>Steve Rogers</h4>
+                    </div>
+                    <div class="extras-sm col s4">
+                        <p class="chip-sm">12 new</p>
+                    </div> 
+                </div>          
+            </div>
+            <div class="card-4 col s4 ">
+                <div class="row">
+                    <div class="icon-sm col s4">
+                        <i class="fas fa-user fa-3x"></i>
+                    </div>
+                    <div class="info-sm col s4">
+                        <h4>Bruce Banner</h4>
+                    </div>
+                    <div class="extras-sm col s4">
+                        <p class="chip-sm">12 new</p>
+                    </div>
+                </div>
+            </div>
     </div>
   </div>
-  <h2 class="text-center org-title"><i class="fa fa-calendar"></i>&nbsp;&nbsp; Events: </h2>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 card">
-        <img class="card-img-top" src="https://codein.withgoogle.com/static/img/og-image.png" alt="Card image cap">
-        <div class="card-body">
-          <h4 class="card-title title">Google Code-In</h4>
-          <p class="card-text">Certificates: 6590 </p>
-          <a href="#" class="btn btn-danger">See certificates</a>
-        </div>
-      </div>
-      <div class="col-md-3 card">
-        <img class="card-img-top" src="https://cdn-images-1.medium.com/max/1200/1*z__mBuA-_5LAzNo0dr0gCQ.png" alt="Card image cap">
-        <div class="card-body">
-          <h4 class="card-title title">Summer of Code </h4>
-          <p class="card-text">Certificates: 3 </p>
-          <a href="#" class="btn btn-danger">See certificates</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>

@@ -1,50 +1,185 @@
-* {
-  color: #384850;
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Hind");
+
+.nav-bar {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 0.5em;
+    background-color: #d43737;
+    box-shadow: 1px 2px 2px 1px rgb(173, 170, 170);
+    
 }
 
-.details-wrapper {
-  margin: 40px 15%;
+.logo a {
+    font-size: 1.75em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
 }
 
-.org-title {
-  font-weight: bold;
+.links {
+    margin-left: 45em;
 }
 
-.rtl {
-  float: right;
-  text-align: right;
+.links a {
+    font-size: 1.05em;
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
 }
 
-.action-wrapper {
-  margin-top: 30px;
+.div-1 {
+    padding: 2em;
 }
 
-button {
-  font-size: 1.5rem;
-  min-height: 40px;
-  font-weight: bold;
-  background: #64C13A;
-  color: white;
-  border-radius: 25px;
-  border: none;
+.div-2 {
+    padding: 2em;
 }
 
-.blue-btn {
-  background: #1F8CE9;
+.card-1 {
+    box-shadow: 1px 3px 3px 1px rgb(173, 170, 170);
+    border-radius: 2px;
+    width: 45em;
+    height: 15em;
+    text-align: center;
+    margin-top: 2em;
+    margin-left: 20em;
+    padding: .5em;
+    font-family: 'Hind', sans-serif;
+    color: rgb(54, 50, 50);
+    
 }
 
-.card {
-  margin-top: 40px;
-  margin-left: 6.25%;
+.buttons {
+    text-align: center;
+    margin-top: 3em;
+    margin-left: 5em;
+    padding: 1em;
 }
 
-.card .btn {
-  color: white;
+.div-import {
+    padding: 1em;
 }
 
-.card .card-img-top {
-  width: 70%;
-  height: 80%;
-  margin: 15px auto 0 auto;
-  padding: 15px;
+.div-generate {
+    padding: 1em;
+}
+
+.btn-import {
+    background-color: rgb(59, 163, 59);
+    color: white;
+    border: none;
+    border-radius: 2em;
+    padding: .5em;
+    width: 15em;
+    font-family: 'Hind', sans-serif;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+.btn-generate {
+    background-color: rgb(78, 78, 197);
+    color: white;
+    border: none;
+    border-radius: 2em;
+    padding: .5em;
+    width: 15em ;
+    font-family: 'Hind', sans-serif;
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+.card-2 {
+    box-shadow: 1px 3px 3px 1px rgb(173, 170, 170);
+    border-radius: 2px;
+    height: 10em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-family: 'Hind', sans-serif;
+    color: rgb(54, 50, 50);
+    text-align: center;
+}
+
+
+
+.card-3 {
+    box-shadow: 1px 3px 3px 1px rgb(173, 170, 170);
+    height: 10em;
+    border-radius: 2px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-family: 'Hind', sans-serif;
+    color: rgb(54, 50, 50);
+    text-align: center;
+}
+
+
+
+.card-4 {
+    box-shadow: 1px 3px 3px 1px rgb(173, 170, 170);
+    height: 10em;
+    border-radius: 2px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-family: 'Hind', sans-serif;
+    color: rgb(54, 50, 50);
+    text-align: center;
+}
+
+
+.icon {
+    padding: 1.75em;
+    margin-top: 3em;
+}
+
+.info {
+    margin-top: 2.5em;
+}
+
+.extras {
+    margin-top: 2.5em;
+}  
+
+.chip-ex {
+    background-color: rgb(199, 39, 39);
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    font-size:0.5em;
+    padding: 1.75px;
+    width: 5em;
+    float: right;
+    margin-right: 10em;
+}
+
+.desg {
+    font-size: 1.25em;
+    margin-top: 4em;
+}
+
+
+.icon-sm {
+    margin-top: 2.5em;
+}
+
+.info-sm {
+    margin-top: 2em;
+}
+
+.info-sm h4 {
+    font-size: 1.2em;
+}
+
+.extras-sm {
+    font-size: 0.5em;
+    float: left;
+}  
+
+.chip-sm {
+    background-color: rgb(199, 39, 39);
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    width: 5em;
+    padding: 1px;
 }
