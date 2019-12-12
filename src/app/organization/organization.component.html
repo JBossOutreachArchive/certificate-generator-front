@@ -21,25 +21,17 @@
       </div>
     </div>
   </div>
-  <h2 class="text-center org-title"><i class="fa fa-calendar"></i>&nbsp;&nbsp; Events: </h2>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 card">
-        <img class="card-img-top" src="https://codein.withgoogle.com/static/img/og-image.png" alt="Card image cap">
-        <div class="card-body">
-          <h4 class="card-title title">Google Code-In</h4>
-          <p class="card-text">Certificates: 6590 </p>
-          <a href="#" class="btn btn-danger">See certificates</a>
-        </div>
-      </div>
-      <div class="col-md-3 card">
-        <img class="card-img-top" src="https://cdn-images-1.medium.com/max/1200/1*z__mBuA-_5LAzNo0dr0gCQ.png" alt="Card image cap">
-        <div class="card-body">
-          <h4 class="card-title title">Summer of Code </h4>
-          <p class="card-text">Certificates: 3 </p>
-          <a href="#" class="btn btn-danger">See certificates</a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <h2 class="text-center org-title"><i class="fa fa-calendar"></i>&nbsp;&nbsp; Certificates: </h2>
+<div class="container">
+    <ag-grid-angular
+      style="width: 60%; height: 500px; margin: 0 auto;"
+      class="ag-theme-balham"
+      [rowData]="rowData"
+      [enableSorting]="true"
+      [enableFilter]="true"
+      [columnDefs]="columnDefs"
+      [enableColResize] = "true"
+      (gridReady)="onGridReady($event)"
+      >
+    </ag-grid-angular>
 </div>
