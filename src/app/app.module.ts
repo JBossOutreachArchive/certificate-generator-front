@@ -21,6 +21,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
 
 import { AuthGuard } from './guards/auth.guard';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { AuthGuard } from './guards/auth.guard';
     FooterComponent,
     NavbarComponent,
     SingleCertificateComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,27 @@
+.error{
+    width: '100%';
+    height: 400px;
+    text-align: center;
+    position: absolute;
+    top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+    padding: 20px;
+}
+.error-title{
+
+    color: black;
+    font-weight: bold;
+}
+.error-link{
+    text-decoration: underline;
+    color: #F1002C;
+}
+@media screen and (max-width: 1024px) {
+    .error-title {
+      font-size: 25px;
+    }
+  }
+  
