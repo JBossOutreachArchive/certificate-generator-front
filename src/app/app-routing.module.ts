@@ -9,7 +9,6 @@ import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
 import { AuthGuard } from './guards/auth.guard';
-import { ErrorComponent } from './error/error.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent},
@@ -18,7 +17,6 @@ const routes: Routes = [
   { path: 'signin', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'issue/single', component: SingleCertificateComponent, canActivate: [AuthGuard]},
-  { path: '**', component: ErrorComponent },
 ];
 
 @NgModule({
