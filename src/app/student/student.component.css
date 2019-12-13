@@ -56,3 +56,21 @@
     margin: 10px auto;
   }
 }
+
+@media (max-width: 1024px){
+  .ag-theme-balham{
+    width: 100%;
+  }
+}
+
+.ag-theme-material{
+  border-radius: 30px;
+  border: 1px solid  #CACACA;
+  padding-top: 30px;
+  width: 60%; 
+  height: 700px;
+  margin: 0 auto;
+  color: #5C5C5C;
+  font-family: sans-serif;
+  font-size: 16px;
+}
