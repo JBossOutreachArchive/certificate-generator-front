@@ -14,7 +14,8 @@
     <div class="container-fluid">
       <div class="row action-wrapper">
         <div class="col-2"></div>
-        <button class="col-lg-3"> IMPORT </button>
+        <button class="col-lg-3" (click)="uploader.click()"> IMPORT </button>
+        <input hidden type="file" #uploader (change)="uploadCSV($event)"/>
         <div class="col-2"></div>
         <button type="button" routerLink="/issue/single" class="col-lg-3 blue-btn"> GENERATE </button>
         <div class="col-2"></div>
