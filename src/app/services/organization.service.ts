@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpRequest } from '@angular/common/http';
 import { Certificate } from './certificate.model';
 import { Environment } from '../environments/environments';
 import { Observable } from 'rxjs';
@@ -23,7 +23,14 @@ export class OrganizationService {
     // Would be used when organization wants to generate single certificate
   }
 
-  private generateBulkCertificate() {
-    // Would be used when organization wants to many certificates by using csv/excel file
+  generateBulkCertificate(csv) {
+    let data = new FormData();
+    data.set('file', csv);
+    let token = 'JWT '+localStorage.getItem('token');
+    const options = {
+      headers: new HttpHeaders().set('Authorization', token)
+    };
+    const req = new HttpRequest('POST', Environment.baseUrl+'api/issue_certificate/csv/', data, options);
+    return this.http.request(req);
   }
 }
