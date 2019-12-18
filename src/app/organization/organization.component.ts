@@ -22,6 +22,33 @@ export class OrganizationComponent implements OnInit {
   ];
 
   rowData = [];
+  
+  Error = false;
+  selectedFile:File = null;
+  Uploaded = false;
+
+  // Check for Valid File type
+  onFileSelected(event){
+
+    this.selectedFile = <File>event.target.files[0];
+    if(this.selectedFile.type != "text/csv" && this.selectedFile.type != "application/vnd.ms-excel"){
+      this.Error = true;
+    }
+    else{
+      this.Error = false;
+    }  
+  }
+
+  // On Upload
+  onUpload(){  
+    this.orgService.generateBulkCertificate(this.selectedFile).subscribe(event => {
+      this.Uploaded = true;
+    },
+    error => {
+      console.log("error: ", error); 
+    }
+    )
+  }
 
   ngOnInit() {
     this.orgService.getCertificates().subscribe((certificates: Certificate[]) => {
@@ -30,6 +57,7 @@ export class OrganizationComponent implements OnInit {
       for (const certificate of certificates){
         this.rowData.push({ name: certificate.student.name, date: certificate.date, desc: certificate.issued_for });
       }
+      
       this.gridApi.setRowData(this.rowData);
     });
   }
