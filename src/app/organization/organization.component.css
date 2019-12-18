@@ -1,12 +1,25 @@
 * {
-  color: #384850;
+ 
 }
 
 .details-wrapper {
   margin: 40px 15%;
+  border-radius: 20px;
+}
+.detail-div1{
+  color: white;
+  border-radius: 10px;
+  background-color: #F1002C;
+  padding: 40px;
+}
+
+.detail-div2{
+  
+  padding: 40px;
 }
 
 .org-title {
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -20,13 +33,24 @@
 }
 
 button {
+  margin: 10px;
   font-size: 1.5rem;
   min-height: 40px;
   font-weight: bold;
-  background: #64C13A;
   color: white;
-  border-radius: 25px;
+  border-radius: 10px;
   border: none;
+}
+
+.btn1{
+  background-color: white;
+  border: 1px solid #F1002C;
+  color: #F1002C;
+  transition: background-color 0.4s;
+}
+.btn1:hover{
+  background-color: #F1002C;
+  color: white;
 }
 
 .blue-btn {
@@ -47,4 +71,62 @@ button {
   height: 80%;
   margin: 15px auto 0 auto;
   padding: 15px;
+}
+
+
+@media (max-width: 1728px) {
+  .detail-div1{
+    padding:20px;
+  }
+  .detail-div2{
+    padding:20px;
+  }
+  .details-wrapper{
+    margin: 20px
+  }
+  .org-title{
+    font-size: 30px;
+  }
+
+}
+
+/* Modal css */
+
+.modal-header{
+  
+  text-align: center;
+  background-color: #F1002C;
+  color: white;
+}
+.modal-body{
+  padding: 40px;
+}
+.modal-title{
+  font-size: 28px;
+  margin-left: 20px;
+  text-align: center;
+  font-weight: bold;
+
+}
+.closebtn{
+
+  color: #F1002C;
+  padding: 2px;
+}
+
+.submit{
+  background-color:white;
+  color: #F1002C;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: background-color 0.3s;
+}
+.submit:hover{
+  background-color: #F1002C;
+  color: white;
+}
+.submit[disabled]{
+  background-color: white;
+  border: none;
+  color: grey;
 }
