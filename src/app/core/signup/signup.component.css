@@ -2,14 +2,6 @@
   font-family: 'Poppins', sans-serif;
  }
 
-.header{
-  padding: 40px;
-  text-align: center;
-  background: red;
-  color: white;
-  font-size: 30px;
-}
-
  .col-4 {
   height: 80vh;
 }
