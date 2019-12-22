@@ -17,6 +17,7 @@ import { OrganizationComponent } from './organization/organization.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BasicComponent } from './templates/basic/basic.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
 
@@ -31,6 +32,7 @@ import { AuthGuard } from './guards/auth.guard';
     OrganizationComponent,
     BasicComponent,
     FooterComponent,
+    HeaderComponent,
     NavbarComponent,
     SingleCertificateComponent,
   ],
