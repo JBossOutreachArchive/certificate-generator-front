@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
+import { ErrorComponent } from './core/error/error.component';
 import { StudentComponent } from './student/student.component';
 import { OrganizationComponent } from './organization/organization.component';
 import { AppRoutingModule } from './/app-routing.module';
@@ -28,6 +29,7 @@ import { AuthGuard } from './guards/auth.guard';
     AppComponent,
     LoginComponent,
     SignupComponent,
+    ErrorComponent,
     StudentComponent,
     OrganizationComponent,
     BasicComponent,
