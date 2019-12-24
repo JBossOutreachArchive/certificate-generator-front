@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
          data => {
            this.expiration_date = new Date();
            this.expiration_date.setTime(this.expiration_date.getTime() + (60 * 60 * 1000));
-           localStorage.setItem('token', 'testvalue');//data['token']);
+           localStorage.setItem('token', data['token']);
            localStorage.setItem('expires_at', this.expiration_date.toString());
            if (this.signinForm.value.role === 'student') {
              localStorage.setItem('user_name', this.signinForm.value.username)
