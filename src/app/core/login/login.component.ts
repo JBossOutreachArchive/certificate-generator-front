@@ -42,8 +42,8 @@ export class LoginComponent implements OnInit {
         password: this.signinForm.value.password
       };
 
-       //this.mAuth.login(this.user).subscribe(
-         //data => {
+       this.mAuth.login(this.user).subscribe(
+         data => {
            this.expiration_date = new Date();
            this.expiration_date.setTime(this.expiration_date.getTime() + (60 * 60 * 1000));
            localStorage.setItem('token', 'testvalue');//data['token']);
@@ -55,11 +55,11 @@ export class LoginComponent implements OnInit {
              localStorage.setItem('user_name', this.signinForm.value.username)
              this.router.navigate(['/organization']);
            }
-         //},
-         //error => {
-           //this.error = error.error.non_field_errors;
-         //}
-       //);
+         },
+         error => {
+           this.error = error.error.non_field_errors;
+         }
+       );
     } else {
       return;
     }
