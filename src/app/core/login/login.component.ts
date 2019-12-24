@@ -42,22 +42,24 @@ export class LoginComponent implements OnInit {
         password: this.signinForm.value.password
       };
 
-       this.mAuth.login(this.user).subscribe(
-         data => {
+       //this.mAuth.login(this.user).subscribe(
+         //data => {
            this.expiration_date = new Date();
            this.expiration_date.setTime(this.expiration_date.getTime() + (60 * 60 * 1000));
-           localStorage.setItem('token', data['token']);
+           localStorage.setItem('token', 'testvalue');//data['token']);
            localStorage.setItem('expires_at', this.expiration_date.toString());
            if (this.signinForm.value.role === 'student') {
+             localStorage.setItem('user_name', this.signinForm.value.username)
              this.router.navigate(['/student']);
            } else {
+             localStorage.setItem('user_name', this.signinForm.value.username)
              this.router.navigate(['/organization']);
            }
-         },
-         error => {
-           this.error = error.error.non_field_errors;
-         }
-       );
+         //},
+         //error => {
+           //this.error = error.error.non_field_errors;
+         //}
+       //);
     } else {
       return;
     }
