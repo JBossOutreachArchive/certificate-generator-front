@@ -8,6 +8,7 @@ import {AuthenticationService} from '../services/authentication.service';
 })
 export class NavbarComponent implements OnInit {
 	public userNameShow:boolean = false;
+  public logOutShow:boolean = false;
 	public userName:any = '';
   	constructor(private mAuth: AuthenticationService) { }
 
@@ -15,10 +16,19 @@ export class NavbarComponent implements OnInit {
   	if(this.mAuth.isAuthenticated()){
   		this.userNameShow = true;
   		this.userName = localStorage.getItem('user_name');
+      this.logOutShow = true;
   	}
   	else {
   		this.userNameShow = false;
   	}
+  }
+
+  ngOnClickLogOut(){
+    localStorage.removeItem('user_name');
+    localStorage.removeItem('token');
+    localStorage.removeItem('expires_at');
+    this.userNameShow = false;
+    this.logOutShow = false;
   }
 
 }
