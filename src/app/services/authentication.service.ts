@@ -40,12 +40,10 @@ import { Injectable } from '@angular/core';
     };
 
     if(userSignup.role == "user"){
-      return true;
-      //return this.http.post(this.baseUrl+"api/user/", JSON.stringify(details), options);
+      return this.http.post(this.baseUrl+"api/user/", JSON.stringify(details), options);
     }
     else if(userSignup.role == "issuer"){
-      return true;
-      //return this.http.post(this.baseUrl+"api/org/", JSON.stringify(details), options);
+      return this.http.post(this.baseUrl+"api/org/", JSON.stringify(details), options);
     }
    }
 
