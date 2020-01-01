@@ -1,13 +1,22 @@
 import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Certificate } from './certificate.model';
+import { Environment } from '../environments/environments';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class StudentService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  private getAllCertificates() {
-    // Fetches all the certificates issued to student
+
+  getCertificates(): Observable<Certificate[]> {
+    const token = 'JWT ' + localStorage.getItem('token');
+    const options = {
+      headers: new HttpHeaders().set('Authorization', token)
+    };
+    return this.http.get<Certificate[]>(Environment.baseUrl+"api/get_certificates", options);
   }
 }
