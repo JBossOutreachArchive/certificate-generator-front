@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthenticationService } from '../../services/authentication.service';
 import { Router } from '@angular/router';
 import { User } from '../../services/user.service';
+import { StatusService } from 'src/app/services/status.service';
 
 @Component({
   selector: 'app-login',
@@ -20,7 +21,8 @@ export class LoginComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private mAuth: AuthenticationService,
-    private router: Router
+    private router: Router,
+    private statusService: StatusService
   ) { }
 
   ngOnInit() {
@@ -44,6 +46,7 @@ export class LoginComponent implements OnInit {
 
        this.mAuth.login(this.user).subscribe(
          data => {
+          this.statusService.changeStatus(true);
            this.expiration_date = new Date();
            this.expiration_date.setTime(this.expiration_date.getTime() + (60 * 60 * 1000));
            localStorage.setItem('token', data['token']);
