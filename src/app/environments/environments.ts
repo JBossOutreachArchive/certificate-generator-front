@@ -4,7 +4,7 @@
 
 export class Environment {
     public static production = false;
-    public static baseUrl = 'https://cert-gen-jboss.herokuapp.com/';
+    public static baseUrl = 'http://127.0.0.1:8000/';
  }
   /*
    * In development mode, to ignore zone related error stack frames such as
