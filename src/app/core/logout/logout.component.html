@@ -1,0 +1,1 @@
+<h1>Logging you out...</h1>

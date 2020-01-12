@@ -5,7 +5,9 @@
   <div class="collapse navbar-collapse">
     <ul class="navbar-nav ml-auto">
       <li><a class="nav-link" href="#">Home</a></li>
-      <li><a class="nav-link" href="#">Sign Up</a></li>
+      <li *ngIf="this.mAuth.isAuthenticated(); else signup"><a class="nav-link" routerLink="/logout">Sign Out</a></li>
+      <ng-template #signup><li><a class="nav-link" href="#">Sign Up</a></li></ng-template>
+
       <li><a class="nav-link" href="#"> <i class="fa fa-user"></i>&nbsp;&nbsp;<i class="fa fa-ellipsis-v"></i></a></li>
     </ul>
   </div>
