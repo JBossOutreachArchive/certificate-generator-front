@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
+ isUserExist: string;
   constructor() { }
 
   ngOnInit() {
+   this.getUserName();
+  }
+
+  getUserName() {
+    this.isUserExist = localStorage.getItem('user_name');
+
   }
 
 }
