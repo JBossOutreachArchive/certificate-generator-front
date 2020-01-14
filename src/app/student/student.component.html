@@ -1,46 +1,38 @@
 <app-navbar></app-navbar>
+
+<div *ngIf="noCertificates; else elseCerts" class="container body">
+  <h1>Uh oh! You have no certificates yet!</h1>
+</div>
+
+<ng-template #elseCerts>
 <div class="container body">
   <div class="row">
     <div class="col-2"></div>
     <div class="col-md-3 text-center">
       <img src="/assets/person.png" class="profile-pic">
     </div>
+
     <div class="col-md-7">
       <div class="details-wrapper">
-        <h2 class="title"> Saba Khukhunashvili </h2>
-        <h3> Certificates owned: 13 </h3>
+        <h2 class="title"> {{this.studentName}} </h2>
+        <h3> Certificates owned: {{this.rowData.length}} </h3>
         <button type="button" class="text-center outline-btn"> Edit Profile </button>
       </div>
     </div>
   </div>
-  <h2 class="text-center section-title title"><i class="fa fa-users"></i>&nbsp;&nbsp; Your Organizations </h2>
+  <h2 class="text-center section-title title"><i class="fa fa-users"></i>&nbsp;&nbsp; Your Certificates</h2>
 
 </div>
 <div class="container">
-  <div class="row">
-    <div class="col-md-3 card">
-      <img class="card-img-top" src="https://lh3.googleusercontent.com/7Lo14ZuKL-nNlCYvOobYQwP8ou-50WUVfCVAsQqd5pWkvbNiAfWeXt8yS99eFuHpjid2mEfLiHfj9VQq_ZkUFRY=s300" alt="Card image cap">
-      <div class="card-body">
-        <h4 class="card-title title">JBoss Outreach</h4>
-        <p class="card-text">Certificates: 11 </p>
-        <a href="#" class="btn btn-danger">See certificates</a>
-      </div>
-    </div>
-    <div class="col-md-3 card">
-      <img class="card-img-top" src="https://lh3.googleusercontent.com/pothvfKKMOM1e-SrPJ3vQKvw5ojTdW9mBsiWLMqRH3d92XqCQT4HajIWLsE8kfzfEKGdwE9RJPovRY8TtFcx0QI=s300" alt="Card image cap">
-      <div class="card-body">
-        <h4 class="card-title title">MetaBrainz</h4>
-        <p class="card-text">Certificates: 3 </p>
-        <a href="#" class="btn btn-danger">See certificates</a>
-      </div>
-    </div>
-    <div class="col-md-3 card">
-      <img class="card-img-top" src="https://lh3.googleusercontent.com/HjDjIIomG9Y4zWk8Ws-p0MxHSIWRwXdYbNJZfsoQ6RGjC5Rp9RdDOIhxhU3eJM4nEZfJ3-0-WSd27oHcmh3NBx22=s300" alt="Card image cap">
-      <div class="card-body">
-        <h4 class="card-title title">Coala</h4>
-        <p class="card-text">Certificates: 11 </p>
-        <a href="#" class="btn btn-danger">See certificates</a>
-      </div>
-    </div>
-  </div>
+  
+    <ag-grid-angular
+      class="ag-theme-balham cert-grid"
+      [rowData] = "rowData"
+      [columnDefs] = "columnDefs"
+      (gridReady) = "onGridReady($event)"
+      [enableSorting]="true"
+      [enableFilter]="true"
+      [enableColResize] = "true"
+    ></ag-grid-angular>
 </div>
+</ng-template>
