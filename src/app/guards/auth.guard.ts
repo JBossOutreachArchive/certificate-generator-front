@@ -10,8 +10,9 @@ export class AuthGuard implements CanActivate {
   canActivate(): boolean {
     if (this.mAuth.isAuthenticated()) {
       return true;
-    }else {
-      this.router.navigate(['/']);
+
+    } else {
+      this.router.navigate(['/forbidden-page']);
       return false;
     }
   }
