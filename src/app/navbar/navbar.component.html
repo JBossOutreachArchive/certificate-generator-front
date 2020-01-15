@@ -1,13 +1,16 @@
-<div >
-<nav class="navbar navbar-expand-md ">
-  <a class="navbar-brand" href="#">Certificate Generator</a>
+<div>
+    <nav class="navbar navbar-expand-md ">
+        <a class="navbar-brand" href="#">Certificate Generator</a>
 
-  <div class="collapse navbar-collapse">
-    <ul class="navbar-nav ml-auto">
-      <li><a class="nav-link" href="#">Home</a></li>
-      <li><a class="nav-link" href="#">Sign Up</a></li>
-      <li><a class="nav-link" href="#"> <i class="fa fa-user"></i>&nbsp;&nbsp;<i class="fa fa-ellipsis-v"></i></a></li>
-    </ul>
-  </div>
-</nav>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="#">Sign Up</a></li>
+                <li><a class="nav-link" href="javascript:;" *ngIf="isUserExist!=null">{{isUserExist}}</a></li>
+                <li>
+                    <a class="nav-link" href="#"> <i class="fa fa-user"></i>&nbsp;&nbsp;<i class="fa fa-ellipsis-v"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </div>
