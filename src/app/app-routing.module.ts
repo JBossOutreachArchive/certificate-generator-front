@@ -9,6 +9,7 @@ import { LoginComponent } from './core/login/login.component';
 import { SignupComponent } from './core/signup/signup.component';
 import { SingleCertificateComponent } from './organization/single-certificate/single-certificate.component';
 import { AuthGuard } from './guards/auth.guard';
+import { ErrorGeneratorComponent } from './error-generator/error-generator.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'student', component: StudentComponent, canActivate: [AuthGuard] },
   { path: 'signin', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
+  {path: '**', component: ErrorGeneratorComponent},
   { path: 'issue/single', component: SingleCertificateComponent, canActivate: [AuthGuard]}
 ];
 
