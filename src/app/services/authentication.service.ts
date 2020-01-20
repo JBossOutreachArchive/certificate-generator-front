@@ -18,6 +18,7 @@ import { Injectable } from '@angular/core';
      body.set('username', user.username);
      body.set('password', user.password);
 
+     localStorage.setItem('username',user.username);
      const options = {
        headers: new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded')
                                  .set('Access-Control-Allow-Origin', '*')
